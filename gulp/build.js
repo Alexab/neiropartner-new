@@ -15,6 +15,6 @@ gulp.task('build', function(callback) {
         'fonts',
         'sass',
         'txt',
-        //'gh-pages',
+        'gh-pages',
         callback)
 });

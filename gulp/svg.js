@@ -1,7 +1,7 @@
 /* SVG */
 var gulp = require('gulp'),
     config = require('./config'),
-    svgmin = require('gulp-svgmin'),
+    imagemin = require('gulp-imagemin'),
     newer = require('gulp-newer'),
     gutil = require('gulp-util'),
     browserSync = require("browser-sync"),
@@ -15,7 +15,7 @@ gulp.task('svg', function () {
             this.emit('end');
         }))
         .pipe(newer(config.pathTo.Build.Svg))
-        .pipe(svgmin())
+        .pipe(imagemin())
         .pipe(gulp.dest(config.pathTo.Build.Svg))
         .pipe(reload({stream: true}));
 });

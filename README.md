@@ -1,3 +1,2 @@
-# AstraMediaGroup Web Starter Kit
+# NeiroPartner Front-End
 
-...

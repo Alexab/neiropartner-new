@@ -15,9 +15,7 @@ window.onload = function(){
         data_srcset: "original" // original-set
     });
 
-    /**
-     * Call Owl-Carousel on header slider
-     */
+    // Call Owl-Carousel on header slider
     $("#js-owl-top-slider").owlCarousel({
         items: 1,
         //center: true,
@@ -32,9 +30,22 @@ window.onload = function(){
         navText:[]
     });
 
-    /**
-     * Center header slider dots
-     */
+    // Call Owl-Carousel on our works slider
+    $("#js-owl-works-slider").owlCarousel({
+        //items: 4,
+        //center: true,
+        //loop: false,
+        //nav: true,
+        //autoWidth: true,
+        //dots: false,
+        //autoplay: true,
+        //autoplayTimeout: 4000,
+        //autoplayHoverPause: true,
+        //navContainer: ".owl-own-nav",
+        //navText:[]
+    });
+
+    // Center header slider dots
     positionedAbsoluteElementHorizontalCenter('#js-owl-top-slider','.owl-dots');
 };
 

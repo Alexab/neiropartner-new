@@ -1,2 +1,0 @@
-# NeiroPartner Front-End
-

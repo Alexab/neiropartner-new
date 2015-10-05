@@ -36,7 +36,7 @@ window.onload = function(){
     $(".js-owl-works-slider").owlCarousel({
         dots: false,
         items: 4,
-        autoWidth: true,
+        //autoWidth: true,
         margin: 30,
         nav: true,
         navContainer: ".owl-own-nav-works",
@@ -48,7 +48,7 @@ window.onload = function(){
     $(".js-owl-partners-slider").owlCarousel({
         dots: false,
         items: 4,
-        autoWidth: true,
+        //autoWidth: true,
         margin: 40,
         nav: true,
         navContainer: ".owl-own-nav-partners",

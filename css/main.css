@@ -1960,9 +1960,12 @@ img:not([src]) {
     font-style : normal;
 
     background-color : transparent;
+    background-image : url("../img/select-arrow.png");
+    background-repeat : no-repeat; 
+    background-position : 95% center;
     border : 1px solid #7f8083;
     border-radius : 5px;
-    outline : none; 
+    outline : none;
 
     -webkit-appearance : none;
        -moz-appearance : none;

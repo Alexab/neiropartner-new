@@ -14,7 +14,12 @@ function setOwlCarouselIfMoreThen(container, count, navContainer) {
                 navText:[],
                 loop: true,
                 responsive : {
-                    // breakpoint from 7400 up
+                    // breakpoint from 740 up
+                    320 : {
+                        items: 1,
+                        margin: 10
+                    },
+                    // breakpoint from 740 up
                     740 : {
                         items: 2,
                         margin: 10

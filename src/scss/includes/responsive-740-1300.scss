@@ -2,11 +2,11 @@
 
   .container{
     width: 100%;
-    //overflow: hidden;
   }
 
   .header__logo-link{
     width: 100%;
+    text-align: center;
   }
 
   .header__nav{
@@ -16,12 +16,12 @@
   }
 
   .problem{
-    flex: 0 0 50%;
-    margin-bottom: 50px;
-    padding: 0 50px;
-    &:last-child{
-      flex: 0 0 100%;
-    }
+    //flex: 0 0 50%;
+    //margin-bottom: 50px;
+    //padding: 0 50px;
+    //&:last-child{
+    //  flex: 0 0 100%;
+    //}
   }
 
   .impuls{
@@ -29,19 +29,19 @@
   }
 
   .direction{
-    flex: 0 0 50%;
-    margin-bottom: 50px;
-    padding: 0 50px;
-    &:last-child{
-      flex: 0 0 100%;
-    }
+    //flex: 0 0 50%;
+    //margin-bottom: 50px;
+    //padding: 0 50px;
+    //&:last-child{
+    //  flex: 0 0 100%;
+    //}
   }
 
   .consalting__left, .consalting__right {
-    width: 100%;
-    flex: 0 0 100%;
-    margin-bottom: 50px;
-    padding: 0 50px;
+    //width: 100%;
+    //flex: 0 0 100%;
+    //margin-bottom: 50px;
+    //padding: 0 50px;
   }
 
   .consalting__title {
@@ -146,4 +146,9 @@
   .our-works-slider{
     padding: 0 100px;
   }
+
+  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners{
+    width: calc(100% - 200px);
+  }
+
 }

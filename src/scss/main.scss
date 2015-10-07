@@ -6,6 +6,7 @@
 
 /* Include custom CSS files */
 @import "includes/variables";
+@import "mixins/helpers";
 @import "mixins/font-face";
 @import "includes/png-sprite";
 @import "includes/svg-sprite";
@@ -23,3 +24,4 @@
 @import "includes/feedback-form";
 @import "includes/footer";
 @import "includes/responsive-740-1300";
+@import "includes/responsive-320-739";

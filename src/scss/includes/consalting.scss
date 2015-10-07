@@ -9,8 +9,9 @@
     flex: 0 0 50%;
   }
   &__img{
-    width: 513px;
-    height: 388px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
   &__title{
     @include font-family('HelveticaNeueCyr-Medium', normal, normal, sans-serif);

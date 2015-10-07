@@ -1,0 +1,123 @@
+.feedback-wrapper{
+  background-color: $color-feedback-bg;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.feedback{
+  display: flex;
+  flex-wrap: nowrap;
+
+  &__left{
+    flex: 0 0 460px;
+    width: 460px;
+    margin-right: 28px;
+  }
+  &__invite{
+    margin-top: 0;
+    margin-bottom: 25px;
+    @include font-family('HelveticaNeueCyr-Medium');
+    font-size: 2rem;
+    color: $color-feedback-invite;
+  }
+  &__subinvite{
+    margin-top: 0;
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $color-feedback-invite;
+  }
+  &__form{
+    flex: 0 0 660px;
+    display: flex;
+  }
+  &__form-left{
+    width: 265px;
+    flex: 0 0 265px;
+    margin-right: 30px;
+  }
+  &__form-right{
+    flex: 0 0 365px;
+    width: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  &__input{
+    box-sizing: border-box;
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    color: $color-feedback-inputs;
+    //width: 265px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    background-color: transparent;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid $color-feedback-inputs-border;
+    border-radius: 5px;
+    outline: none;
+    &::placeholder{
+      @include font-family('OpenSans-Regular');
+      font-size: 1rem;
+      color: $color-feedback-inputs;
+    }
+    &:focus{
+      border: 2px solid $color-feedback-inputs-border-focus;
+      width: calc(100% - 1px);
+      height: 39px;
+      line-height: 39px;
+    }
+  }
+  &__select{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    color: $color-feedback-inputs;
+    width: 100%;
+    padding-left: 15px;
+    background-color: transparent;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid $color-feedback-inputs-border;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+    background-image: url('../img/select-arrow.png');
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    &::placeholder{
+      @include font-family('OpenSans-Regular');
+      font-size: 1rem;
+      color: $color-feedback-inputs;
+    }
+    &:focus{
+      border: 2px solid $color-feedback-inputs-border-focus;
+    }
+  }
+  &__textarea{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    color: $color-feedback-inputs;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid $color-feedback-inputs-border;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    height: 190px;
+    margin-bottom: 25px;
+    &::placeholder{
+      @include font-family('OpenSans-Regular');
+      font-size: 1rem;
+      color: $color-feedback-inputs;
+    }
+    &:focus{
+      border: 2px solid $color-feedback-inputs-border-focus;
+      width: calc(100% - 1px);
+      height: 189px;
+    }
+  }
+}

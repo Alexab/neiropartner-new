@@ -1,0 +1,11 @@
+// PARTNERS
+include ../mixins/partner
+.wrapper.wrapper--light
+    .container.partners
+        h2.partners__title Наши партнеры
+
+        .partners-slider
+            .owl-own-nav-partners
+            .container.js-owl-partners-slider
+                - for (var i=0; i<6; i++ )
+                    +partner

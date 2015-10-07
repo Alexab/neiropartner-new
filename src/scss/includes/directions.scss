@@ -1,0 +1,51 @@
+.direction{
+  flex: 0 0 32%;
+  text-align: center;
+  margin-bottom: 50px;
+
+  &__icon{
+    background-repeat: no-repeat;
+    width: 148px;
+    height: 148px;
+    display: inline-block;
+
+    &--philosophy{
+      @include sprite($sprite-philosophy);
+    }
+    &--principles{
+      @include sprite($sprite-principles);
+    }
+    &--directions{
+      @include sprite($sprite-directions);
+    }
+  }
+  &__title{
+    @include font-face('HelveticaNeueCyr-Medium', normal, normal, sans-serif);
+    font-size: 1.75rem;
+  }
+  &__text{
+    @include font-face('OpenSans-Regular', normal, normal, sans-serif);
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $color-directions-text;
+  }
+  &__list{
+    @include font-face('OpenSans-Regular', normal, normal, sans-serif);
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $color-directions-text;
+    list-style-type: none;
+    padding: 0;
+  }
+  &__item{
+    @include font-face('OpenSans-Regular', normal, normal, sans-serif);
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $color-directions-text;
+    background: url('../img/marker.png') no-repeat left center;
+    padding-left: 25px;
+  }
+}

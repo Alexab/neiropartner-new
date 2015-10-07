@@ -1,0 +1,139 @@
+.header-top-line{
+  height: 15px;
+  background-color: $color-header-top-line;
+
+  &__wrapper{
+    margin: 0 auto;
+    text-align: center;
+    height: 15px;
+    width: 720px;
+    font-size: 0;
+    background-color: $color-header-top-line-wrapper;
+  }
+  &__strip{
+    height: 15px;
+    display: inline-block;
+    width: 120px;
+    border-radius: 0 0 4px 4px;
+
+    &--grey{
+      background-color: $color-header-top-line;
+    }
+    &--grey-left{
+      border-radius: 0 0 4px 0;
+    }
+    &--grey-right{
+      border-radius: 0 0 0 4px;
+    }
+    &--blue-1{
+      background-color: $color-header-top-line-strip-blue-1;
+    }
+    &--blue-2{
+      background-color: $color-header-top-line-strip-blue-2;
+    }
+    &--blue-3{
+      background-color: $color-header-top-line-strip-blue-3;
+    }
+    &--blue-4{
+      background-color: $color-header-top-line-strip-blue-4;
+    }
+  }
+}
+
+.header{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  box-shadow: 0 2px 0 0 $color-header-shadow;
+
+  &__lang{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    width: 70px;
+    height: 17px;
+    border-radius: 0 0 4px 4px;
+    background-color: $color-header-top-line;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  &__lang-item{
+    @include font-family('HelveticaNeueCyr-Light', normal, normal, sans-serif);
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: $color-header-lang;
+    &:first-child{  margin-right: 5px;  }
+    &:last-child{  margin-left: 5px;  }
+    &:hover,&--current{
+      @include font-family('HelveticaNeueCyr-Bold', normal, normal, sans-serif);
+      color: $color-header-lang-hover;  }
+  }
+  &__logo-link{
+
+  }
+  &__logo{
+    width: 306px;
+    height: 85px;
+  }
+  &__nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 89px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+  }
+  &__nav-item{
+    display: inline-block;
+  }
+  &__nav-link{
+    @include font-family('HelveticaNeueCyr-Medium', normal, normal, sans-serif);
+    font-size: 0.8125rem;
+    color: $color-header-menu-link;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover{  color: $color-header-menu-link-hover; }
+    &--partnership{
+      display: inline-block;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      padding: 0 10px;
+      background-color: $color-header-menu-link-bg-partnership;
+      color: $color-header-menu-link-contacts-partnership!important;
+      border-radius: 4px;
+      &:hover{
+        color: $color-header-menu-link-contacts-partnership;
+        box-shadow: inset 0 2px 0 0 $color-header-menu-link-bg-partnership-hover;
+      }
+      &:active{
+        color: $color-header-menu-link-contacts-partnership;
+        box-shadow: inset 0 2px 0 0 $color-header-menu-link-bg-partnership-hover;
+        background-color: $color-header-menu-link-bg-partnership-active;
+        text-decoration: none;
+      }
+    }
+    &--contacts{
+      display: inline-block;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      padding: 0 10px;
+      background-color: $color-header-menu-link-bg-contacts;
+      color: $color-header-menu-link-contacts-partnership;
+      border-radius: 4px;
+      &:hover{
+        color: $color-header-menu-link-contacts-partnership;
+        box-shadow: inset 0 2px 0 0 $color-header-menu-link-bg-contacts-hover;
+      }
+      &:active{
+        color: $color-header-menu-link-contacts-partnership;
+        box-shadow: inset 0 2px 0 0 $color-header-menu-link-bg-contacts-hover;
+        background-color: $color-header-menu-link-bg-contacts-active;
+        text-decoration: none;
+      }
+    }
+  }
+}

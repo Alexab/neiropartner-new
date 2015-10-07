@@ -1,0 +1,42 @@
+.consalting{
+  display: flex;
+  padding-bottom: 120px;
+  &__left{
+    flex: 0 0 50%;
+    text-align: center;
+  }
+  &__right{
+    flex: 0 0 50%;
+  }
+  &__img{
+    width: 513px;
+    height: 388px;
+  }
+  &__title{
+    @include font-family('HelveticaNeueCyr-Medium', normal, normal, sans-serif);
+    font-size: 3rem;
+    color: $color-project-block-title;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+  &__text{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $color-project-text;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  &__link{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $color-project-link;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    margin: 0;
+  }
+}

@@ -1,0 +1,95 @@
+.footer-wrapper{
+  background-color: $color-footer-bg;
+  padding-bottom: 25px;
+}
+
+.footer{
+  padding-top: 35px;
+  flex-wrap: nowrap;
+
+  &__left{
+    flex: 0 0 676px;
+  }
+  &__right{
+    margin-left: 180px;
+  }
+  &__menu{
+    list-style-type: none;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid $color-footer-menu-line;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  &__menu-item{
+    display: inline-block;
+    margin-right: 25px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__menu-link{
+    @include font-family('HelveticaNeueCyr-Roman');
+    color: $color-footer-menu-link;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .875rem;
+    &:hover{
+      color: $color-footer-menu-link--hover;
+    }
+  }
+  &__social{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__social-icon{
+    display: inline-block;
+    width: 32px;
+    height: 33px;
+    opacity: .7;
+    margin-bottom: 30px;
+    &:hover{  opacity: 1;}
+    &--tw{
+      @include sprite($sprite-twitter);
+    }
+    &--vk{
+      @include sprite($sprite-vkontakte);
+    }
+    &--fb{
+      @include sprite($sprite-facebook);
+    }
+  }
+  &__social-link{
+    display: inline-block;
+    width: 32px;
+    height: 33px;
+  }
+  &__copyright{
+    @incclude font-family('HelveticaNeueCyr-Light');
+    margin: 0;
+    font-size: .81rem;
+    color: $color-footer-copyright;
+  }
+  &__phone{
+    @incclude font-family('HelveticaNeueCyr-Light');
+    font-size: 1.5rem;
+    color: $color-footer-phone;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__phone-link{
+    @incclude font-family('HelveticaNeueCyr-Light');
+    font-size: 1.5rem;
+    color: $color-footer-phone;
+    text-decoration: none;
+  }
+  &__address{
+    @incclude font-family('HelveticaNeueCyr-Light');
+    font-size: .81rem;
+    color: $color-footer-address;
+    line-height: 1.125rem;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+}
+

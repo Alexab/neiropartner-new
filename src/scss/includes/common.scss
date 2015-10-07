@@ -1,0 +1,87 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+/* Fixes Firefox anomaly */
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
+  }
+}
+
+.container{
+  display: flex;
+  width: $width-container;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.impuls{
+  display: block;
+  background-image: url(../img/impuls.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: $width-container;
+  height: 46px;
+  margin: 85px auto 100px auto;
+}
+
+.mouse{
+  display: block;
+  @include sprite($sprite-mouse);
+  background-repeat: no-repeat;
+  width: 139px;
+  height: 42px;
+  float: right;
+}
+
+.wrapper{
+  
+  &--grey{
+    background: linear-gradient(180deg, $color-wrapper--grey-start, $color-wrapper--grey-end);
+  }
+  &--light{
+    background: linear-gradient(180deg, $color-wrapper--light-start, $color-wrapper--light-end);
+  }
+}
+
+.btn{
+  text-transform: uppercase;
+  text-align: center;
+  @include font-family(HelveticaNeueCyr-Medium);
+  font-size: 1.0625rem;
+  padding: 0 35px;
+  line-height: 3rem;
+  border-radius: 5px;
+  text-decoration: none;
+  height: 40px;
+  &--all{
+    color: $color-btn;
+    background-color: $color-btn-bg;
+    display: block;
+    margin: 0 auto;
+    &:hover{
+      color: $color-btn;
+      box-shadow: inset 0 2px 0 0 $color-btn-hover-shadow;
+    }
+    &:active{
+      color: $color-btn;
+      box-shadow: inset 0 2px 0 0 $color-btn-hover-shadow;
+      background-color: $color-btn-bg-active;
+    }
+  }
+  &--feedback{
+    display: inline-block;
+    margin: 0;
+    border: none;
+    outline: none;
+  }
+}

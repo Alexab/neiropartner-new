@@ -1,0 +1,13 @@
+// OUR WORKS
+include ../mixins/work
+section.container.our-works
+    h2.our-works__title Наши работы
+    p.our-works__text Сотрудники НейроПартнера являются признанными специалистами в своей области, имеют множество публикаций в научных журналах, ведут активные исследования в области нейропротезирования, консультируют и ведут преподавательскую деятельность. Результаты научных работ запатентованы
+
+    .our-works-slider
+        .owl-own-nav-works
+        .container.js-owl-works-slider
+            - for (var i=0; i<6; i++ )
+                +work
+
+    a(href='javascript:void(0)' title="Все проекты НейроПартнер").btn.btn--all Все работы

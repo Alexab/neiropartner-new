@@ -1,0 +1,149 @@
+@include mq($from: tablet, $until: wide) {
+
+  .container{
+    width: 100%;
+    //overflow: hidden;
+  }
+
+  .header__logo-link{
+    width: 100%;
+  }
+
+  .header__nav{
+    flex: 0 0 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .problem{
+    flex: 0 0 50%;
+    margin-bottom: 50px;
+    padding: 0 50px;
+    &:last-child{
+      flex: 0 0 100%;
+    }
+  }
+
+  .impuls{
+    width: 100%;
+  }
+
+  .direction{
+    flex: 0 0 50%;
+    margin-bottom: 50px;
+    padding: 0 50px;
+    &:last-child{
+      flex: 0 0 100%;
+    }
+  }
+
+  .consalting__left, .consalting__right {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+
+  .consalting__title {
+    text-align: center;
+  }
+
+  .mission{
+    padding: 0 50px;
+  }
+
+  .mission-wrapper{
+    padding-bottom: 50px;
+  }
+
+  .feedback{
+    flex-wrap: wrap;
+  }
+  
+  .feedback__left, .feedback__form {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+
+  .feedback__form-left{
+    width: 30%;
+    flex: 0 0 30%;
+  }
+  .feedback__form-right{
+    width: calc(70% - 30px);
+    flex: 0 0 calc(70% - 30px);
+  }
+
+  .footer{
+    flex-wrap: wrap;
+  }
+
+  .footer__left{
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer__menu{
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__menu-item{
+    margin: 0;
+  }
+
+  .footer__social{
+    text-align: center;
+  }
+
+  .footer__copyright{
+    text-align: center;
+  }
+
+  .footer__right{
+    margin: 0;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .slider{
+    height: auto;
+  }
+  .slider__slide{
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+
+  .slider__slide-left{
+    flex: 0 0 100%;
+  }
+
+  .slider__slide-right{
+    flex: 0 0 100%;
+    margin-top: 50px;
+    padding: 0 50px;
+  }
+
+  .slider__gradient{
+    margin: 0 auto;
+  }
+
+
+  .project{
+    flex: 0 0 50%;
+  }
+
+  .projects-slider{
+    padding: 0 100px;
+  }
+
+  .partners-slider{
+    padding: 0 100px;
+  }
+
+  .our-works-slider{
+    padding: 0 100px;
+  }
+}

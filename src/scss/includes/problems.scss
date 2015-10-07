@@ -1,0 +1,25 @@
+.problem{
+  flex: 0 0 33.3333%;
+  text-align: center;
+  &__link{
+    @include font-family('HelveticaNeueCyr-Bold', normal, normal, sans-serif);
+    font-size: 3.4375rem;
+    color: $color-problems-link;
+    text-decoration: none;
+    display: block;
+    &:hover{
+      color: $color-problems-link--hover;
+    }
+  }
+  &__link-text{
+    @include font-family('HelveticaNeueCyr-Medium', normal, normal, sans-serif);
+    font-size: 1.9375rem;
+    display: block;
+  }
+  &__text{
+    @include font-family('HelveticaNeueCyr-Medium', normal, normal, sans-serif);
+    font-size: 1.1875rem;
+    line-height: 1.625rem;
+    color: $color-problems-text;
+  }
+}

@@ -2329,6 +2329,8 @@ img:not([src]) {
     }
     .header__logo-link {
         width : 100%;
+
+        text-align : center;
     }
     .header__nav {
         -webkit-flex : 0 0 100%;

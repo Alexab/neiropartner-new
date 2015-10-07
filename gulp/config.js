@@ -48,7 +48,7 @@ module.exports = {
     browserSync: {
         server: './build',
         baseDir: './build',
-        tunnel: true,
+        tunnel: false,
         host: 'localhost',
         port: 9000,
         injectChanges: true,

@@ -7,9 +7,7 @@ window.onload = function(){
      * SET data-original="path_to_img"
      * SET CSS class .lazyload to all img tags
      * Example: <img class="lazyload" data-original="img/img.png" alt="alt text" title="title text">
-     *
-     *  TODO: незабыть в мануал написать про использование
-     */
+     **/
     var AMGLazyLoad = new LazyLoad({
         elements_selector: ".lazyload", // img
         data_srcset: "original", // original-set
@@ -32,29 +30,14 @@ window.onload = function(){
     // Center header slider dots
     positionedAbsoluteElementHorizontalCenter('.js-owl-top-slider','.owl-dots');
 
-    // Call Owl-Carousel on our works slider
-    $(".js-owl-works-slider").owlCarousel({
-        dots: false,
-        items: 4,
-        //autoWidth: true,
-        margin: 30,
-        nav: true,
-        navContainer: ".owl-own-nav-works",
-        navText:[],
-        loop: true
-    });
+    // Call Owl-Carousel on our works block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-works-slider", 4, ".owl-own-nav-works");
 
-    // Call Owl-Carousel on partner slider
-    $(".js-owl-partners-slider").owlCarousel({
-        dots: false,
-        items: 4,
-        //autoWidth: true,
-        margin: 40,
-        nav: true,
-        navContainer: ".owl-own-nav-partners",
-        navText:[],
-        loop: true
-    });
+    // Call Owl-Carousel on projects block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-projects-slider", 3, ".owl-own-nav-projects");
+
+    // Call Owl-Carousel on projects block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-partners-slider", 4, ".owl-own-nav-partners");
 
 };
 

@@ -7,9 +7,7 @@ window.onload = function(){
      * SET data-original="path_to_img"
      * SET CSS class .lazyload to all img tags
      * Example: <img class="lazyload" data-original="img/img.png" alt="alt text" title="title text">
-     *
-     *  TODO: незабыть в мануал написать про использование
-     */
+     **/
     var AMGLazyLoad = new LazyLoad({
         elements_selector: ".lazyload", // img
         data_srcset: "original", // original-set
@@ -32,29 +30,14 @@ window.onload = function(){
     // Center header slider dots
     positionedAbsoluteElementHorizontalCenter('.js-owl-top-slider','.owl-dots');
 
-    // Call Owl-Carousel on our works slider
-    $(".js-owl-works-slider").owlCarousel({
-        dots: false,
-        items: 4,
-        //autoWidth: true,
-        margin: 30,
-        nav: true,
-        navContainer: ".owl-own-nav-works",
-        navText:[],
-        loop: true
-    });
+    // Call Owl-Carousel on our works block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-works-slider", 4, ".owl-own-nav-works");
 
-    // Call Owl-Carousel on partner slider
-    $(".js-owl-partners-slider").owlCarousel({
-        dots: false,
-        items: 4,
-        //autoWidth: true,
-        margin: 40,
-        nav: true,
-        navContainer: ".owl-own-nav-partners",
-        navText:[],
-        loop: true
-    });
+    // Call Owl-Carousel on projects block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-projects-slider", 3, ".owl-own-nav-projects");
+
+    // Call Owl-Carousel on projects block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-partners-slider", 4, ".owl-own-nav-partners");
 
 };
 
@@ -70,4 +53,35 @@ function positionedAbsoluteElementHorizontalCenter(containerSelector,elementSele
         leftIndent = (containerWidth / 2) - (elementWidth / 2);
 
     element.style.left = ''+leftIndent+'px';
+}
+/* Call Owl Carousel if there is more items in block then need */
+
+function setOwlCarouselIfMoreThen(container, count, navContainer) {
+    navContainer = navContainer || false; // navContainer is optional argument, if it is not set - use default "false
+
+    var items = document.querySelector(container).children;
+
+    if (items.length) { // check if there is children in container
+        if (items.length > count ) { // call Owl if items more then count
+            $(container).owlCarousel({
+                dots: false,
+                nav: true,
+                navContainer: navContainer,
+                navText:[],
+                loop: true,
+                responsive : {
+                    // breakpoint from 7400 up
+                    740 : {
+                        items: 2,
+                        margin: 10
+                    },
+                    // breakpoint from 1300 up
+                    1300 : {
+                        items: count,
+                        margin: 30
+                    }
+                }
+            });
+        }
+    }
 }

@@ -2593,12 +2593,15 @@ img:not([src]) {
 
             -ms-flex-wrap : wrap;
     }
+    .feedback-wrapper {
+        padding-top : 10px;
+    }
     .feedback__left, .feedback__form {
         -webkit-flex : 0 0 100%;
             -ms-flex : 0 0 100%;
                 flex : 0 0 100%;
         width : 100%;
-        margin-bottom : 50px;
+        margin-bottom : 10px;
         padding : 10px; 
 
         -webkit-box-flex : 0;
@@ -2723,6 +2726,7 @@ img:not([src]) {
         min-height : 125px;
     }
     .project__title {
+        font-weight : bold; 
         font-size : .7rem;
     }
     .project__text {

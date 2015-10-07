@@ -1442,7 +1442,7 @@ img:not([src]) {
     position : absolute;
     top : calc(50% - 46px); 
 
-    width : 100vw;
+    width : 100%;
 }
 .owl-own-nav-projects .owl-prev, .owl-own-nav-projects .owl-next {
     position : absolute;
@@ -2520,5 +2520,8 @@ img:not([src]) {
     }
     .our-works-slider {
         padding : 0 100px;
+    }
+    .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners {
+        width : calc(100% - 200px);
     }
 }

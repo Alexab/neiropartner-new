@@ -2617,10 +2617,14 @@ img:not([src]) {
     .feedback__form-right {
         -webkit-flex : 0 0 calc(70% - 30px);
             -ms-flex : 0 0 calc(70% - 30px);
-                flex : 0 0 calc(70% - 30px); 
+                flex : 0 0 calc(70% - 30px);
+        -webkit-justify-content : center;
+                justify-content : center; 
         width : calc(70% - 30px);
 
         -webkit-box-flex : 0;
+        -webkit-box-pack : center;
+        -ms-flex-pack : center;
     }
     .footer {
         -webkit-flex-wrap : wrap;

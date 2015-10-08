@@ -46,47 +46,51 @@ window.onload = function(){
  * Centering element with position: absolute in container block
  */
 function positionedAbsoluteElementHorizontalCenter(containerSelector,elementSelector){
-    var container = document.querySelector(containerSelector),
-        element = container.querySelector(elementSelector),
-        elementWidth = element.clientWidth,
-        containerWidth = container.clientWidth,
-        leftIndent = (containerWidth / 2) - (elementWidth / 2);
 
-    element.style.left = ''+leftIndent+'px';
+    if (document.querySelector(containerSelector)) {
+        var container = document.querySelector(containerSelector),
+            element = container.querySelector(elementSelector),
+            elementWidth = element.clientWidth,
+            containerWidth = container.clientWidth,
+            leftIndent = (containerWidth / 2) - (elementWidth / 2);
+        element.style.left = ''+leftIndent+'px';
+    }
 }
 /* Call Owl Carousel if there is more items in block then need */
 
 function setOwlCarouselIfMoreThen(container, count, navContainer) {
     navContainer = navContainer || false; // navContainer is optional argument, if it is not set - use default "false
 
-    var items = document.querySelector(container).children;
+    if (document.querySelector(container)) {
+        var items = document.querySelector(container).children;
 
-    if (items.length) { // check if there is children in container
-        if (items.length > count ) { // call Owl if items more then count
-            $(container).owlCarousel({
-                dots: false,
-                nav: true,
-                navContainer: navContainer,
-                navText:[],
-                loop: true,
-                responsive : {
-                    // breakpoint from 740 up
-                    300 : {
-                        items: 1,
-                        margin: 10
-                    },
-                    // breakpoint from 740 up
-                    740 : {
-                        items: 2,
-                        margin: 10
-                    },
-                    // breakpoint from 1300 up
-                    1300 : {
-                        items: count,
-                        margin: 30
+        if (items.length) { // check if there is children in container
+            if (items.length > count ) { // call Owl if items more then count
+                $(container).owlCarousel({
+                    dots: false,
+                    nav: true,
+                    navContainer: navContainer,
+                    navText:[],
+                    loop: true,
+                    responsive : {
+                        // breakpoint from 740 up
+                        300 : {
+                            items: 1,
+                            margin: 10
+                        },
+                        // breakpoint from 740 up
+                        740 : {
+                            items: 2,
+                            margin: 10
+                        },
+                        // breakpoint from 1300 up
+                        1300 : {
+                            items: count,
+                            margin: 30
+                        }
                     }
-                }
-            });
+                });
+            }
         }
     }
 }

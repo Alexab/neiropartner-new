@@ -2,6 +2,7 @@
 var gulp = require('gulp'),
     config = require('./config'),
     sass = require('gulp-sass'),
+    sassdoc = require('sassdoc'),
     minifycss = require('gulp-minify-css'),
     cssshrink = require('gulp-cssshrink'),
     csscomb = require('gulp-csscomb'),
@@ -20,6 +21,9 @@ gulp.task('sass', function () {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))
+        //.pipe(sassdoc({
+        //    dest: 'src/scss/sassdoc'
+        //}))
         .pipe(newer(config.pathTo.Build.Styles))
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))
@@ -32,4 +36,7 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(config.pathTo.Build.Styles))
         .pipe(reload({stream: true}));
+        //.resume();
 });
+
+// TODO: sassdoc

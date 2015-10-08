@@ -59,6 +59,7 @@
     @include font-family('HelveticaNeueCyr-Medium');
     font-size: 1.225rem;
     color: $color-work-title;
+    word-wrap: break-word
   }
   &__link{
     @include font-family('HelveticaNeueCyr-Medium');

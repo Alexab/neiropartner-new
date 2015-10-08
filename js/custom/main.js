@@ -36,7 +36,7 @@ window.onload = function(){
     // Call Owl-Carousel on projects block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-projects-slider", 3, ".owl-own-nav-projects");
 
-    // Call Owl-Carousel on projects block if there os more than 4 works
+    // Call Owl-Carousel on partners block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-partners-slider", 4, ".owl-own-nav-partners");
 
 };

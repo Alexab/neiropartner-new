@@ -29,36 +29,53 @@ $color-header-slider-bq: #949191;
 $color-header-slider-text: #47494e;
 $color-header-slider-dot: #c5c5c5;
 $color-header-slider-dot--active: #4b4b4b;
+
 $color-problems-link: #393939;
 $color-problems-link--hover: #2d54c2;
 $color-problems-text: #4b4b4b;
+
 $color-directions-text: #4b4b4b;
-$color-wrapper--grey-start: #f4f4f2;
-$color-wrapper--grey-end: #d8eef9;
+
 $color-project-block-title: #2d54c2;
 $color-project-title: #4b4b4b;
 $color-project-text: #4b4b4b;
 $color-project-link: #2d54c2;
+
 $color-btn: #fff;
 $color-btn-bg: #8fbc42;
 $color-btn-hover-shadow: #60971d;
 $color-btn-bg-active: #6da40e;
+
 $color-mission-title: #fff;
 $color-mission-text: #fff;
+
 $color-our-works-text: #4b4b4b;
 $color-our-works-title: #2d54c2;
+
 $color-work-title: #4b4b4b;
 $color-work-text: #4b4b4b;
 $color-work-link-hover: #2d54c2;
+
 $color-wrapper--light-start: #f4f4f2;
 $color-wrapper--light-end: #fff;
+$color-wrapper--grey-start: #f4f4f2;
+$color-wrapper--grey-end: #d8eef9;
+$color-wrapper--contacts-start: #d8eef9;
+$color-wrapper--contacts-end: #f4f4f2;
+
 $color-partners-block-title: #2d54c2;
 $color-partner-name: #4b4b4b;
+
 $color-feedback-bg: #47494e;
 $color-feedback-inputs: #fff;
 $color-feedback-inputs-border: #7f8083;
 $color-feedback-inputs-border-focus: #6889b1;
 $color-feedback-invite: #fff;
+
+$color-contact-inputs: #4b4b4b;
+$color-contacts-inputs-border-focus: #b1d6fe;
+$color-contact-text: #4b4b4b;
+
 $color-footer-bg: #e7ebee;
 $color-footer-menu-link: #4b4b4b;
 $color-footer-menu-link--hover: #2d54c2;
@@ -66,12 +83,13 @@ $color-footer-menu-line: #bebebe;
 $color-footer-phone: #4b4b4b;
 $color-footer-copyright: #4b4b4b;
 $color-footer-address: #6f6f6f;
+
 $base-font-color: #000;
 
 
 /* Media Queries Breakpoints */
 $mq-breakpoints: (
-        mobile:  320px,
+        mobile:  300px,
         tablet:  740px,
         desktop: 980px,
         wide:    1300px

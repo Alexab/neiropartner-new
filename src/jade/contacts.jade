@@ -1,0 +1,41 @@
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_if-ie
+        include includes/_header
+        main.wrapper.wrapper--contacts
+            .container.contacts
+                // CONTACTS
+                .contacts__left
+                    address.contacts__address
+                        ul.contacts__list
+                            li.contacts__item.contacts__item--geo СПб, Морская наб. 1, 400
+                            li.contacts__item.contacts__item--email
+                                a(href='mailto:info@neuropartner.ru' title='Написать в Нейро-Партнер').contacts__item-link info@neuropartner.ru
+                            li.contacts__item.contacts__item--phone
+                                a(href='tel:7(981) 81 65 060' title='Позвонить в Нейро-Партнер').contacts__item-link 7(981) 81 65 060
+                        ul.contacts__list
+                            li.contacts__item.contacts__item--data ИНН: 1234567890
+                            li.contacts__item.contacts__item--data КПП: 1234567890
+                            li.contacts__item.contacts__item--data ОГРН: 1234567890
+                            li.contacts__item.contacts__item--data р/с: 1234567890 в "Название банка"
+
+                // FEEDBACK FORM
+                form.contacts__form
+                    h2.contacts__title Мы ждем ваших писем
+                    .contacts__form-left
+                        input(type="text" placeholder="Имя" required spellcheck="true").contacts__input
+                        input(type="email" placeholder="Эл. почта" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" spellcheck="true").contacts__input
+                        input(type="tel" placeholder="Телефон" required pattern="(\+?\d[- .]*){7,13}" spellcheck="true" title="Международный, государственный или местный телефонный номер").contacts__input
+                        select(required).contacts__select
+                            option Я - пациент
+                            option Я - врач или специалист
+                            option Я - потенциальный инвестор
+                            option Хочу к Вам присоединиться и работать в Нейро-Партнере
+                            option Другое
+                    .contacts__form-right
+                        textarea(placeholder="Сообщение" required spellcheck="true").contacts__textarea
+                        button(title="Отправить").btn.btn--all.btn--feedback Отправить
+
+        include includes/_footer

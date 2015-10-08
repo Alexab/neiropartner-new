@@ -1,0 +1,164 @@
+.contacts-wrapper{
+
+}
+
+.contacts{
+  padding: 100px 0 200px 0;
+  display: flex;
+  flex-wrap: nowrap;
+
+  &__left{
+    flex: 0 0 460px;
+    width: 460px;
+    margin-right: 28px;
+  }
+  &__address{
+
+  }
+  &__list{
+    padding: 0;
+    margin-top: 5px;
+  }
+  &__item{
+    @include font-family('OpenSans-Regular');
+    list-style-type: none;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: $color-contact-text;
+    margin-bottom: 29px;
+    &:before{
+      content: '';
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+
+    &--geo:before{
+      @include sprite($sprite-geo);
+    }
+    &--email:before{
+      @include sprite($sprite-email);
+    }
+    &--phone:before{
+      @include sprite($sprite-phone);
+    }
+    &--data{
+      font-size: 1rem;
+      line-height: 1.31rem;
+      margin-bottom: 10px;
+      margin-left: 25px;
+    }
+  }
+  &__item-link{
+    @include font-family('OpenSans-Regular');
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: $color-contact-text;
+    text-decoration: none;
+  }
+
+  &__title{
+    @include font-family('HelveticaNeueCyr-Medium', normal, normal, sans-serif);
+    font-size: 3rem;
+    color: $color-project-block-title;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-top: 0;
+    flex: 0 0 100%;
+  }
+
+  &__form{
+    flex: 0 0 660px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__form-left{
+    width: 265px;
+    flex: 0 0 265px;
+    margin-right: 30px;
+  }
+  &__form-right{
+    flex: 0 0 365px;
+    width: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  &__input{
+    box-sizing: border-box;
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    color: $color-contact-inputs;
+    //width: 265px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    background-color: transparent;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid $color-feedback-inputs-border;
+    border-radius: 5px;
+    outline: none;
+    &::placeholder{
+      @include font-family('OpenSans-Regular');
+      font-size: 1rem;
+      color: $color-contact-inputs;
+    }
+    &:focus{
+      border: 2px solid $color-contacts-inputs-border-focus;
+      width: calc(100% - 1px);
+      height: 39px;
+      line-height: 39px;
+    }
+  }
+  &__select{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    color: $color-contact-inputs;
+    width: 100%;
+    padding-left: 15px;
+    background-color: transparent;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid $color-feedback-inputs-border;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+    background-image: url('../img/select-arrow.png');
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    &::placeholder{
+      @include font-family('OpenSans-Regular');
+      font-size: 1rem;
+      color: $color-contact-inputs;
+    }
+    &:focus{
+      border: 2px solid $color-contacts-inputs-border-focus;
+    }
+  }
+  &__textarea{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    color: $color-contact-inputs;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid $color-feedback-inputs-border;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    height: 190px;
+    margin-bottom: 25px;
+    &::placeholder{
+      @include font-family('OpenSans-Regular');
+      font-size: 1rem;
+      color: $color-contact-inputs;
+    }
+    &:focus{
+      border: 2px solid $color-contacts-inputs-border-focus;
+      width: calc(100% - 1px);
+      height: 189px;
+    }
+  }
+}

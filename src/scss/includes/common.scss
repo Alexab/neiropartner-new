@@ -22,6 +22,7 @@ img:not([src]) {
   position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-width: 320px;
 }
 
 .impuls{
@@ -47,6 +48,9 @@ img:not([src]) {
   
   &--grey{
     background: linear-gradient(180deg, $color-wrapper--grey-start, $color-wrapper--grey-end);
+  }
+  &--contacts{
+    background: linear-gradient(180deg, $color-wrapper--contacts-start, $color-wrapper--contacts-end);
   }
   &--light{
     background: linear-gradient(180deg, $color-wrapper--light-start, $color-wrapper--light-end);

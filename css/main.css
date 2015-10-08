@@ -1709,8 +1709,9 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1.225rem;
     font-family : "HelveticaNeueCyr-Medium", sans-serif;
-    color : #4b4b4b; 
+    color : #4b4b4b;
     font-style : normal;
+    word-wrap : break-word;
 }
 .work__link {
     font-weight : normal;

@@ -18,10 +18,7 @@
 @include font-face('OpenSans-Regular', OpenSans, regular, opensans-regular-webfont);
 @include font-face('OpenSans-Bold', OpenSans, bold, opensans-bold-webfont);
 
-
-
 html {
   font-size: $base-font-size;
   //line-height: $base-line-height;
 }
-

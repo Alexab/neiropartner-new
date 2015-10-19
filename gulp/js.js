@@ -14,7 +14,6 @@ var gulp = require('gulp'),
     reload = browserSync.reload,
     plumber = require('gulp-plumber');
 
-
 gulp.task('js', function () {
     var customJS = gulpFilter(config.pathTo.Src.JSCustom, {restore: true}),
         vendorJS = gulpFilter(config.pathTo.Src.JSVendor, {restore: true});

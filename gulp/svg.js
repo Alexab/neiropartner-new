@@ -15,7 +15,10 @@ gulp.task('svg', function () {
             this.emit('end');
         }))
         .pipe(newer(config.pathTo.Build.Svg))
-        .pipe(imagemin())
+        .pipe(imagemin({
+            multipass: true,
+            optimizationLevel: 7
+        }))
         .pipe(gulp.dest(config.pathTo.Build.Svg))
         .pipe(reload({stream: true}));
 });

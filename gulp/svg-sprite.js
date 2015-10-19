@@ -2,7 +2,7 @@
 var gulp = require('gulp'),
     config = require('./config'),
     svg2png = require('gulp-svg2png'),
-    svgmin = require('gulp-svgmin'),
+    imagemin = require('gulp-imagemin'),
     svgspritesheet = require('gulp-svg-spritesheet'),
     newer = require('gulp-newer'),
     gutil = require('gulp-util'),
@@ -27,7 +27,10 @@ gulp.task('svg-sprite', function () {
             templateDest: config.pathTo.Build.SvgSpriteCSS,
             units: 'rem'
         }))
-        .pipe(svgmin())
+        .pipe(imagemin({
+            multipass: true,
+            optimizationLevel: 7
+        }))
         .pipe(gulp.dest(config.pathTo.Build.SvgSprite))
         .pipe(svg2png())
         .pipe(gulp.dest(config.pathTo.Build.SvgSpriteNoSvg))

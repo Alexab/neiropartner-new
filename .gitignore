@@ -202,4 +202,3 @@ design/*.*
 #!/src/svg/.gitignore
 #/src/svg/sprite/*.*
 #!/src/svg/sprite/.gitignore
-

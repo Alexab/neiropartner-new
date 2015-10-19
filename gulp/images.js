@@ -19,7 +19,7 @@ gulp.task('images', function () {
         .pipe(newer(config.pathTo.Build.Images))
         .pipe(imagemin({
             progressive: true,
-            optimizationLevel: 5,
+            optimizationLevel: 7,
             use: [pngquant()],
             interlaced: true
         }))

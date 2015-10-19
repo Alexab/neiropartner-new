@@ -1,3 +1,46 @@
+### 1.3.4 (October 19, 2015)
+
+* Add fonts preload meta-tag in head
+
+### 1.3.3 (October 19, 2015)
+
+* Set jaguar template for jsDoc3
+
+### 1.3.2 (October 18, 2015)
+
+* add closing outdate modal by press Esc on keyboard (closeAMGOutdateBrowserModal.js)
+
+### 1.3.1 (October 18, 2015)
+
+* fix regexp in browser versions (getOutDateBrowserLink.js)
+
+### 1.3.0 (October 17, 2015)
+
+* add detect browser js (detectBrowser.js)
+* add AStraMediaGroup outdate browser modal cap (for IE 7/8/9, Safari 7, Chrome/Opera 38,38,49, Firefox 40)
+
+### 1.2.0 (October 16, 2015)
+
+* delete much rules from .gitignore. It was mistake to add them
+* delete svgmin from svg-sprite task
+* add Async CSS Load (loadCSS.js)
+* remove font-family from ./.csscomb.json (fonts did not working with it)
+* change js load from async to defer in footer
+* add jsdoc gulp task for JavaScript documentation generating
+
+### 1.1.4 (October 7, 2015)
+
+* change gulp tasks for svg and images for better optimisation
+
+### 1.1.3 (October 5, 2015)
+
+* remove svg-min and change it to imagemin in gulp/svg
+
+### 1.1.2 (October 5, 2015)
+
+* replace sass include font-face to _typography.scss
+* fix example in main.js for lazyload
+
 ### 1.1.1 (October 4, 2015)
 
 * add design folder to store .psd and over design files locally

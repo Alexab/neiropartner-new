@@ -3,7 +3,27 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
     include includes/_head
     body
         include includes/_header
-        main
+        main.wrapper.wrapper--blue2grey
+            .container.container--consalting
+                h1.h1-title.m-0-a.t-ac Консалтинг
+                p.consalting-text.
+                    С целью популяризации новых экспериментальных и нейрореабилитационных технологий специалистами НейроПартнера проводятся лекции, семинары, индивидуальное обучение персонала научных лабораторий и клиник по различным темам:
+                ul.consalting-features
+                    li.consalting-features__item Экспериментальные модели и методы для исследований двигательного контроля
+                    li.consalting-features__item Новые подходы нейрореабилитации после повреждения спинного мозга
+                    li.consalting-features__item Спинальные и стволовые механизмы регуляции позы и локомоции
+                    li.consalting-features__item Нейропротезирование двигательных функций: от эксперимента к клинике
+                    li.consalting-features__item Фармакологическая нейромодуляция спинальных сетей для восстановления двигательных функции при нейромотрных заболеваниях
+                p.consalting-text.consalting-text--small.
+                    Наша деятельность основывается на многолетнем опыте исследований, в ходе которых были созданы уникальные
+                    экспериментальные модели для изучения нервной системы в норме и патологии, разработаны новые нейрореабилитационные подходы, получены <a href="javascript:void(0)">патенты</a> на изобретения, опубликованы <a href="javascript:void(0)">статьи</a> в ведущих мировых изданиях
+                .consalting-bids
+                    i.consalting-bids__icon
+                    p.consalting-bids__text Принимаются заявки по организации сотрудничества в данном направлении
+                    a(href="javascript:void(0)" title="Все проекты НейроПартнер").btn.btn--all.btn--common Подать заявку
+                .impuls
+
+                include includes/video-slider
 
             include includes/partners
             include includes/feedback-form

@@ -39,5 +39,10 @@ window.onload = function(){
     // Call Owl-Carousel on partners block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-partners-slider", 4, ".owl-own-nav-partners");
 
+    // Call Owl-Carousel on video block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-video-slider", 3, ".owl-own-nav-video");
+
+    // Find html5 video and activate
+    //videoHTML5Youtube();
 };
 

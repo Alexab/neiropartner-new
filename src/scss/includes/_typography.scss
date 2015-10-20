@@ -1,5 +1,3 @@
-// TYPOGRAPHY
-
 // FONTS
 @include font-face('HelveticaNeueCyr-Black', HelveticaNeueCyr, black, helveticaneuecyr-black-webfont);
 @include font-face('HelveticaNeueCyr-Black-Italic', HelveticaNeueCyr, black-italic, helveticaneuecyr-blackitalic-webfont);
@@ -17,8 +15,25 @@
 @include font-face('Georgia-Italic', Georgia, italic, georgia-italic);
 @include font-face('OpenSans-Regular', OpenSans, regular, opensans-regular-webfont);
 @include font-face('OpenSans-Bold', OpenSans, bold, opensans-bold-webfont);
+@include font-face('OpenSans-SemiBold', OpenSans, semibold, opensans-semibold-webfont);
+
+// TYPOGRAPHY
 
 html {
   font-size: $base-font-size;
   //line-height: $base-line-height;
+}
+
+.h1-title{
+    @include font-family('HelveticaNeueCyr-Medium');
+    font-size: 47px;
+    color: $color-h1-title;
+    letter-spacing: 0.02em;
+}
+
+.h2-title{
+    @include font-family('HelveticaNeueCyr-Medium');
+    font-size: 47px;
+    color: $color-h1-title;
+    letter-spacing: 0.02em;
 }

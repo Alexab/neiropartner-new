@@ -23,6 +23,10 @@ img:not([src]) {
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 320px;
+    &--consalting{
+        padding-top: 60px;
+        padding-bottom: 110px;
+    }
 }
 
 .impuls{
@@ -45,11 +49,11 @@ img:not([src]) {
 }
 
 .wrapper{
-  
+
   &--grey{
     background: linear-gradient(180deg, $color-wrapper--grey-start, $color-wrapper--grey-end);
   }
-  &--contacts{
+  &--blue2grey{
     background: linear-gradient(180deg, $color-wrapper--contacts-start, $color-wrapper--contacts-end);
   }
   &--light{
@@ -63,7 +67,7 @@ img:not([src]) {
   @include font-family(HelveticaNeueCyr-Medium);
   font-size: 1.0625rem;
   padding: 0 35px;
-  line-height: 3rem;
+  line-height: 2.7rem;
   border-radius: 5px;
   text-decoration: none;
   height: 40px;
@@ -82,10 +86,14 @@ img:not([src]) {
       background-color: $color-btn-bg-active;
     }
   }
-  &--feedback{
-    display: inline-block;
-    margin: 0;
-    border: none;
-    outline: none;
+  &--feedback {
+      display: inline-block;
+      margin: 0;
+      border: none;
+      outline: none;
   }
+    &--common{
+        display: inline-block;
+    }
 }
+

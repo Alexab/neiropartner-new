@@ -36,14 +36,14 @@
     text-align: right;
   }
   &__gradient-text{
-    @include font-family('HelveticaNeueCyr-Medium',normal,normal,sans-serif);
+    @include font-family('HelveticaNeueCyr-Medium');
     font-size: 4.8125rem;
   }
   &__neiropartner{
 
   }
   &__text{
-    @include font-family('HelveticaNeueCyr-Light',normal,normal,sans-serif);
+    @include font-family('HelveticaNeueCyr-Light');
     font-size: 2rem;
     text-transform: uppercase;
     color: $color-header-slider-text;
@@ -55,7 +55,7 @@
 
   }
   &__blockquote-text{
-    @include font-family('Georgia-Italic',normal,normal,sans-serif);
+    @include font-family('Georgia-Italic');
     text-align: left;
     font-size: 1.25rem;
     line-height: 40px;

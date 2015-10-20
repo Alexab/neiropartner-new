@@ -21,7 +21,7 @@ function setOwlCarouselIfMoreThen(container, count, navContainer) {
                             margin: 10
                         },
                         // breakpoint from 740 up
-                        740 : {
+                        770 : {
                             items: 2,
                             margin: 10
                         },

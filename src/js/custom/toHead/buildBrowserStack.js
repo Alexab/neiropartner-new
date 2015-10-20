@@ -52,6 +52,6 @@ var buildBrowserStack = function(browserLinksClass, classToCheck, browsersStackC
         }
 
     }
-}
+};
 
 buildBrowserStack();

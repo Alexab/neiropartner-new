@@ -4,8 +4,9 @@
 
 
 /* Typography */
-$base-font-size: 16px;
+$base-font-size: 16;
 $base-line-height: 1rem;
+$color-h1-title: #2d54c2;
 
 /* Colors */
 $color-header-top-line: #d8d8d8;
@@ -85,13 +86,20 @@ $color-footer-phone: #4b4b4b;
 $color-footer-copyright: #4b4b4b;
 $color-footer-address: #6f6f6f;
 
+$color-consalting-text: #999999;
+$color-consalting-features: #333;
+$color-consalting-video-time: #666;
+$color-consalting-features-numbers: #fff;
+$color-consalting-features-numbers-bgc: #8bb740;
+$color-consalting-video-title--hover: #3366cc;
+
 $base-font-color: #000;
 
 
 /* Media Queries Breakpoints */
 $mq-breakpoints: (
         mobile:  300px,
-        tablet:  740px,
+        tablet:  768px,
         desktop: 980px,
         wide:    1300px
 );

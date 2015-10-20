@@ -278,10 +278,20 @@
     margin-top: 10px;
   }
 
-  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners{
+  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video{
     width: calc(100% - 200px);
   }
+    .video-slider{
+        padding: 0 100px;
+    }
 
+    .owl-item.active{
+        display: flex;
+        justify-content: center;
+    }
+    .video-slider__item{
+        width: 100%;
+    }
   .impuls{
     margin: 20px auto 20px;
   }

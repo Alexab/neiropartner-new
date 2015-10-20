@@ -34,7 +34,7 @@
   .feedback{
     flex-wrap: wrap;
   }
-  
+
   .feedback__left, .feedback__form {
     width: 100%;
     flex: 0 0 100%;
@@ -159,8 +159,19 @@
     padding: 0 100px;
   }
 
-  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners{
+    .video-slider{
+        padding: 0 100px;
+    }
+
+    .owl-item.active{
+        display: flex;
+        justify-content: center;
+    }
+
+  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video{
     width: calc(100% - 200px);
   }
-
+    .video-slider__item{
+        width: 100%;
+    }
 }

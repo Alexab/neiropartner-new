@@ -1,0 +1,10 @@
+// VIDEO SLIDER
+include ../mixins/video
+
+section.container
+    h2.h2-title.m-0-a.t-ac Видео
+    .video-owl-slider.video-slider
+        .owl-own-nav-video
+        .container.js-owl-video-slider
+            - for (var i=0; i<6; i++ )
+                +video

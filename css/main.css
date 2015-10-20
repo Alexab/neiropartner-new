@@ -9,7 +9,6 @@
 html {
     font-family : sans-serif;
     /* 2 */
-
     -webkit-text-size-adjust : 100%;
     /* 1 */
         -ms-text-size-adjust : 100%;
@@ -194,6 +193,7 @@ pre {
  */
 code, kbd, pre, samp {
     font-size : 1em; 
+
     font-family : monospace, monospace;
 }
 
@@ -378,6 +378,22 @@ td, th {
 /* Colors */
 /* Media Queries Breakpoints */
 /* Sizes */
+.hidden {
+    display : none !important;
+
+    visibility : hidden !important;
+}
+
+.m-0-a {
+    display : block !important;
+    width : 100%; 
+    margin : 0 auto !important;
+}
+
+.t-ac {
+    text-align : center !important;
+}
+
 /**
 *  @author: Igor Timohin (timohin.i@gmail.com)
 *  AstraMediaGroup (http://astramg.ru)
@@ -432,7 +448,6 @@ The `sprites` mixin generates identical output to the CSS template
 */
 @font-face {
     font-family : "HelveticaNeueCyr-Black";
-
     src : url("fonts/HelveticaNeueCyr/black/helveticaneuecyr-black-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/black/helveticaneuecyr-black-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/black/helveticaneuecyr-black-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/black/helveticaneuecyr-black-webfont.svg#HelveticaNeueCyr-Black") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/black/helveticaneuecyr-black-webfont.eot"), local("☺");
 }
@@ -440,14 +455,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Black";
-
         src : url("fonts/HelveticaNeueCyr/black/helveticaneuecyr-black-webfont.svg#HelveticaNeueCyr-Black") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Black-Italic";
-
     src : url("fonts/HelveticaNeueCyr/black-italic/helveticaneuecyr-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/black-italic/helveticaneuecyr-blackitalic-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/black-italic/helveticaneuecyr-blackitalic-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/black-italic/helveticaneuecyr-blackitalic-webfont.svg#HelveticaNeueCyr-Black-Italic") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/black-italic/helveticaneuecyr-blackitalic-webfont.eot"), local("☺");
 }
@@ -455,14 +468,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Black-Italic";
-
         src : url("fonts/HelveticaNeueCyr/black-italic/helveticaneuecyr-blackitalic-webfont.svg#HelveticaNeueCyr-Black-Italic") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Bold";
-
     src : url("fonts/HelveticaNeueCyr/bold/helveticaneuecyr-bold-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/bold/helveticaneuecyr-bold-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/bold/helveticaneuecyr-bold-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/bold/helveticaneuecyr-bold-webfont.svg#HelveticaNeueCyr-Bold") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/bold/helveticaneuecyr-bold-webfont.eot"), local("☺");
 }
@@ -470,14 +481,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Bold";
-
         src : url("fonts/HelveticaNeueCyr/bold/helveticaneuecyr-bold-webfont.svg#HelveticaNeueCyr-Bold") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Bold-Italic";
-
     src : url("fonts/HelveticaNeueCyr/bold-italic/helveticaneuecyr-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/bold-italic/helveticaneuecyr-bolditalic-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/bold-italic/helveticaneuecyr-bolditalic-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/bold-italic/helveticaneuecyr-bolditalic-webfont.svg#HelveticaNeueCyr-Bold-Italic") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/bold-italic/helveticaneuecyr-bolditalic-webfont.eot"), local("☺");
 }
@@ -485,14 +494,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Bold-Italic";
-
         src : url("fonts/HelveticaNeueCyr/bold-italic/helveticaneuecyr-bolditalic-webfont.svg#HelveticaNeueCyr-Bold-Italic") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Italic";
-
     src : url("fonts/HelveticaNeueCyr/italic/helveticaneuecyr-italic-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/italic/helveticaneuecyr-italic-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/italic/helveticaneuecyr-italic-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/italic/helveticaneuecyr-italic-webfont.svg#HelveticaNeueCyr-Italic") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/italic/helveticaneuecyr-italic-webfont.eot"), local("☺");
 }
@@ -500,14 +507,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Italic";
-
         src : url("fonts/HelveticaNeueCyr/italic/helveticaneuecyr-italic-webfont.svg#HelveticaNeueCyr-Italic") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Light";
-
     src : url("fonts/HelveticaNeueCyr/light/helveticaneuecyr-light-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/light/helveticaneuecyr-light-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/light/helveticaneuecyr-light-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/light/helveticaneuecyr-light-webfont.svg#HelveticaNeueCyr-Light") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/light/helveticaneuecyr-light-webfont.eot"), local("☺");
 }
@@ -515,14 +520,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Light";
-
         src : url("fonts/HelveticaNeueCyr/light/helveticaneuecyr-light-webfont.svg#HelveticaNeueCyr-Light") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Light-Italic";
-
     src : url("fonts/HelveticaNeueCyr/light-italic/helveticaneuecyr-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/light-italic/helveticaneuecyr-lightitalic-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/light-italic/helveticaneuecyr-lightitalic-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/light-italic/helveticaneuecyr-lightitalic-webfont.svg#HelveticaNeueCyr-Light-Italic") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/light-italic/helveticaneuecyr-lightitalic-webfont.eot"), local("☺");
 }
@@ -530,14 +533,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Light-Italic";
-
         src : url("fonts/HelveticaNeueCyr/light-italic/helveticaneuecyr-lightitalic-webfont.svg#HelveticaNeueCyr-Light-Italic") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Medium";
-
     src : url("fonts/HelveticaNeueCyr/medium/helveticaneuecyr-medium-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/medium/helveticaneuecyr-medium-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/medium/helveticaneuecyr-medium-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/medium/helveticaneuecyr-medium-webfont.svg#HelveticaNeueCyr-Medium") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/medium/helveticaneuecyr-medium-webfont.eot"), local("☺");
 }
@@ -545,14 +546,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Medium";
-
         src : url("fonts/HelveticaNeueCyr/medium/helveticaneuecyr-medium-webfont.svg#HelveticaNeueCyr-Medium") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Roman";
-
     src : url("fonts/HelveticaNeueCyr/roman/helveticaneuecyr-roman-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/roman/helveticaneuecyr-roman-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/roman/helveticaneuecyr-roman-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/roman/helveticaneuecyr-roman-webfont.svg#HelveticaNeueCyr-Roman") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/roman/helveticaneuecyr-roman-webfont.eot"), local("☺");
 }
@@ -560,14 +559,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Roman";
-
         src : url("fonts/HelveticaNeueCyr/roman/helveticaneuecyr-roman-webfont.svg#HelveticaNeueCyr-Roman") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Thin";
-
     src : url("fonts/HelveticaNeueCyr/thin/helveticaneuecyr-thin-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/thin/helveticaneuecyr-thin-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/thin/helveticaneuecyr-thin-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/thin/helveticaneuecyr-thin-webfont.svg#HelveticaNeueCyr-Thin") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/thin/helveticaneuecyr-thin-webfont.eot"), local("☺");
 }
@@ -575,14 +572,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Thin";
-
         src : url("fonts/HelveticaNeueCyr/thin/helveticaneuecyr-thin-webfont.svg#HelveticaNeueCyr-Thin") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Thin-Italic";
-
     src : url("fonts/HelveticaNeueCyr/thin-italic/helveticaneuecyr-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/thin-italic/helveticaneuecyr-thinitalic-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/thin-italic/helveticaneuecyr-thinitalic-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/thin-italic/helveticaneuecyr-thinitalic-webfont.svg#HelveticaNeueCyr-Thin-Italic") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/thin-italic/helveticaneuecyr-thinitalic-webfont.eot"), local("☺");
 }
@@ -590,14 +585,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Thin-Italic";
-
         src : url("fonts/HelveticaNeueCyr/thin-italic/helveticaneuecyr-thinitalic-webfont.svg#HelveticaNeueCyr-Thin-Italic") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Ultra-Light";
-
     src : url("fonts/HelveticaNeueCyr/ultra-light/helveticaneuecyr-ultralight-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/ultra-light/helveticaneuecyr-ultralight-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/ultra-light/helveticaneuecyr-ultralight-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/ultra-light/helveticaneuecyr-ultralight-webfont.svg#HelveticaNeueCyr-Ultra-Light") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/ultra-light/helveticaneuecyr-ultralight-webfont.eot"), local("☺");
 }
@@ -605,14 +598,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Ultra-Light";
-
         src : url("fonts/HelveticaNeueCyr/ultra-light/helveticaneuecyr-ultralight-webfont.svg#HelveticaNeueCyr-Ultra-Light") format("svg");
     }
 }
 
 @font-face {
     font-family : "HelveticaNeueCyr-Ultra-Light-Italic";
-
     src : url("fonts/HelveticaNeueCyr/ultra-light-italic/helveticaneuecyr-ultralightitalic-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/HelveticaNeueCyr/ultra-light-italic/helveticaneuecyr-ultralightitalic-webfont.woff") format("woff"), url("fonts/HelveticaNeueCyr/ultra-light-italic/helveticaneuecyr-ultralightitalic-webfont.ttf") format("truetype"), url("fonts/HelveticaNeueCyr/ultra-light-italic/helveticaneuecyr-ultralightitalic-webfont.svg#HelveticaNeueCyr-Ultra-Light-Italic") format("svg"); 
     src : url("fonts/HelveticaNeueCyr/ultra-light-italic/helveticaneuecyr-ultralightitalic-webfont.eot"), local("☺");
 }
@@ -620,14 +611,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "HelveticaNeueCyr-Ultra-Light-Italic";
-
         src : url("fonts/HelveticaNeueCyr/ultra-light-italic/helveticaneuecyr-ultralightitalic-webfont.svg#HelveticaNeueCyr-Ultra-Light-Italic") format("svg");
     }
 }
 
 @font-face {
     font-family : "Georgia-Italic";
-
     src : url("fonts/Georgia/italic/georgia-italic.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/Georgia/italic/georgia-italic.woff") format("woff"), url("fonts/Georgia/italic/georgia-italic.ttf") format("truetype"), url("fonts/Georgia/italic/georgia-italic.svg#Georgia-Italic") format("svg"); 
     src : url("fonts/Georgia/italic/georgia-italic.eot"), local("☺");
 }
@@ -635,14 +624,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "Georgia-Italic";
-
         src : url("fonts/Georgia/italic/georgia-italic.svg#Georgia-Italic") format("svg");
     }
 }
 
 @font-face {
     font-family : "OpenSans-Regular";
-
     src : url("fonts/OpenSans/regular/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/OpenSans/regular/opensans-regular-webfont.woff") format("woff"), url("fonts/OpenSans/regular/opensans-regular-webfont.ttf") format("truetype"), url("fonts/OpenSans/regular/opensans-regular-webfont.svg#OpenSans-Regular") format("svg"); 
     src : url("fonts/OpenSans/regular/opensans-regular-webfont.eot"), local("☺");
 }
@@ -650,14 +637,12 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "OpenSans-Regular";
-
         src : url("fonts/OpenSans/regular/opensans-regular-webfont.svg#OpenSans-Regular") format("svg");
     }
 }
 
 @font-face {
     font-family : "OpenSans-Bold";
-
     src : url("fonts/OpenSans/bold/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/OpenSans/bold/opensans-bold-webfont.woff") format("woff"), url("fonts/OpenSans/bold/opensans-bold-webfont.ttf") format("truetype"), url("fonts/OpenSans/bold/opensans-bold-webfont.svg#OpenSans-Bold") format("svg"); 
     src : url("fonts/OpenSans/bold/opensans-bold-webfont.eot"), local("☺");
 }
@@ -665,13 +650,45 @@ The `sprites` mixin generates identical output to the CSS template
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     @font-face {
         font-family : "OpenSans-Bold";
-
         src : url("fonts/OpenSans/bold/opensans-bold-webfont.svg#OpenSans-Bold") format("svg");
     }
 }
 
+@font-face {
+    font-family : "OpenSans-SemiBold";
+    src : url("fonts/OpenSans/semibold/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/OpenSans/semibold/opensans-semibold-webfont.woff") format("woff"), url("fonts/OpenSans/semibold/opensans-semibold-webfont.ttf") format("truetype"), url("fonts/OpenSans/semibold/opensans-semibold-webfont.svg#OpenSans-SemiBold") format("svg"); 
+    src : url("fonts/OpenSans/semibold/opensans-semibold-webfont.eot"), local("☺");
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family : "OpenSans-SemiBold";
+        src : url("fonts/OpenSans/semibold/opensans-semibold-webfont.svg#OpenSans-SemiBold") format("svg");
+    }
+}
+
 html {
-    font-size : 16px;
+    font-size : 16;
+}
+
+.h1-title {
+    font-weight : normal;
+    font-size : 47px;
+    color : #2d54c2;
+    font-style : normal;
+    letter-spacing : .02em; 
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
+}
+
+.h2-title {
+    font-weight : normal;
+    font-size : 47px;
+    color : #2d54c2;
+    font-style : normal;
+    letter-spacing : .02em; 
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 
 * {
@@ -708,6 +725,10 @@ img:not([src]) {
     -ms-flex-pack : justify;
         -ms-flex-wrap : wrap;
 }
+.container--consalting {
+    padding-top : 60px;
+    padding-bottom : 110px;
+}
 
 .impuls {
     display : block;
@@ -730,7 +751,7 @@ img:not([src]) {
 
     background-image : url(../img/sprite/png-sprite.png);
     background-repeat : no-repeat;
-    background-position : -447px -47px;
+    background-position : -549px -47px;
 }
 
 .wrapper--grey {
@@ -738,7 +759,7 @@ img:not([src]) {
     background :         linear-gradient(180deg, #f4f4f2, #d8eef9);
 }
 
-.wrapper--contacts {
+.wrapper--blue2grey {
     background : -webkit-linear-gradient(270deg, #d8eef9, #f4f4f2);
     background :         linear-gradient(180deg, #d8eef9, #f4f4f2);
 }
@@ -754,14 +775,15 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 1.0625rem;
-    line-height : 3rem;
-    font-family : HelveticaNeueCyr-Medium, sans-serif;
+    line-height : 2.7rem;
     text-align : center;
     text-transform : uppercase;
     text-decoration : none;
     font-style : normal;
 
     border-radius : 5px;
+
+    font-family : HelveticaNeueCyr-Medium, sans-serif;
 }
 .btn--all {
     display : block;
@@ -788,6 +810,9 @@ img:not([src]) {
 
     border : none;
     outline : none;
+}
+.btn--common {
+    display : inline-block;
 }
 
 .header-top-line {
@@ -859,10 +884,11 @@ img:not([src]) {
 .header__lang-item {
     font-weight : normal;
     font-size : .75rem;
-    font-family : "HelveticaNeueCyr-Light", sans-serif;
     color : #4b4b4b; 
     text-decoration : none;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Light", sans-serif;
 }
 .header__lang-item:first-child {
     margin-right : 5px;
@@ -872,9 +898,10 @@ img:not([src]) {
 }
 .header__lang-item:hover, .header__lang-item--current {
     font-weight : normal;
-    font-family : "HelveticaNeueCyr-Bold", sans-serif;
     color : #2853ce; 
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Bold", sans-serif;
 }
 .header__logo {
     width : 306px;
@@ -907,11 +934,12 @@ img:not([src]) {
 .header__nav-link {
     font-weight : normal;
     font-size : .8125rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     color : #6d6d6d;
     text-transform : uppercase; 
     text-decoration : none;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .header__nav-link:hover {
     color : #2d54c2;
@@ -1041,28 +1069,31 @@ img:not([src]) {
 .slider__gradient-text {
     font-weight : normal;
     font-size : 4.8125rem; 
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .slider__text {
     font-weight : normal;
     font-weight : lighter;
     font-size : 2rem;
-    font-family : "HelveticaNeueCyr-Light", sans-serif;
     text-align : right; 
     color : #47494e;
     text-transform : uppercase;
     font-style : normal;
     letter-spacing : 1.3px;
+
+    font-family : "HelveticaNeueCyr-Light", sans-serif;
 }
 .slider__blockquote-text {
     font-weight : normal;
     font-size : 1.25rem;
     line-height : 40px;
-    font-family : "Georgia-Italic", sans-serif;
     text-align : left;
     color : #949191; 
     font-style : normal;
+
+    font-family : "Georgia-Italic", sans-serif;
 }
 .slider__blockquote-cite {
     float : right; 
@@ -1145,7 +1176,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
 }
 .owl-own-nav .owl-next {
     right : 25px;
@@ -1157,7 +1188,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
     -webkit-transform : rotate(180deg);
         -ms-transform : rotate(180deg);
             transform : rotate(180deg);
@@ -1177,10 +1208,11 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 3.4375rem;
-    font-family : "HelveticaNeueCyr-Bold", sans-serif;
     color : #393939;
     text-decoration : none;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Bold", sans-serif;
 }
 .problem__link:hover {
     color : #2d54c2;
@@ -1190,16 +1222,18 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 1.9375rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .problem__text {
     font-weight : normal;
     font-size : 1.1875rem;
     line-height : 1.625rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 
 .direction {
@@ -1224,7 +1258,7 @@ img:not([src]) {
     height : 148px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 -47px;
+    background-position : -298px -47px;
 }
 .direction__icon--principles {
     width : 148px;
@@ -1238,7 +1272,7 @@ img:not([src]) {
     height : 148px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -298px -47px;
+    background-position : 0 -47px;
 }
 .direction__title {
     font-size : 1.75rem;
@@ -1247,7 +1281,6 @@ img:not([src]) {
 @font-face {
     .direction__title {
         font-family : "HelveticaNeueCyr-Medium";
-
         src : url("fonts/normal/normal/sans-serif.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/normal/normal/sans-serif.woff") format("woff"), url("fonts/normal/normal/sans-serif.ttf") format("truetype"), url("fonts/normal/normal/sans-serif.svg#HelveticaNeueCyr-Medium") format("svg"); 
         src : url("fonts/normal/normal/sans-serif.eot"), local("☺");
     }
@@ -1256,7 +1289,6 @@ img:not([src]) {
     @font-face {
         .direction__title {
             font-family : "HelveticaNeueCyr-Medium";
-
             src : url("fonts/normal/normal/sans-serif.svg#HelveticaNeueCyr-Medium") format("svg");
         }
     }
@@ -1271,7 +1303,6 @@ img:not([src]) {
 @font-face {
     .direction__text {
         font-family : "OpenSans-Regular";
-
         src : url("fonts/normal/normal/sans-serif.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/normal/normal/sans-serif.woff") format("woff"), url("fonts/normal/normal/sans-serif.ttf") format("truetype"), url("fonts/normal/normal/sans-serif.svg#OpenSans-Regular") format("svg"); 
         src : url("fonts/normal/normal/sans-serif.eot"), local("☺");
     }
@@ -1280,7 +1311,6 @@ img:not([src]) {
     @font-face {
         .direction__text {
             font-family : "OpenSans-Regular";
-
             src : url("fonts/normal/normal/sans-serif.svg#OpenSans-Regular") format("svg");
         }
     }
@@ -1298,7 +1328,6 @@ img:not([src]) {
 @font-face {
     .direction__list {
         font-family : "OpenSans-Regular";
-
         src : url("fonts/normal/normal/sans-serif.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/normal/normal/sans-serif.woff") format("woff"), url("fonts/normal/normal/sans-serif.ttf") format("truetype"), url("fonts/normal/normal/sans-serif.svg#OpenSans-Regular") format("svg"); 
         src : url("fonts/normal/normal/sans-serif.eot"), local("☺");
     }
@@ -1307,7 +1336,6 @@ img:not([src]) {
     @font-face {
         .direction__list {
             font-family : "OpenSans-Regular";
-
             src : url("fonts/normal/normal/sans-serif.svg#OpenSans-Regular") format("svg");
         }
     }
@@ -1326,7 +1354,6 @@ img:not([src]) {
 @font-face {
     .direction__item {
         font-family : "OpenSans-Regular";
-
         src : url("fonts/normal/normal/sans-serif.eot?#iefix") format("embedded-opentype"), local("☺"), url("fonts/normal/normal/sans-serif.woff") format("woff"), url("fonts/normal/normal/sans-serif.ttf") format("truetype"), url("fonts/normal/normal/sans-serif.svg#OpenSans-Regular") format("svg"); 
         src : url("fonts/normal/normal/sans-serif.eot"), local("☺");
     }
@@ -1335,7 +1362,6 @@ img:not([src]) {
     @font-face {
         .direction__item {
             font-family : "OpenSans-Regular";
-
             src : url("fonts/normal/normal/sans-serif.svg#OpenSans-Regular") format("svg");
         }
     }
@@ -1350,12 +1376,12 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 2.93rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     text-align : center;
     color : #2d54c2;
     font-style : normal;
 
     -webkit-box-flex : 0;
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 
 .project {
@@ -1411,7 +1437,6 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 1.56rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     color : #4b4b4b;
     font-style : normal;
 
@@ -1419,6 +1444,7 @@ img:not([src]) {
     -webkit-box-pack : center;
     -ms-flex-align : center;
     -ms-flex-pack : center;
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .project__text {
     margin : 0; 
@@ -1426,10 +1452,11 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     text-align : left;
     color : #4b4b4b;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .project__link {
     display : block;
@@ -1438,11 +1465,12 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     text-align : left;
     color : #2d54c2;
     text-decoration : none;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 
 .owl-own-nav-projects {
@@ -1470,7 +1498,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
 }
 .owl-own-nav-projects .owl-next {
     right : -58px;
@@ -1482,7 +1510,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
     -webkit-transform : rotate(180deg);
         -ms-transform : rotate(180deg);
             transform : rotate(180deg);
@@ -1560,10 +1588,11 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 3rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     text-align : left;
     color : #2d54c2;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .consalting__text {
     margin : 0;
@@ -1572,10 +1601,11 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     text-align : left;
     color : #4b4b4b;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .consalting__link {
     display : block;
@@ -1584,11 +1614,238 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     text-align : left;
     color : #2d54c2;
     text-decoration : none;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
+}
+
+.consalting-text {
+    font-weight : normal;
+    font-size : 1.3125rem;
+    line-height : 2.25rem;
+    text-align : center; 
+    color : #999;
+    font-style : normal;
+
+    font-family : "OpenSans-SemiBold", sans-serif;
+}
+.consalting-text--small {
+    font-weight : normal;
+    font-size : 1rem;
+    line-height : 1.625rem;
+    color : #333; 
+    font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
+}
+
+.consalting-features {
+    width : 842px;
+    min-height : 570px;
+    margin-top : 75px;
+    margin-right : auto;
+    margin-bottom : 0;
+    margin-left : auto;
+    padding : 0;
+
+    list-style : none;
+
+    background-image : url(../img/consalting-features-bg.png);
+    background-position : center -65px; 
+
+    counter-reset : list;
+}
+.consalting-features__item {
+    display : block;
+    margin : 0 auto;
+
+    list-style-type : none;
+    font-weight : normal;
+    font-size : 1.125rem;
+    text-align : center; 
+    color : #333;
+    font-style : normal;
+
+    font-family : "OpenSans-SemiBold", sans-serif;
+}
+.consalting-features__item:before {
+    content : counter(list);
+
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-justify-content : center;
+            justify-content : center;
+    -webkit-align-items : center;
+            align-items : center;
+    width : 27px;
+    height : 27px;
+    margin : 20px auto;
+
+    color : #fff;
+
+    background-color : #8bb740; 
+    border-radius : 50%;
+
+    counter-increment : list;
+
+    -webkit-box-align : center;
+    -webkit-box-pack : center;
+    -ms-flex-align : center;
+    -ms-flex-pack : center;
+}
+
+.consalting-bids {
+    width : 100%; 
+
+    text-align : center;
+}
+.consalting-bids__icon {
+    display : inline-block;
+    width : 101px;
+    height : 77px; 
+    margin-top : 80px;
+    margin-bottom : 40px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -447px -47px;
+}
+.consalting-bids__text {
+    margin-top : 0;
+    margin-bottom : 35px; 
+
+    font-weight : normal;
+    font-size : 1.1875rem;
+    line-height : 1.625rem;
+    color : #333;
+    font-style : normal;
+
+    font-family : "OpenSans-SemiBold", sans-serif;
+}
+
+.video-slider__video:hover .video-slider__video-title {
+    color : #36c;
+}
+
+.video-slider__item {
+    width : 360px;
+    height : 228px;
+}
+.video-slider__item:hover .video-slider__video-title {
+    color : #36c;
+}
+
+.video-slider__video-title {
+    margin : 10px 0;
+
+    font-weight : normal;
+    font-size : 1.125rem;
+    line-height : 1.3125rem;
+    color : #333;
+    text-decoration : none; 
+    font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
+}
+.video-slider__video-title:hover {
+    color : #36c;
+}
+
+.video-slider__video-date {
+    display : block; 
+    width : 100%;
+
+    font-weight : normal;
+    font-size : .875rem;
+    line-height : 1.3125rem;
+    color : #666;
+    font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
+}
+
+.js-owl-video-slider .owl-stage-outer {
+    overflow : hidden;
+}
+
+.js-owl-video-slider .owl-stage {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-direction : row;
+        -ms-flex-direction : row;
+            flex-direction : row;
+    overflow : hidden; 
+
+    -webkit-box-direction : normal;
+    -webkit-box-orient : horizontal;
+}
+
+.js-owl-video-slider .owl-item {
+    visibility : hidden;
+}
+
+.js-owl-video-slider .owl-item.active {
+    visibility : visible;
+}
+
+.js-owl-video-slider .owl-nav.disabled {
+    display : none;
+}
+
+.owl-own-nav-video {
+    position : absolute;
+    top : calc(50% - 46px); 
+
+    width : 100%;
+}
+.owl-own-nav-video .owl-prev, .owl-own-nav-video .owl-next {
+    position : absolute;
+
+    cursor : pointer;
+    opacity : .7;
+}
+.owl-own-nav-video .owl-prev:hover, .owl-own-nav-video .owl-next:hover {
+    opacity : 1;
+}
+.owl-own-nav-video .owl-prev {
+    left : -58px; 
+
+    display : inline-block;
+    width : 28px;
+    width : 28px;
+    height : 92px;
+    height : 92px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 -196px;
+}
+.owl-own-nav-video .owl-next {
+    right : -58px;
+
+    display : inline-block;
+    width : 28px;
+    width : 28px;
+    height : 92px;
+    height : 92px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 -196px;
+    -webkit-transform : rotate(180deg);
+        -ms-transform : rotate(180deg);
+            transform : rotate(180deg);
+}
+
+.video-owl-slider {
+    position : relative;
+
+    width : 100%; 
+    margin-top : 55px;
 }
 
 .mission-wrapper {
@@ -1614,9 +1871,10 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 3rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     color : #fff;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .mission__text {
     margin-top : 0;
@@ -1625,10 +1883,11 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1.31rem;
     line-height : 2rem;
-    font-family : "OpenSans-Bold", sans-serif;
     text-align : center; 
     color : #fff;
     font-style : normal;
+
+    font-family : "OpenSans-Bold", sans-serif;
 }
 .mission__img {
     width : 792px;
@@ -1655,10 +1914,11 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 3rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     text-align : left;
     color : #2d54c2;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .our-works__text {
     width : 80%;
@@ -1668,10 +1928,11 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     text-align : center;
     color : #4b4b4b;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 
 .work {
@@ -1692,7 +1953,7 @@ img:not([src]) {
 
     width : 265px;
     height : 170px;
-    margin : 0;
+    margin : 0 auto;
 }
 .work__img-item:after {
     content : "";
@@ -1715,18 +1976,20 @@ img:not([src]) {
 .work__title {
     font-weight : normal;
     font-size : 1.225rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     color : #4b4b4b;
     font-style : normal;
-    word-wrap : break-word;
+    word-wrap : break-word; 
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .work__link {
     font-weight : normal;
     font-size : 1.225rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     color : #4b4b4b;
     text-decoration : none; 
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .work__text {
     margin-bottom : 0; 
@@ -1734,9 +1997,10 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.31rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .work__more-link {
     display : block;
@@ -1745,11 +2009,12 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     text-align : left;
     color : #2d54c2;
     text-decoration : none;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 
 .js-owl-works-slider .owl-stage-outer {
@@ -1807,7 +2072,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
 }
 .owl-own-nav-works .owl-next {
     right : -58px;
@@ -1819,7 +2084,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
     -webkit-transform : rotate(180deg);
         -ms-transform : rotate(180deg);
             transform : rotate(180deg);
@@ -1844,12 +2109,12 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 2.93rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     text-align : center;
     color : #2d54c2;
     font-style : normal;
 
     -webkit-box-flex : 0;
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 
 .partners-slider {
@@ -1883,7 +2148,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
 }
 .owl-own-nav-partners .owl-next {
     right : -58px;
@@ -1895,7 +2160,7 @@ img:not([src]) {
     height : 92px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -447px -90px;
+    background-position : 0 -196px;
     -webkit-transform : rotate(180deg);
         -ms-transform : rotate(180deg);
             transform : rotate(180deg);
@@ -1922,10 +2187,11 @@ img:not([src]) {
 .partner__name {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "HelveticaNeueCyr-Roman", sans-serif;
     text-align : center; 
     color : #4b4b4b;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Roman", sans-serif;
 }
 
 .js-owl-partners-slider .owl-stage-outer {
@@ -1991,9 +2257,10 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 2rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .feedback__subinvite {
     margin-top : 0;
@@ -2001,9 +2268,10 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__form {
     display : -webkit-box;
@@ -2054,42 +2322,47 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 40px;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff;
     font-style : normal;
 
     background-color : transparent;
     border : 1px solid #7f8083;
     border-radius : 5px;
-    outline : none;
+    outline : none; 
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__input::-webkit-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__input::-moz-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__input:-ms-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__input::placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__input:focus {
     width : calc(100% - 1px);
@@ -2107,7 +2380,6 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 40px;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff;
     font-style : normal;
 
@@ -2122,34 +2394,39 @@ img:not([src]) {
     -webkit-appearance : none;
        -moz-appearance : none;
             appearance : none;
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__select::-webkit-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__select::-moz-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__select:-ms-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__select::placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__select:focus {
     border : 2px solid #6889b1;
@@ -2163,7 +2440,6 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 40px;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff;
     font-style : normal;
 
@@ -2173,34 +2449,40 @@ img:not([src]) {
     outline : none;
 
     resize : none;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__textarea::-webkit-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__textarea::-moz-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__textarea:-ms-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__textarea::placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #fff; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .feedback__textarea:focus {
     width : calc(100% - 1px);
@@ -2251,11 +2533,12 @@ img:not([src]) {
 .footer__menu-link {
     font-weight : normal;
     font-size : .875rem; 
-    font-family : "HelveticaNeueCyr-Roman", sans-serif;
     color : #4b4b4b;
     text-transform : uppercase;
     text-decoration : none;
     font-style : normal;
+
+    font-family : "HelveticaNeueCyr-Roman", sans-serif;
 }
 .footer__menu-link:hover {
     color : #2d54c2;
@@ -2282,21 +2565,21 @@ img:not([src]) {
     height : 33px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -620px -47px;
+    background-position : -722px -47px;
 }
 .footer__social-icon--vk {
     width : 32px;
     height : 33px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -653px -47px;
+    background-position : -755px -47px;
 }
 .footer__social-icon--fb {
     width : 32px;
     height : 33px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -587px -47px;
+    background-position : -689px -47px;
 }
 .footer__social-link {
     display : inline-block;
@@ -2365,9 +2648,10 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1.125rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b;
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__item:before {
     content : "";
@@ -2382,21 +2666,21 @@ img:not([src]) {
     height : 30px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -476px -90px;
+    background-position : -549px -90px;
 }
 .contacts__item--email:before {
     width : 24px;
     height : 17px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -712px -47px;
+    background-position : -814px -47px;
 }
 .contacts__item--phone:before {
     width : 25px;
     height : 27px; 
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -686px -47px;
+    background-position : -788px -47px;
 }
 .contacts__item--data {
     margin-bottom : 10px;
@@ -2409,10 +2693,11 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1.125rem;
     line-height : 1.625rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b;
     text-decoration : none; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__title {
     -webkit-flex : 0 0 100%;
@@ -2423,12 +2708,12 @@ img:not([src]) {
 
     font-weight : normal;
     font-size : 3rem;
-    font-family : "HelveticaNeueCyr-Medium", sans-serif;
     text-align : left;
     color : #2d54c2;
     font-style : normal;
 
     -webkit-box-flex : 0;
+    font-family : "HelveticaNeueCyr-Medium", sans-serif;
 }
 .contacts__form {
     display : -webkit-box;
@@ -2482,42 +2767,47 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 40px;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b;
     font-style : normal;
 
     background-color : transparent;
     border : 1px solid #7f8083;
     border-radius : 5px;
-    outline : none;
+    outline : none; 
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__input::-webkit-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__input::-moz-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__input:-ms-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__input::placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__input:focus {
     width : calc(100% - 1px);
@@ -2535,7 +2825,6 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 40px;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b;
     font-style : normal;
 
@@ -2550,34 +2839,39 @@ img:not([src]) {
     -webkit-appearance : none;
        -moz-appearance : none;
             appearance : none;
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__select::-webkit-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__select::-moz-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__select:-ms-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__select::placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__select:focus {
     border : 2px solid #b1d6fe;
@@ -2591,7 +2885,6 @@ img:not([src]) {
     font-weight : normal;
     font-size : 1rem;
     line-height : 40px;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b;
     font-style : normal;
 
@@ -2601,34 +2894,40 @@ img:not([src]) {
     outline : none;
 
     resize : none;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__textarea::-webkit-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__textarea::-moz-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__textarea:-ms-input-placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__textarea::placeholder {
     font-weight : normal;
     font-size : 1rem;
-    font-family : "OpenSans-Regular", sans-serif;
     color : #4b4b4b; 
     font-style : normal;
+
+    font-family : "OpenSans-Regular", sans-serif;
 }
 .contacts__textarea:focus {
     width : calc(100% - 1px);
@@ -2637,7 +2936,7 @@ img:not([src]) {
     border : 2px solid #b1d6fe;
 }
 
-@media (min-width: 46.25em) and (max-width: 81.24em) {
+@media (min-width: 48em) and (max-width: 81.24em) {
     .container {
         width : 100%;
     }
@@ -2844,12 +3143,29 @@ img:not([src]) {
     .our-works-slider {
         padding : 0 100px;
     }
-    .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners {
+    .video-slider {
+        padding : 0 100px;
+    }
+    .owl-item.active {
+        display : -webkit-box;
+        display : -webkit-flex;
+        display : -ms-flexbox;
+        display :         flex;
+        -webkit-justify-content : center;
+                justify-content : center; 
+
+        -webkit-box-pack : center;
+        -ms-flex-pack : center;
+    }
+    .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video {
         width : calc(100% - 200px);
+    }
+    .video-slider__item {
+        width : 100%;
     }
 }
 
-@media (min-width: 18.75em) and (max-width: 46.24em) {
+@media (min-width: 18.75em) and (max-width: 47.99em) {
     .container {
         width : 100%;
     }
@@ -3197,8 +3513,25 @@ img:not([src]) {
         line-height : 1.2rem;
         text-align : center;
     }
-    .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners {
+    .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video {
         width : calc(100% - 200px);
+    }
+    .video-slider {
+        padding : 0 100px;
+    }
+    .owl-item.active {
+        display : -webkit-box;
+        display : -webkit-flex;
+        display : -ms-flexbox;
+        display :         flex;
+        -webkit-justify-content : center;
+                justify-content : center; 
+
+        -webkit-box-pack : center;
+        -ms-flex-pack : center;
+    }
+    .video-slider__item {
+        width : 100%;
     }
     .impuls {
         margin : 20px auto 20px;
@@ -3238,4 +3571,194 @@ img:not([src]) {
     .work {
         width : 100%;
     }
+}
+
+[class^="amg-"] {
+    box-sizing : border-box;
+}
+
+.amg-outdate-modal-opened {
+    height : 100% !important;
+}
+
+.amg-outdate-wrapper {
+    position : absolute;
+    z-index : 10000;
+
+    display : none; 
+    width : 100%;
+    height : 100%;
+    min-height : 700px;
+
+    background-color : #808080;
+}
+
+.amg-outdate {
+    position : absolute;
+    top : 0;
+    right : 0;
+    bottom : 0;
+    left : 0;
+
+    width : 960px;
+    height : 600px;
+    margin : auto;
+    padding-top : 56px;
+    padding-right : 95px;
+    padding-bottom : 50px; 
+    padding-left : 85px;
+
+    background-color : #fff;
+    background-image : url("../img/amg-outdate-bg-car.png");
+    background-repeat : no-repeat;
+    background-size : 960px 600px;
+}
+.amg-outdate__title {
+    margin-top : 0;
+    margin-bottom : 45px; 
+
+    font-weight : normal;
+    font-size : 40px;
+    line-height : 54px;
+    color : #404041;
+    text-transform : uppercase;
+    font-style : normal;
+    letter-spacing : .02em;
+
+    font-family : "Roboto-Regular", sans-serif;
+}
+.amg-outdate__title-more {
+    color : #e62d2a;
+}
+.amg-outdate__text {
+    margin-top : 0; 
+
+    font-weight : normal;
+    font-size : 13px;
+    line-height : 17px;
+    font-style : normal;
+    letter-spacing : .03em;
+
+    font-family : "Roboto-Thin", sans-serif;
+}
+.amg-outdate__text:last-child {
+    margin-bottom : 0;
+}
+.amg-outdate__close {
+    position : absolute;
+    top : 20px;
+    right : 20px;
+
+    width : 23px;
+    height : 23px;
+    margin : 0;
+    padding : 0;
+
+    line-height : 1;
+
+    background-color : transparent;
+    background-image : url("../img/amg-outdate-cross.png");
+    background-repeat : no-repeat;
+    background-size : 23px 23px; 
+    border : 0;
+    outline : none;
+    cursor : pointer;
+
+    -webkit-appearance : none;
+       -moz-appearance : none;
+            appearance : none;
+}
+.amg-outdate__close .amg-cross {
+    -webkit-transition : all .5s ease;
+            transition : all .5s ease;
+
+    fill : #e62d2a;
+}
+.amg-outdate__close:hover .amg-cross {
+    fill : #000;
+}
+.amg-outdate__close:hover {
+    background-image : url("../img/amg-outdate-cross--hover.png");
+}
+.amg-outdate__browsers-stack {
+    position : relative; 
+
+    display : table;
+    width : 100%;
+}
+.amg-outdate__browser {
+    display : table-cell;
+    width : 124px;
+    height : 144px;
+    padding-top : 20px;
+    padding-right : 25px;
+    padding-bottom : 20px;
+    padding-left : 25px;
+
+    font-size : 0;
+    vertical-align : middle; 
+    text-align : center;
+    text-decoration : none;
+
+    -webkit-transition : all .5s ease;
+            transition : all .5s ease;
+}
+.amg-outdate__browser:hover {
+    box-shadow : 0 0 20px #cfcfcf;
+}
+.amg-outdate__browser--isUsed {
+    position : relative; 
+
+    width : 168px;
+    height : 188px;
+}
+.amg-outdate__browser--isUsed .amg-outdate__browser-logo {
+    width : 113px;
+    height : 108px;
+}
+.amg-outdate__browser-logo {
+    width : 77px;
+    height : 77px;
+    margin : 0 auto;
+
+    -o-object-fit : contain;
+       object-fit : contain;
+}
+.amg-outdate__browser-name {
+    display : inline-block; 
+    margin-top : 10px;
+
+    font-weight : normal;
+    font-size : 13px;
+    line-height : 18px;
+    color : #373839;
+    font-style : normal;
+
+    font-family : "Roboto-Light", sans-serif;
+}
+.amg-outdate__btn-thx {
+    position : relative; 
+
+    display : block;
+    margin : 0 auto;
+    margin-top : 17px;
+
+    font-weight : normal;
+    font-size : 14px;
+    line-height : 18px;
+    color : #e62d2a;
+    text-transform : uppercase;
+    font-style : normal;
+
+    background-color : transparent;
+    border : 0;
+    outline : none;
+
+    font-family : "Roboto-Bold", sans-serif;
+}
+.amg-outdate__btn-thx:hover {
+    color : #414041; 
+
+    -webkit-transition : all .5s ease;
+            transition : all .5s ease;
 }

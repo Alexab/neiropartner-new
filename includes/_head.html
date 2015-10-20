@@ -2,6 +2,7 @@
   <title>Page Title</title>
   <!-- Main Meta information-->
   <meta charset="utf-8" />
+  <meta http-equiv="Cache-control" content="public" />
   <!-- Set DNS-prefetch domains (https://w3c.github.io/resource-hints/)
   link(rel="dns-prefetch" href="//example.com/")
   link(rel="dns-prefetch" href="//cdn.example.com/")
@@ -12,11 +13,11 @@
   link(rel="preconnect" href="//cdn.example.com" crossorigin)
   
   -->
-  <!-- Set preload resources (https://w3c.github.io/resource-hints/)
-  link(rel="preload" href="YOUR_FONT_NAME.woff2" as="font")
-  link(rel="preload" href="example.png")
-  
-  -->
+  <!-- Set preload resources (https://w3c.github.io/resource-hints/)-->
+  <!--link(rel="preload" href="css/fonts/roboto/bold/roboto-bold-webfont.woff" as="font")-->
+  <!--link(rel="preload" href="css/fonts/roboto/light/roboto-light-webfont.woff" as="font")-->
+  <!--link(rel="preload" href="css/fonts/roboto/medium/roboto-medium-webfont.woff" as="font")-->
+  <!--link(rel="preload" href="css/fonts/roboto/regular/roboto-regular-webfont.woff" as="font")-->
   <!-- Set prerender resources (https://w3c.github.io/resource-hints/)
   link(rel="prerender" href="//example.com/next-page.html")
   
@@ -99,9 +100,127 @@
   
   -->
   <!-- Set JS that must be in <head>-->
-  <!--[if IE 9]>
+  <!-- Detect browser and setup Cap for old versions-->
+  <script></script>
+  <!-- Get html5shiv if this is IE lower or equal to 9-->
+  <!--[if lte IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <!-- Set yours main CSS file-->
+  <!-- Async load CSS-->
+  <script>
+    /* loadCSS: load a CSS file asynchronously.
+     [c]2015 @scottjehl, Filament Group, Inc.
+     Licensed MIT
+     */
+    (function(w)
+    {
+      "use strict";
+      /* exported loadCSS */
+      w.loadCSS = function(href, before, media)
+      {
+        // Arguments explained:
+        // `href` [REQUIRED] is the URL for your CSS file.
+        // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+        // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+        // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+        var doc = w.document;
+        var ss = doc.createElement("link");
+        var ref;
+        if (before)
+        {
+          ref = before;
+        }
+        else
+        {
+          var refs;
+          if (doc.querySelectorAll)
+          {
+            refs = doc.querySelectorAll("style,link[rel=stylesheet],script");
+          }
+          else
+          {
+            refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+          }
+          ref = refs[refs.length - 1];
+        }
+        var sheets = doc.styleSheets;
+        ss.rel = "stylesheet";
+        ss.href = href;
+        // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+        ss.media = "only x";
+        // Inject link
+        // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+        // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+        ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
+        // A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+        var onloadcssdefined = function(cb)
+        {
+          var defined;
+          for (var i = 0; i < sheets.length; i++)
+          {
+            var sheet = sheets[i];
+            if (sheet.href && sheet.href === ss.href)
+            {
+              defined = true;
+            }
+          }
+          if (defined)
+          {
+            cb();
+          }
+          else
+          {
+            setTimeout(function()
+            {
+              onloadcssdefined(cb);
+            });
+          }
+        };
+        // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+        ss.onloadcssdefined = onloadcssdefined;
+        onloadcssdefined(function()
+        {
+          ss.media = media || "all";
+        });
+        return ss;
+      };
+    }(this));
+    /*!
+     onloadCSS: adds onload support for asynchronous stylesheets loaded with loadCSS.
+     [c]2014 @zachleat, Filament Group, Inc.
+     Licensed MIT
+     */
+    /* global navigator */
+    /* exported onloadCSS */
+    function onloadCSS(ss, callback)
+    {
+      ss.onload = function()
+      {
+        ss.onload = null;
+        if (callback)
+        {
+          callback.call(ss);
+        }
+      };
+      // This code is for browsers that don’t support onload, any browser that
+      // supports onload should use that instead.
+      // No support for onload:
+      //	* Android 4.3 (Samsung Galaxy S4, Browserstack)
+      //	* Android 4.2 Browser (Samsung Galaxy SIII Mini GT-I8200L)
+      //	* Android 2.3 (Pantech Burst P9070)
+      // Weak inference targets Android < 4.4
+      if ("isApplicationInstalled" in navigator && "onloadcssdefined" in ss)
+      {
+        ss.onloadcssdefined(callback);
+      }
+    }
+    var stylesheet = loadCSS('css/main.min.css');
+    onloadCSS(stylesheet, function()
+    {
+      var expires = new Date(+new Date + (7 * 24 * 60 * 60 * 1000)).toUTCString();
+      document.cookie = 'fullCSS=true; expires=' + expires;
+    });
+  </script>
+  <!-- Set yours main CSS file if JS is down-->
   <noscript>
     <link rel="stylesheet" href="css/main.min.css" /> </noscript>
 </head>

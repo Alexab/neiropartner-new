@@ -59,6 +59,9 @@ img:not([src]) {
   &--light{
     background: linear-gradient(180deg, $color-wrapper--light-start, $color-wrapper--light-end);
   }
+  &--blue2grey-light{
+      background: linear-gradient(180deg, #dff1fa 0%, #fff 20%);
+  }
 }
 
 .btn{
@@ -97,3 +100,93 @@ img:not([src]) {
     }
 }
 
+
+.submenu{
+    margin-top: 58px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 55px;
+    width: 100%;
+    padding-left: 0;
+    &:after{
+        content: '';
+        height: 1px;
+        position: absolute;
+        bottom: -35px;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient(to right, #80a6db, transparent);
+    }
+    &__item{
+        display: inline-block;
+        padding-left: 27px;
+        padding-right: 27px;
+        &:first-child{  padding-left: 0;    }
+        &:last-child{  padding-right: 0;    }
+    }
+    &__link{
+        @include font-family('HelveticaNeueCyr-Roman');
+        font-size: (20 / $base-font-size) + rem;
+        color: $submenu-color;
+        display: inline-block;
+        height: 28px;
+        padding: 0 13px;
+        line-height: 32px;
+        text-decoration: none;
+        &:hover{
+            color: $submenu-color--hover;
+        }
+        &--active{
+            color: $submenu-color--active;
+            background-color: $submenu-bgcolor--active;
+            border-radius: 5px;
+            box-shadow: inset 0 2px 0 0 $submenu-bgcolor-shadow--active;
+            &:hover{
+                color: $submenu-color--active;
+            }
+        }
+    }
+}
+
+.pagination{
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 100px;
+    &__item{
+        display: inline-block;
+    }
+    &__link{
+        @include font-family('HelveticaNeueCyr-Medium');
+        font-size: (21 / $base-font-size) +rem;
+        line-height: (35 / $base-font-size) +rem;
+        color: $color-pagination;
+        text-decoration: none;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        &:hover{
+            color: $color-pagination--hover;
+        }
+        &--active{
+            color: $color-pagination--active;
+            border-radius: 3px;
+            background-color: $color-bgpagination--active;
+            &:hover{
+                color: $color-pagination--active;
+            }
+        }
+        &--arrow-left, &--arrow-right{
+            @include sprite($sprite-pagination-arrow);
+            opacity: .7;
+            &:hover{  opacity: 1;}
+        }
+        &--arrow-left{
+            transform: rotate(180deg);
+            margin-right: 22px;
+        }
+        &--arrow-right{
+            margin-left: 22px;
+        }
+    }
+}

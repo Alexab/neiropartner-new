@@ -50,6 +50,7 @@
     line-height: (36 / $base-font-size) + rem;
     color: $color-consalting-text;
     text-align: center;
+    margin-top: 0;
     &--small{
         @include font-family('OpenSans-Regular');
         font-size: (16 / $base-font-size) + rem;

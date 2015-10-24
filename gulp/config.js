@@ -38,7 +38,7 @@ module.exports = {
 
     /* GitHub Pages options*/
     ghpOptions: {
-        remoteUrl: "git@github.com:Enkil/amg-webstarter-kit.git"
+        remoteUrl: "git@github.com:Enkil/neiropartner-new.git"
     },
 
     //jsDocOptions:"./node_modules/jsdoc/jsdoc.js ./src/js/custom/**/*.js -r -p -d ./build/docs/js",

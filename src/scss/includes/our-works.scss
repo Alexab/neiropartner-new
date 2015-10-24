@@ -25,6 +25,7 @@
 .work{
   cursor: pointer;
   width: 265px;
+    margin-bottom: 70px;
   &:hover{
     .work__link{  color: $color-work-link-hover;}
     .work__img-item:after{

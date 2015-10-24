@@ -1,0 +1,39 @@
+include mixins/work
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_header
+        main.wrapper.wrapper--blue2grey-light
+            .container
+                ul.submenu
+                    li.submenu__item
+                        a(href='ourworks-articles.html' title='Статьи').submenu__link.submenu__link--active Статьи
+                    li.submenu__item
+                        a(href='patents.html' title='Патенты').submenu__link Патенты
+                    li.submenu__item
+                        a(href='about.html' title='О Нас').submenu__link О нас
+
+                h1.h1-title Статьи
+
+                - for (var i=0; i<12; i++ )
+                    +work
+
+                ul.pagination
+                    li.pagination__item
+                        a(href='javascript:void(0)' title='Назад').pagination__link.pagination__link--arrow-left
+                    li.pagination__item
+                        a(href='javascript:void(0)' title='Перейти на страницу 1').pagination__link.pagination__link--active 1
+                    li.pagination__item
+                        a(href='javascript:void(0)' title='Перейти на страницу 2').pagination__link 2
+                    li.pagination__item
+                        a(href='javascript:void(0)' title='Перейти на страницу 3').pagination__link 3
+                    li.pagination__item
+                        a(href='javascript:void(0)' title='Перейти на страницу 4').pagination__link 4
+                    li.pagination__item
+                        a(href='javascript:void(0)' title='Вперед').pagination__link.pagination__link--arrow-right
+        include includes/partners
+        include includes/feedback-form
+
+        include includes/_footer
+        //include includes/_outdate-browers

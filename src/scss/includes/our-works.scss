@@ -50,6 +50,10 @@
       text-align: center;
       background: rgba(0,0,0,.5);
     }
+      &--patent{
+          width: 267px;
+          height: 360px;
+      }
   }
 
   &__img{
@@ -87,6 +91,7 @@
     margin: 0;
   }
 }
+
 
 .js-owl-works-slider{
   .owl-stage-outer{
@@ -139,4 +144,5 @@
   position: relative;
   margin-bottom: 55px;
   width: 100%;
+    & .work {  margin-bottom: 0;}
 }

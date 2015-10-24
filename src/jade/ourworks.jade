@@ -1,0 +1,48 @@
+include mixins/work
+include mixins/patent
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_header
+        main.wrapper.wrapper--blue2grey-light
+            .container.our-works
+                ul.submenu
+                    li.submenu__item
+                        a(href='ourworks-articles.html' title='Статьи').submenu__link.submenu__link--active Статьи
+                    li.submenu__item
+                        a(href='patents.html' title='Патенты').submenu__link Патенты
+                    li.submenu__item
+                        a(href='about.html' title='О Нас').submenu__link О нас
+
+                h1.h1-title Статьи
+                .our-works-slider
+                    .owl-own-nav-works
+                    .container.js-owl-works-slider
+                        - for (var i=0; i<6; i++ )
+                            +work
+                a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все статьи
+                .impuls
+
+                h1.h1-title Патенты
+                .our-works-slider
+                    .owl-own-nav-works
+                    .container.js-owl-works-slider
+                        - for (var i=0; i<6; i++ )
+                            +patent
+                a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все патенты
+                .impuls
+
+                h1.h1-title О нас
+                .our-works-slider
+                    .owl-own-nav-works
+                    .container.js-owl-works-slider
+                        - for (var i=0; i<6; i++ )
+                            +work
+                a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все статьи
+
+
+        include includes/partners
+        include includes/feedback-form
+        include includes/_footer
+        //include includes/_outdate-browers

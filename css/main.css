@@ -741,6 +741,10 @@ img:not([src]) {
     padding-top : 60px;
     padding-bottom : 110px;
 }
+.container--articles {
+    padding-top : 60px;
+    padding-bottom : 100px;
+}
 
 .impuls {
     display : block;
@@ -895,7 +899,7 @@ img:not([src]) {
 
 .pagination {
     width : 100%;
-    margin-bottom : 100px; 
+    margin-bottom : 0; 
 
     font-size : 0;
     text-align : center;

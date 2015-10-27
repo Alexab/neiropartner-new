@@ -1,0 +1,38 @@
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_header
+        main.wrapper.wrapper--blue2grey
+            .container.container--cooperation
+                h1.h1-title.h1-title--cooperation Приглашаем к сотрудничеству
+                img(src='img/cooperation.png' alt='НейроПартнер - Приглашаем к сотрудничеству' title='НейроПартнер - Приглашаем к сотрудничеству').cooperation-banner.lazyload
+                p.cooperation-lead-text.
+                    Мы хотим достичь поставленных целей как можно эффективнее <br> и поэтому нам нужны:
+                // List of cooperation needs
+                ul.cooperation-needs
+                    li.cooperation-needs__item.cooperation-needs__item--knowledges
+                        h3.cooperation-needs__title Знания
+                        p.cooperation-needs__text.
+                            Знания во многих областях могут помочь развитию компании<br> Если вы хотите присоединиться к нашей команде, напишите нам о том, что вы знаете и умеете,<br> а мы постараемся найти этому достойное применение
+                    li.cooperation-needs__item.cooperation-needs__item--expirience
+                        h3.cooperation-needs__title Опыт
+                        p.cooperation-needs__text.
+                            Вы врач, пациент, инженер, ученый или творческая личность?<br> Нам интересно узнать о вашем опыте и пожеланиях нашему проекту <br> Вместе мы сможем достигнуть поставленных целей
+                    li.cooperation-needs__item.cooperation-needs__item--ideas
+                        h3.cooperation-needs__title Идеи
+                        p.cooperation-needs__text.
+                            Вы знаете как развить компанию, какие потребности испытывают наши клиенты?<br> Расскажите нам и мы начнем совместную работу
+                    li.cooperation-needs__item.cooperation-needs__item--offers
+                        h3.cooperation-needs__title Деловые предложения
+                        p.cooperation-needs__text.
+                            Если вы успешный предприниматель и видите перспективы в работе с нами<br> — пишите, мы готовы к сотрудничеству
+                    li.cooperation-needs__item.cooperation-needs__item--investments
+                        h3.cooperation-needs__title Инвестиции
+                        p.cooperation-needs__text.
+                            Если вы ищете перспективные проекты и хотите помочь в их реализации,<br> сообщите нам об этом и мы обязательно рассмотрим ваши предложения
+
+            include includes/partners
+            include includes/feedback-form
+        include includes/_footer
+        include includes/_outdate-browers

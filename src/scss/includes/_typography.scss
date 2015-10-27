@@ -26,7 +26,7 @@ html {
 
 .h1-title{
     @include font-family('HelveticaNeueCyr-Medium');
-    font-size: 47px;
+    font-size: (47 / $base-font-size) + rem;
     color: $color-h1-title;
     letter-spacing: 0.02em;
     margin-left: auto;
@@ -34,11 +34,14 @@ html {
     width: 100%;
     margin-bottom: 50px;
     text-align: center;
+    &--cooperation{
+        font-size: (42 / $base-font-size) + rem;
+    }
 }
 
 .h2-title{
     @include font-family('HelveticaNeueCyr-Medium');
-    font-size: 47px;
+    font-size: (47 / $base-font-size) + rem;
     color: $color-h1-title;
     letter-spacing: 0.02em;
     margin-left: auto;

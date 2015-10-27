@@ -22,6 +22,7 @@
   &__title{
     @include font-face('HelveticaNeueCyr-Medium', normal, normal, sans-serif);
     font-size: 1.75rem;
+      color: $color-directions-title;
   }
   &__text{
     @include font-face('OpenSans-Regular', normal, normal, sans-serif);

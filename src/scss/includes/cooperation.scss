@@ -1,0 +1,50 @@
+.cooperation-banner{
+    width: 100%;
+    object-fit: cover;
+}
+
+.cooperation-lead-text{
+    font-size: (28 / $base-font-size) + rem;
+    color: $color-cooperation-text;
+    @include font-family('HelveticaNeueCyr-Medium');
+    margin-top: 90px;
+    margin-bottom: 85px;
+    width: 100%;
+    text-align: center;
+}
+
+.cooperation-needs{
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+
+    &__item{
+        display: block;
+        &:before{
+            content: '';
+            display: inline-block;
+            margin-top: 55px;
+        }
+        &--knowledges:before{@include sprite($sprite-knowledge);  margin-top: 0;}
+        &--expirience:before{@include sprite($sprite-expirience);}
+        &--ideas:before{@include sprite($sprite-ideas);}
+        &--offers:before{@include sprite($sprite-offers);}
+        &--investments:before{@include sprite($sprite-investments);}
+    }
+    &__title{
+        @include font-family('HelveticaNeueCyr-Bold');
+        font-size: (38 / $base-font-size) + rem;
+        color: $color-cooperation-item;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    &__text{
+        @include font-family('HelveticaNeueCyr-Roman');
+        font-size: (18 / $base-font-size) + rem;
+        line-height: (27 / $base-font-size) + rem;
+        color: $color-cooperation-item;
+        margin: 0;
+    }
+}

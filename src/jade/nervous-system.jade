@@ -1,0 +1,40 @@
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_header
+        main.wrapper.wrapper--blue2grey-light
+            .container.article-wrapper
+                // Submenu
+                ul.submenu
+                    li.submenu__item
+                        a(href='nervous-system.html' title='Нервная система').submenu__link.submenu__link--active Нервная система
+                    li.submenu__item
+                        a(href='disease.html' title='Заболевания').submenu__link Заболевания
+                    li.submenu__item
+                        a(href='disability.html' title='Проблема инвалидности').submenu__link Проблема инвалидности
+                    li.submenu__item
+                        a(href='neuroprosthesis.html' title='Нейропротезы').submenu__link Нейропротезы
+
+
+                h1.h1-title Нервная система
+
+                // Article
+                article.article
+                    .article__left
+                        ul.article__list
+                            li.article__list-item
+                                p.article__text.
+                                    Нервная система управляет всеми физиологическими процессами внутри организма, а также взаимодействием с окружающей средой. Разделяется на <a href="javascript:void(0) title="периферическую">периферическую</a> и <a href="javascript:void(0) title="центральную">центральную</a>, а также на <a href="javascript:void(0) title="вегетативную">вегетативную</a>
+                                    и <a href="javascript:void(0) title="соматическую">соматическую</a>.
+                            li.article__list-item
+                                p.article__text.
+                                    В основе работы нервной системы лежат <a href="javascript:void(0) title="нервные клетки">нервные клетки</a>, объединенные
+                                    в <a href="javascript:void(0) title="нейронные сети">нейронные сети</a> для контроля различных физиологических функций: активное передвижение в пространстве (ходьба, бег, другие формы <a href="javascript:void(0) title="локомоции">локомоции</a>), целенаправленные движения, поддержание позы и баланса, работа внутренних органов, мышление, эмоции и др.
+
+                    .article__right
+                        img(src="img/nervouse-system.jpg" alt="Нервная система" title="Нервная система").article__right-img
+        include includes/partners
+        include includes/feedback-form
+        include includes/_footer
+        //include includes/_outdate-browers

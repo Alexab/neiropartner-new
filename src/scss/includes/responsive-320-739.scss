@@ -331,4 +331,22 @@
   .work{
     width: 100%;
   }
+
+    .article__left, .article__right {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 50px;
+        padding: 0 50px;
+    }
+
+    .submenu__item{
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .submenu__link{
+        font-size: (20 / $base-font-size) + rem;
+    }
 }

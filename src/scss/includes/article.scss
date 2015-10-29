@@ -1,0 +1,42 @@
+.article-wrapper{
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 140px;
+}
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__left{
+        flex: 0 0 50%;
+        //padding-top: 70px;
+    }
+    &__right{
+        flex: 0 0 50%;
+        text-align: center;
+    }
+    &__right-img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    &__list{
+        padding: 0;
+        list-style: none;
+    }
+    &__list-item{
+        padding-left: 25px;
+        margin-bottom: 35px;
+        background: url('../img/marker.png') no-repeat left 15%;
+    }
+    &__text{
+        @include font-family('OpenSans-Regular');
+        font-size: (15 / $base-font-size) +rem;
+        line-height: (26 / $base-font-size) +rem;
+        color: $color-article-text;
+        margin: 0;
+    }
+
+}

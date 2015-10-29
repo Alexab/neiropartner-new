@@ -65,10 +65,12 @@
     margin-top: 75px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 0;
+    margin-bottom: 55px;
     padding: 0;
     list-style: none;
-    background-image: url(../img/consalting-features-bg.png);
+    //background-image: url(../img/consalting-features-bg.png);
+    background-image: url(../svg/consalting-bg.svg);
+    background-repeat: no-repeat;
     counter-reset: list;
     background-position: center -65px;
 

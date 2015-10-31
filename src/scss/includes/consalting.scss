@@ -68,11 +68,11 @@
     margin-bottom: 55px;
     padding: 0;
     list-style: none;
-    //background-image: url(../img/consalting-features-bg.png);
-    background-image: url(../svg/consalting-bg.svg);
+    background-image: url(../img/consalting-features-bg.png);
+    //background-image: url(../svg/consalting-bg.svg);
     background-repeat: no-repeat;
     counter-reset: list;
-    background-position: center -65px;
+    background-size: contain;
 
     &__item{
         @include font-family('OpenSans-SemiBold');

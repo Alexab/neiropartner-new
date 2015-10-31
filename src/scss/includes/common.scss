@@ -53,7 +53,15 @@ img:not([src]) {
   background-repeat: no-repeat;
   width: 139px;
   height: 42px;
-  float: right;
+    margin-left: 20px;
+}
+
+.bottles{
+    display: block;
+    @include sprite($sprite-bottles);
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 94px;
 }
 
 .wrapper{

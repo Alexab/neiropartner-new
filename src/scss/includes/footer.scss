@@ -11,7 +11,9 @@
     flex: 0 0 700px;
   }
   &__right{
-    margin-left: 180px;
+    //margin-left: 180px;
+      display: flex;
+      align-items: flex-end;
   }
   &__menu{
     list-style-type: none;

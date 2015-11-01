@@ -3549,7 +3549,7 @@ img:not([src])
     padding-left: 15px;
 
     color: #4b4b4b;
-    border: 1px solid #7f8083;
+    border: 2px solid #7f8083;
     border-radius: 5px;
     outline: none; 
     background-color: transparent;
@@ -3680,7 +3680,7 @@ img:not([src])
     resize: none;
 
     color: #4b4b4b;
-    border: 1px solid #7f8083;
+    border: 2px solid #7f8083;
     border-radius: 5px;
     outline: none;
     background-color: transparent;
@@ -3885,6 +3885,8 @@ img:not([src])
 }
 .article__right-img
 {
+    display: inline-block; 
+
     width: 100%;
     height: auto;
 
@@ -3893,6 +3895,8 @@ img:not([src])
 }
 .article__list
 {
+    display: inline-block; 
+
     padding: 0;
 
     list-style: none;

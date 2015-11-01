@@ -3130,7 +3130,7 @@ img:not([src])
     resize: none;
 
     color: #fff;
-    border: 1px solid #7f8083;
+    border: 2px solid #7f8083;
     border-radius: 5px;
     outline: none;
     background-color: transparent;

@@ -117,6 +117,9 @@
     margin: 0;
     flex: 0 0 100%;
     text-align: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
   }
 
   .slider{

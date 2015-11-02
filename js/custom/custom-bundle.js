@@ -24,7 +24,8 @@ window.onload = function(){
         autoplayHoverPause: true,
         navContainer: ".owl-own-nav",
         navText:[],
-        loop: true
+        loop: true,
+        animateOut: 'fadeOut'
     });
 
     // Center header slider dots

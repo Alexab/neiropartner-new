@@ -45,5 +45,8 @@ window.onload = function(){
 
     // Find html5 video and activate
     //videoHTML5Youtube();
+
+    // Toogle sliders on project pages
+    toggleSliders();
 };
 

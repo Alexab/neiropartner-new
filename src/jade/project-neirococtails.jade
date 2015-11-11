@@ -1,0 +1,58 @@
+include mixins/work
+include mixins/project-infoblock
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_header
+        main.wrapper.wrapper--blue2grey-light
+            .container.article-wrapper
+                // Submenu
+                ul.submenu
+                    li.submenu__item
+                        a(href='project-neiroreabilitation.html' title='Нервная система').submenu__link Мультисистемная нейрореабилитация
+                    li.submenu__item
+                        a(href='project-neirococtails.html' title='Заболевания').submenu__link.submenu__link--active Нейрококтейли
+                    li.submenu__item
+                        a(href='project-softimplants.html' title='Проблема инвалидности').submenu__link Мягкие имплантанты
+
+                h1.h1-title Нейрококтейли
+                // Article
+                article.article
+                    .article__left
+                        ul.article__list
+                            li.article__list-item
+                                p.article__text.
+                                    В проекте разрабатывается группа новых нейромодулирующих препаратов для активации нейрональной пластичности: драг-дизайн молекулы, синтез химических агентов и их апробация
+                            li.article__list-item
+                                p.article__text.
+                                    В первую очередь, исследования ориентированы на спинальных пациентов с тяжелыми поражениями спинного мозга
+                            li.article__list-item
+                                p.article__text.
+                                    В основе выбора химических агентов, модулирующих активность нейрональных рецепторов, лежит экспериментальная работа, проведенная за последние 10 лет
+                    .article__right
+                        img(src="img/projects-neirococtails.jpg" alt="Нейрококтейли" title="Нейрококтейли").article__right-img
+
+                // Infoblock
+                +project-infoblock('Проект основывается на ряде предшествующих патентов и экспериментальных статей')
+
+                // Articles
+                ul.small-menu
+                    li.small-menu__item
+                        a(href='javascript:void(0)' title='Статьи').small-menu__link.small-menu__link--active Статьи
+                    li.small-menu__item
+                        a(href='javascript:void(0)' title='Патенты').small-menu__link Патенты
+                    li.small-menu__item
+                        a(href='javascript:void(0)' title='Видео').small-menu__link Видео
+
+                .our-works-slider
+                    .owl-own-nav-works
+                    .container.js-owl-works-slider
+                        - for (var i=0; i<6; i++ )
+                            +work
+                a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все статьи
+
+        include includes/partners
+        include includes/feedback-form
+        include includes/_footer
+        //include includes/_outdate-browers

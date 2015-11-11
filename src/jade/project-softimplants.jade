@@ -1,0 +1,62 @@
+include mixins/work
+include mixins/project-infoblock
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_header
+        main.wrapper.wrapper--blue2grey-light
+            .container.article-wrapper
+                // Submenu
+                ul.submenu
+                    li.submenu__item
+                        a(href='project-neiroreabilitation.html' title='Нервная система').submenu__link Мультисистемная нейрореабилитация
+                    li.submenu__item
+                        a(href='project-neirococtails.html' title='Заболевания').submenu__link Нейрококтейли
+                    li.submenu__item
+                        a(href='project-softimplants.html' title='Проблема инвалидности').submenu__link.submenu__link--active Мягкие имплантанты
+                h1.h1-title Мягкие имплантанты
+                // Article
+                article.article
+                    .article__left
+                        ul.article__list
+                            li.article__list-item
+                                p.article__text.
+                                    Проект нацелен на создание электро-химического нейропротеза для имплантации в головной и спинной мозг человека
+                            li.article__list-item
+                                p.article__text.
+                                    Несоответствие механических свойств мягких структур нервной ткани и относительно жестких нейрональных имплантатов ограничивало их применение в клинической практике. Планируется создать мягкие имплантаты с формой и механическими характеристиками, близкими с наружной соединительнотканной оболочкой мозга
+                            li.article__list-item
+                                p.article__text.
+                                    В искусственную мозговую оболочку из силикона будут помещаться тончайшие электроды, коннекторы для стимуляции и регистрации нейронных структур, а также микроканалы для введения лекарств. Химическая стимуляция может применяться для местной противовоспалительной терапии, активации или блокады нейрональных рецепторов, ускорения нейропластических и регенераторных процессов
+                            li.article__list-item
+                                p.article__text.
+                                    Такой нейропротез ориентирован для нейрореабилитационных процедур у парализованных больных с повреждением спинного мозга, паркинсонизмом, дегенеративными заболеваниями нервной системы. Мягкий имплантат также может быть ключевым элементом системы мозг-компьютер интерфейс
+
+                    .article__right
+                        img(src="img/project-softimplants.jpg" alt="Мягкие имплантанты" title="Мягкие имплантанты").article__right-img
+
+
+                // Infoblock
+                +project-infoblock('Проект является продолжением работы, опубликованной в журнале Science, 2015, основывается на ряде предшествующих патентов и экспериментальных статей')
+
+                // Articles
+                ul.small-menu
+                    li.small-menu__item
+                        a(href='javascript:void(0)' title='Статьи').small-menu__link.small-menu__link--active Статьи
+                    li.small-menu__item
+                        a(href='javascript:void(0)' title='Патенты').small-menu__link Патенты
+                    li.small-menu__item
+                        a(href='javascript:void(0)' title='Видео').small-menu__link Видео
+
+                .our-works-slider
+                    .owl-own-nav-works
+                    .container.js-owl-works-slider
+                        - for (var i=0; i<6; i++ )
+                            +work
+                a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все статьи
+
+        include includes/partners
+        include includes/feedback-form
+        include includes/_footer
+        //include includes/_outdate-browers

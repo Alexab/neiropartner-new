@@ -52,7 +52,7 @@ var getOutDateBrowserLink = function(browserLinksClass, classToAdd, dataset, cap
         }
     }
 
-}
+};
 
 getOutDateBrowserLink();
 

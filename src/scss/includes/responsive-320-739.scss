@@ -2,6 +2,7 @@
 
   .container{
     width: 100%;
+    padding: 0 10px;
   }
 
   .header-top-line{
@@ -233,7 +234,7 @@
   }
 
   .project{
-    flex: 0 0 50%;
+    flex: 0 0 100%;
   }
 
   .projects-slider{
@@ -350,4 +351,8 @@
     .submenu__link{
         font-size: (20 / $base-font-size) + rem;
     }
+
+  .small-menu{
+    text-align: center;
+  }
 }

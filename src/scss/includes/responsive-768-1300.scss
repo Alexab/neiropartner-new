@@ -6,6 +6,10 @@
     padding-right: 10px;
   }
 
+  .slider-container{
+    width: 100%;
+  }
+
   .header__logo-link{
     width: 100%;
     text-align: center;
@@ -128,6 +132,8 @@
 
   .our-patents-slider{  padding: 0 100px;  }
 
+  .our-about-slider{  padding: 0 100px;}
+
   .video-slider{  padding: 0 100px;  }
 
   .owl-item.active{
@@ -135,7 +141,7 @@
         justify-content: center;
   }
 
-  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video, .owl-own-nav-patents{  width: calc(100% - 200px);  }
+  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video, .owl-own-nav-patents, .owl-own-nav-about{  width: calc(100% - 200px);  }
 
   .video-slider__item{  width: 100%;  }
 

@@ -8,13 +8,13 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
             .container.container--articles
                 ul.submenu
                     li.submenu__item
-                        a(href='ourworks-articles.html' title='Статьи').submenu__link.submenu__link--active Статьи
+                        a(href='ourworks-articles.html' title='Статьи').submenu__link Статьи
                     li.submenu__item
                         a(href='ourworks-patents.html' title='Патенты').submenu__link Патенты
                     li.submenu__item
-                        a(href='ourworks-about.html' title='О Нас').submenu__link О нас
+                        a(href='ourworks-about.html' title='О Нас').submenu__link.submenu__link--active О нас
 
-                h1.h1-title Статьи
+                h1.h1-title О нас
 
                 - for (var i=0; i<12; i++ )
                     +article

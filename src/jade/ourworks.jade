@@ -1,5 +1,6 @@
 include mixins/work
 include mixins/patent
+include mixins/about-item
 doctype
 html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
     include includes/_head
@@ -13,37 +14,37 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
                     li.submenu__item
                         a(href='ourworks-articles.html' title='Статьи').submenu__link.submenu__link--active Статьи
                     li.submenu__item
-                        a(href='patents.html' title='Патенты').submenu__link Патенты
+                        a(href='ourworks-patents.html' title='Патенты').submenu__link Патенты
                     li.submenu__item
-                        a(href='about.html' title='О Нас').submenu__link О нас
+                        a(href='ourworks-about.html' title='О Нас').submenu__link О нас
 
                 // Articles
-                h1.h1-title Статьи
+                h2.h1-title Статьи
                 .our-works-slider
                     .owl-own-nav-works
-                    .container.js-owl-works-slider
+                    .slider-container.js-owl-works-slider
                         - for (var i=0; i<6; i++ )
                             +work
                 a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все статьи
                 .impuls
 
                 // Patents
-                h1.h1-title Патенты
+                h2.h1-title Патенты
                 .our-patents-slider
                     .owl-own-nav-patents
-                    .container.js-owl-patents-slider
+                    .slider-container.js-owl-patents-slider
                         - for (var i=0; i<6; i++ )
                             +patent
                 a(href='ourworks-articles.html' title="Все патенты НейроПартнер").btn.btn--all Все патенты
                 .impuls
 
                 // About
-                h1.h1-title О нас
-                .our-works-slider
+                h2.h1-title О нас
+                .our-about-slider
                     .owl-own-nav-about
-                    .container.js-owl-about-slider
+                    .slider-container.js-owl-about-slider
                         - for (var i=0; i<6; i++ )
-                            +work
+                            +about-item
                 a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все статьи
 
 

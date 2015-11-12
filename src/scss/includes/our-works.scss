@@ -35,8 +35,8 @@
   }
 
   &__img-item{
-    width: 265px;
-    height: 170px;
+    width: 100%;
+    //height: 170px;
     position: relative;
     margin: 0 auto;
     &:after{
@@ -59,6 +59,7 @@
   &__img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
   &__title{
     @include font-family('HelveticaNeueCyr-Medium');
@@ -160,8 +161,8 @@
   }
 
   &__img-item{
-    width: 265px;
-    height: 360px;
+    width: 100%;
+    //height: 360px;
     position: relative;
     margin: 0 auto;
     &:after{
@@ -180,6 +181,7 @@
   &__img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
   &__title{
     @include font-family('HelveticaNeueCyr-Medium');
@@ -268,6 +270,73 @@
 }
 
 
+.about-item{
+  cursor: pointer;
+  width: 265px;
+  margin-bottom: 70px;
+  &:hover{
+    .patent__link{  color: $color-work-link-hover;}
+    .patent__img-item:after{
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__img-item{
+    width: 100%;
+    //height: 360px;
+    position: relative;
+    margin: 0 auto;
+    &:after{
+      content: '';
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+      text-align: center;
+      background: rgba(0,0,0,.5);
+    }
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__title{
+    @include font-family('HelveticaNeueCyr-Medium');
+    font-size: 1.225rem;
+    color: $color-work-title;
+    word-wrap: break-word
+  }
+  &__link{
+    @include font-family('HelveticaNeueCyr-Medium');
+    font-size: 1.225rem;
+    color: $color-work-title;
+    text-decoration: none;
+    //&:hover{  color: $color-work-link-hover;}
+  }
+  &__text{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    line-height: 1.31rem;
+    color: $color-work-text;
+    margin-bottom: 0;
+  }
+  &__more-link{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $color-project-link;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    margin: 0;
+  }
+}
+
 .js-owl-about-slider{
   .owl-stage-outer{
     overflow: hidden;
@@ -313,4 +382,11 @@
     right: -58px;
     transform: rotate(180deg);
   }
+}
+
+.our-about-slider{
+  position: relative;
+  margin-bottom: 55px;
+  width: 100%;
+  & .work {  margin-bottom: 0;}
 }

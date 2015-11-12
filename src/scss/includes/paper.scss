@@ -1,0 +1,80 @@
+.breadcrumbs{
+  width: 100%;
+  padding-left: 0;
+  margin-top: 65px;
+  margin-bottom: 45px;
+
+  &__item{
+    display: inline-block;
+  }
+  &__link{
+    @include font-family('HelveticaNeueCyr-Roman');
+    display: inline-block;
+    font-size: 18px;
+    color: $color-breadcrumbs-link;
+    text-decoration: none;
+    &:hover{
+      color: $color-breadcrumbs-link--last;
+    }
+  }
+}
+
+.paper{
+  margin-bottom: 165px;
+  position: relative;
+  width: 100%;
+  &:after{
+    content: '';
+    height: 1px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #80a6db, transparent);
+  }
+
+  &__journal{
+    @include font-family('HelveticaNeueCyr-Roman');
+    font-size: 23px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: $color-paper-journal;
+  }
+  &__title{
+    @include font-family('HelveticaNeueCyr-Medium');
+    font-size: 40px;
+    color: $color-paper-title;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  &__authors{
+    @include font-family('OpenSans-Semiblod');
+    font-size: 17px;
+    color: $color-paper-authors;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  &__text{
+    @include font-family('OpenSans-Regular');
+    font-size: 17px;
+    line-height: 26px;
+    color: $color-paper-text;
+  }
+  &__subtitle{
+    @include font-family('HelveticaNeueCyr-Medium');
+    font-size: 29px;
+    color: $color-paper-title;
+    margin-top: 55px;
+    margin-bottom: 30px;
+  }
+  &__img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  &__source{
+    @include font-family('OpenSans-Regular');
+    font-size: 17px;
+    line-height: 26px;
+    color: $color-paper-text;
+  }
+}

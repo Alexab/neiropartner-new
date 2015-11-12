@@ -6,6 +6,10 @@
     padding-right: 10px;
   }
 
+  .slider-container{
+    width: 100%;
+  }
+
   .header-top-line{  @include hidden;  }
 
   .header__lang{  top: -20px;  }
@@ -201,6 +205,8 @@
 
   .our-patents-slider{  padding: 0 100px;  }
 
+  .our-about-slider{  padding: 0 100px;  }
+
   .project{  margin-bottom: 10px;  }
 
   .project__icon{
@@ -226,7 +232,7 @@
     margin-top: 10px;
   }
 
-  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video, .owl-own-nav-patents{  width: calc(100% - 200px);  }
+  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video, .owl-own-nav-patents, .owl-own-nav-about{  width: calc(100% - 200px);  }
 
   .video-slider{  padding: 0 100px;  }
 
@@ -259,6 +265,8 @@
 
   .patent{  width: 100%;}
 
+  .about-item{  width: 100%;}
+
   .article__left, .article__right {
     width: 100%;
     flex: 0 0 100%;
@@ -276,9 +284,16 @@
     margin: 10px 0;
   }
 
-  .submenu__link{
-    font-size: (20 / $base-font-size) + rem;
-  }
+  .submenu__link{  font-size: (20 / $base-font-size) + rem;  }
 
   .small-menu{  text-align: center;  }
+
+  .paper__img{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .paper__source a{
+    font-size: 10px;
+  }
 }

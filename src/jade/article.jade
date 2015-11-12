@@ -1,0 +1,48 @@
+include mixins/work
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        main
+
+            .wrapper.wrapper--blue2grey-light
+                .container
+                    include includes/breadcrumbs
+                    article.paper
+                        p.paper__journal Journal of Neuroscience
+                        h1.paper__title Spinal and Supraspinal Control of the Direction of Stepping during Locomotion
+                        p.paper__authors.
+                            Pavel E. Musienko1,2, Pavel V. Zelenin3, Vladimir F. Lyalka3, Yury P. Gerasimenko1, Grigory N. Orlovsky3,
+                            and Tatiana G. Deliagina3
+                        p.paper__text.
+                            1. Pavlov Institute of Physiology, 100034 St. Petersburg, Russia,
+                            2. Center for Neuroprosthetics and Brain Mind Institute, School of Life Sciences, Swiss Federal Institute of Technology (EPFL), CH-1015 Lausanne, Switzerland
+                            3. Department of Neuroscience, Karolinska Institute, SE-17177 Stockholm, Sweden (год, том, страницы)
+                            <br>
+                            The Journal of Neuroscience, 28 November 2012, 32(48): 17442-17453; doi: 10.1523/JNEUROSCI.3757-12.2012
+                        h2.paper__subtitle Abstract
+                        p.paper__text.
+                            Most bipeds and quadrupeds, in addition to forward walking, are also capable of backward and sideward walking. The direction of walking is determined by the direction of stepping movements of individual limbs in relation to the front-to-rear body axis. Our goal was to assess the functional organization of the system controlling the direction of stepping. Experiments were performed on decerebrate cats walking on the treadmill with their hindlimbs, whereas the head and trunk were rigidly fixed. Different directions of the treadmill motion relative to the body axis were used (0, ±45, ±90, and 180°). For each direction, we compared locomotion evoked from the brainstem (by stimulation of the mesencephalic locomotor region, MLR) with locomotion evoked by epidural stimulation of the spinal cord (SC).
+                        img(data-original='img/paper-img.jpg' alt='Spinal and Supraspinal Control of the Direction of Stepping during Locomotion' title='Spinal and Supraspinal Control of the Direction of Stepping during Locomotion').paper__img.lazyload
+                        p.paper__source.
+                            Источник
+                            <a href="javascript:void(0)" title="Источник">http://www.jneurosci.org/content/32/48/17442.long</a>
+
+                    // Articles
+                    .our-works-slider
+                        .owl-own-nav-works
+                        .slider-container.js-owl-works-slider
+                            - for (var i=0; i<6; i++ )
+                                +work
+
+            include includes/partners
+            include includes/feedback-form
+
+        include includes/_footer
+
+        //include includes/_outdate-browers

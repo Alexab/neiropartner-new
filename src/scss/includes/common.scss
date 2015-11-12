@@ -23,7 +23,7 @@ img:not([src]) {
   position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-width: 320px;
+
     &--consalting{
         padding-top: 60px;
         padding-bottom: 110px;
@@ -257,4 +257,13 @@ img:not([src]) {
 .sliders{
   display: flex;
   flex-wrap: wrap;
+}
+
+.slider-container{
+  display: flex;
+  width: $width-container;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

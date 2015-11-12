@@ -1,4 +1,4 @@
-include mixins/article
+include mixins/about-item-for-list
 doctype
 html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
     include includes/_head
@@ -17,7 +17,7 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
                 h1.h1-title О нас
 
                 - for (var i=0; i<12; i++ )
-                    +article
+                    +about-item-for-list
 
                 ul.pagination
                     li.pagination__item

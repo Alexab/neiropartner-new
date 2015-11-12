@@ -39,6 +39,9 @@
     margin-bottom: 25px;
     margin-top: 0;
     color: $color-paper-journal;
+    &--about-page{
+      margin-bottom: 15px;
+    }
   }
   &__title{
     @include font-family('HelveticaNeueCyr-Medium');
@@ -76,5 +79,12 @@
     font-size: 17px;
     line-height: 26px;
     color: $color-paper-text;
+  }
+  &__date{
+    @include font-family('HelveticaNeueCyr-Light');
+    font-size: 16px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: $color-paper-journal;
   }
 }

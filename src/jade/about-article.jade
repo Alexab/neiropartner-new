@@ -1,0 +1,43 @@
+include mixins/about-item
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        main
+
+            .wrapper.wrapper--blue2grey-light
+                .container
+                    include includes/breadcrumbs
+                    article.paper
+                        p.paper__journal.paper__journal--about-page Найка и жизнь
+                        p.paper__date 20 января 2015
+                        h1.paper__title.
+                            Спинномозговой имплантат позволяет встать на ноги
+                        p.paper__text.
+                            При травмах позвоночника человек полностью или частично утрачивает подвижность – происходит это оттого, что нарушаются проводящие нервные пути в спинном мозге, передающие приказы от головного мозга к мышцам. Однако сам спинной мозг уже давно никто не рассматривает как обычный «электрошнур», просто передающий нейрохимические импульсы от «руководящего органа» к «исполнителям». Спинномозговые нейроны образуют довольно сложные специализированные сети, ответственные за сохранение равновесие, координацию при ходьбе, контролирующие скорость и направление движения и т. д. Получая информацию от мышц и кожи, нейронные сети спинного мозга могут вносить поправки в двигательную программу, корректируя её в зависимости от ощущений….
+
+                        img(data-original='img/paper-img.jpg' alt='Spinal and Supraspinal Control of the Direction of Stepping during Locomotion' title='Spinal and Supraspinal Control of the Direction of Stepping during Locomotion').paper__img.lazyload
+                        p.paper__text.
+                            Автор: Кирилл Стасевич
+                        p.paper__source.
+                            Источник
+                            <a href="javascript:void(0)" title="Источник">http://www.jneurosci.org/content/32/48/17442.long</a>
+
+                    // Articles
+                    .our-about-slider
+                        .owl-own-nav-about
+                        .slider-container.js-owl-about-slider
+                            - for (var i=0; i<6; i++ )
+                                +about-item
+
+            include includes/partners
+            include includes/feedback-form
+
+        include includes/_footer
+
+        //include includes/_outdate-browers

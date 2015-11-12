@@ -1,0 +1,42 @@
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        main
+
+            .wrapper.wrapper--blue2grey-light
+                .container
+                    h1.h1-title Новости
+                    // Yeasrs list
+                    ul.years-list
+                        li.years-list__item
+                            a(href='javascript:void(0)' title='Новости за 2015 год').years-list__link.years-list__link--active 2015
+                        li.years-list__item
+                            a(href='javascript:void(0)' title='Новости за 2016 год').years-list__link 2016
+                        li.years-list__item
+                            a(href='javascript:void(0)' title='Новости за 2017 год').years-list__link 2017
+
+                    // News preview
+                    .news
+                        span.news__date 20 января
+                        a(href='javascript:void(0)' title='Controlling specific locomotor behaviors through multidimensional monoaminergic modulation of spinal circuitries').news__title.
+                            Controlling specific locomotor behaviors through multidimensional monoaminergic modulation of spinal circuitries
+
+                    // News preview
+                    .news
+                        span.news__date 22 января
+                        a(href='javascript:void(0)' title='Closed-loop neuromodulation of spinal sensorimotor circuits controls refined locomotion after complete spinal cord injury').news__title.
+                            Closed-loop neuromodulation of spinal sensorimotor circuits controls refined locomotion after complete spinal
+                            cord injury
+
+            include includes/partners
+            include includes/feedback-form
+
+        include includes/_footer
+
+        //include includes/_outdate-browers

@@ -1,0 +1,58 @@
+.years-list{
+  margin-top: 0;
+  list-style: none;
+  position: relative;
+  margin-bottom: 75px;
+  width: 100%;
+  padding-left: 0;
+  &:after{
+    content: '';
+    height: 1px;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #80a6db, transparent);
+  }
+
+  &__item{
+    display: inline-block;
+  }
+  &__link{
+    @include font-family('HelveticaNeueCyr-Roman');
+    font-size: 20px;
+    color: $color-years;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    line-height: 28px;
+    text-decoration: none;
+    &:hover{  color: $color-years--hover; }
+    &--active{
+      background-color: $color-years-bg--active;
+      color: $color-years--active;
+      &:hover{  color: $color-years--active;}
+    }
+  }
+}
+
+.news{
+  margin-bottom: 40px;
+  &:last-child{  margin-bottom: 280px;}
+
+  &__date{
+    @include font-family('HelveticaNeueCyr-Light');
+    display: block;
+    font-size: 15px;
+    color: $color-news-date;
+    margin-bottom: 20px;
+  }
+  &__title{
+    @include font-family('HelveticaNeueCyr-Medium');
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: $color-news-title;
+    &:hover{  color: $color-news-title--hover;}
+  }
+}

@@ -27,10 +27,11 @@
   }
   &__slide-image{
     position: relative;
-    top: -15px;
+    //top: -15px;
     object-fit: contain;
     height: calc(100vh - 195px);
     max-height: 800px;
+    width: 100%;
   }
   &__gradient{
     text-align: right;

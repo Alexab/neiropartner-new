@@ -29,19 +29,19 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
 
                 // Patents
                 h1.h1-title Патенты
-                .our-works-slider
-                    .owl-own-nav-works
-                    .container.js-owl-works-slider
+                .our-patents-slider
+                    .owl-own-nav-patents
+                    .container.js-owl-patents-slider
                         - for (var i=0; i<6; i++ )
                             +patent
-                a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все патенты
+                a(href='ourworks-articles.html' title="Все патенты НейроПартнер").btn.btn--all Все патенты
                 .impuls
 
                 // About
                 h1.h1-title О нас
                 .our-works-slider
-                    .owl-own-nav-works
-                    .container.js-owl-works-slider
+                    .owl-own-nav-about
+                    .container.js-owl-about-slider
                         - for (var i=0; i<6; i++ )
                             +work
                 a(href='ourworks-articles.html' title="Все проекты НейроПартнер").btn.btn--all Все статьи

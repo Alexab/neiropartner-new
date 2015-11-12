@@ -2,17 +2,13 @@
 
   .container{
     width: 100%;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .header-top-line{
-    @include hidden;
-  }
+  .header-top-line{  @include hidden;  }
 
-  .header__lang{
-    top: -20px;
-
-  }
+  .header__lang{  top: -20px;  }
 
   .header__logo-link{
     width: 100%;
@@ -54,9 +50,7 @@
     padding: 0 50px;
   }
 
-  .impuls{
-    width: 100%;
-  }
+  .impuls{  width: 100%;  }
 
   .direction{
     flex: 0 0 100%;
@@ -71,29 +65,17 @@
     padding: 0 50px;
   }
 
-  .consalting{
-    padding-bottom: 10px;
-  }
+  .consalting{  padding-bottom: 10px;  }
 
-  .consalting__title {
-    text-align: center;
-  }
+  .consalting__title {  text-align: center;  }
 
-  .mission{
-    padding: 0 50px;
-  }
+  .mission{  padding: 0 50px;  }
 
-  .mission-wrapper{
-    padding-bottom: 50px;
-  }
+  .mission-wrapper{  padding-bottom: 50px;  }
 
-  .feedback{
-    flex-wrap: wrap;
-  }
+  .feedback{  flex-wrap: wrap;  }
 
-  .feedback-wrapper{
-    padding-top: 10px;
-  }
+  .feedback-wrapper{  padding-top: 10px;  }
 
   .feedback__left, .feedback__form {
     width: 100%;
@@ -112,9 +94,7 @@
     justify-content: center;
   }
 
-  .feedback__form{
-    flex-wrap: wrap;
-  }
+  .feedback__form{  flex-wrap: wrap;  }
 
   // Contacts form
   .contacts{
@@ -122,9 +102,7 @@
     padding: 50px 0 50px 0;
   }
 
-  .feedback-wrapper{
-    padding-top: 10px;
-  }
+  .feedback-wrapper{  padding-top: 10px;  }
 
   .contacts__left, .contacts__form {
     width: 100%;
@@ -133,9 +111,7 @@
     padding: 10px;
   }
 
-  .contacts__form{
-    flex-wrap: wrap;
-  }
+  .contacts__form{  flex-wrap: wrap;  }
 
   .contacts__form-left{
     width: 30%;
@@ -153,17 +129,11 @@
     justify-content: space-around;
   }
 
-  .contacts__item{
-    margin-right: 10px;
-  }
+  .contacts__item{  margin-right: 10px;  }
 
-  .contacts__item--data{
-    margin-left: 0;
-  }
+  .contacts__item--data{  margin-left: 0;  }
 
-  .contacts__textarea{
-    margin-top: 10px;
-  }
+  .contacts__textarea{  margin-top: 10px;  }
 
   .footer{
     flex-wrap: wrap;
@@ -180,28 +150,20 @@
     justify-content: space-around;
   }
 
-  .footer__menu-item{
-    margin: 0;
-  }
+  .footer__menu-item{  margin: 0;  }
 
-  .footer__social{
-    text-align: center;
-  }
+  .footer__social{  text-align: center;  }
 
-  .footer__copyright{
-    text-align: center;
-  }
+  .footer__copyright{  text-align: center;  }
 
   .footer__right{
     margin: 0;
     flex: 0 0 100%;
     text-align: center;
-      align-items: center;
+    align-items: center;
   }
 
-  .footer__menu{
-    flex-wrap: wrap;
-  }
+  .footer__menu{  flex-wrap: wrap;  }
 
   .footer__menu-item{
     flex: 0 0 100%;
@@ -209,9 +171,7 @@
     line-height: 1.2rem;
   }
 
-  .slider{
-    height: auto;
-  }
+  .slider{  height: auto;  }
 
   .slider__slide{
     flex-wrap: wrap;
@@ -219,9 +179,7 @@
     justify-content: center;
   }
 
-  .slider__slide-left{
-    flex: 0 0 100%;
-  }
+  .slider__slide-left{  flex: 0 0 100%;  }
 
   .slider__slide-right{
     flex: 0 0 100%;
@@ -229,33 +187,21 @@
     padding: 0 50px;
   }
 
-  .slider__gradient{
-    margin: 0 auto;
-  }
+  .slider__gradient{  margin: 0 auto;  }
 
-  .project{
-    flex: 0 0 100%;
-  }
+  .project{  flex: 0 0 100%;  }
 
-  .projects-slider{
-    padding: 0 100px;
-  }
+  .projects-slider{  padding: 0 100px;  }
 
-  .partners-slider{
-    padding: 0 100px;
-  }
+  .partners-slider{  padding: 0 100px;  }
 
-  .partner{
-    width: 100%;
-  }
+  .partner{  width: 100%;  }
 
-  .our-works-slider{
-    padding: 0 100px;
-  }
+  .our-works-slider{  padding: 0 100px;  }
 
-  .project{
-    margin-bottom: 10px;
-  }
+  .our-patents-slider{  padding: 0 100px;  }
+
+  .project{  margin-bottom: 10px;  }
 
   .project__icon{
     width: 100%;
@@ -280,87 +226,59 @@
     margin-top: 10px;
   }
 
-  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video{
-    width: calc(100% - 200px);
-  }
-    .video-slider{
-        padding: 0 100px;
-    }
+  .owl-own-nav-works, .owl-own-nav-projects, .owl-own-nav-partners, .owl-own-nav-video, .owl-own-nav-patents{  width: calc(100% - 200px);  }
 
-    .owl-item.active{
+  .video-slider{  padding: 0 100px;  }
+
+  .owl-item.active{
         display: flex;
         justify-content: center;
-    }
-    .video-slider__item{
-        width: 100%;
-    }
-  .impuls{
-    margin: 20px auto 20px;
   }
 
-  .consalting__right{
-    padding: 0 10px;
-  }
+  .video-slider__item{ width: 100%;  }
 
-  .consalting__text{
-    text-align: center;
-  }
+  .impuls{  margin: 20px auto 20px;  }
 
-  .consalting__link{
-    text-align: center;
-  }
+  .consalting__right{  padding: 0 10px;  }
 
-  .mission__title{
-    text-align: center;
-  }
+  .consalting__text{  text-align: center;  }
 
-  .mission__text{
-    margin: 0;
-  }
+  .consalting__link{  text-align: center;  }
 
-  .contacts__form-left, .contacts__form-right{
-    flex: 0 0 100%;
-  }
+  .mission__title{  text-align: center;  }
 
-  .feedback__form-left, .feedback__form-right{
-    flex: 0 0 100%;
-  }
+  .mission__text{  margin: 0;  }
 
-  .feedback__textarea{
-    margin-top: 10px;
-  }
+  .contacts__form-left, .contacts__form-right{  flex: 0 0 100%;  }
 
-  .work{
+  .feedback__form-left, .feedback__form-right{  flex: 0 0 100%;  }
+
+  .feedback__textarea{  margin-top: 10px;  }
+
+  .work{  width: 100%;  }
+
+  .patent{  width: 100%;}
+
+  .article__left, .article__right {
     width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+    padding: 0 50px;
   }
 
-    .article__left, .article__right {
-        width: 100%;
-        flex: 0 0 100%;
-        margin-bottom: 50px;
-        padding: 0 50px;
-    }
+  .submenu{  margin-top: 55px;  }
 
-  .submenu{
-    //display: flex;
-    //flex: 0 0 100%;
-    //justify-content: space-around;
-    //padding: 0;
-    margin-top: 55px;
-  }
-
-    .submenu__item{
-        padding-right: 0;
-        padding-left: 0;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-    .submenu__link{
-        font-size: (20 / $base-font-size) + rem;
-    }
-
-  .small-menu{
+  .submenu__item{
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
     text-align: center;
+    margin: 10px 0;
   }
+
+  .submenu__link{
+    font-size: (20 / $base-font-size) + rem;
+  }
+
+  .small-menu{  text-align: center;  }
 }

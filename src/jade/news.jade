@@ -39,4 +39,17 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
 
         include includes/_footer
 
+            script.
+                var validator = new FormValidator('feedback-form', [{
+                        name: 'name',
+                        rules: 'required'
+                        }, {
+                            name: 'email',
+                            rules: 'valid_email'
+                            }], function(errors) {
+                                if (errors.length > 0) {
+                                alert('form not valid')
+                            }
+                });
+
         //include includes/_outdate-browers

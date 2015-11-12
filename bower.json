@@ -18,5 +18,7 @@
     "vanilla-lazyload": "~1.5.7",
     "owl.carousel": "owl-carousel2#~2.0.0-beta.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "validatejs": "~1.5.1"
+  }
 }

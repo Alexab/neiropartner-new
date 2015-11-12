@@ -56,5 +56,20 @@ window.onload = function(){
 
     // Toogle sliders on project pages
     toggleSliders();
+
+
+    // Validate form
+    //var validator = new FormValidator('feedback-form', [{
+    //    name: 'name',
+    //    rules: 'required'
+    //}, {
+    //    name: 'email',
+    //    rules: 'valid_email'
+    //}], function(errors) {
+    //    if (errors.length > 0) {
+    //        alert('form not valid')
+    //    }
+    //});
+
 };
 

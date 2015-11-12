@@ -415,11 +415,11 @@
           <p class="feedback__invite">Принимаются предложения по инвестированию проектов</p>
           <p class="feedback__subinvite">Если вас заинтересовала наша деятельность и вы хотите сотрудничать с нами, заполните форму</p>
         </div>
-        <form class="feedback__form">
+        <form name="feedback-form" class="feedback__form">
           <div class="feedback__form-left">
-            <input type="text" placeholder="Имя" required spellcheck="true" class="feedback__input">
-            <input type="email" placeholder="Эл. почта" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" spellcheck="true" class="feedback__input">
-            <input type="tel" placeholder="Телефон" required pattern="(+?d[- .]*){7,13}" spellcheck="true" title="Международный, государственный или местный телефонный номер" class="feedback__input">
+            <input type="text" placeholder="Имя" name="name" class="feedback__input">
+            <input type="email" placeholder="Эл. почта" name="email" class="feedback__input">
+            <input type="tel" placeholder="Телефон" name="phone" class="feedback__input">
             <select required class="feedback__select">
               <option>Я - пациент</option>
               <option>Я - врач или специалист</option>
@@ -429,7 +429,7 @@
             </select>
           </div>
           <div class="feedback__form-right">
-            <textarea placeholder="Сообщение" required spellcheck="true" class="feedback__textarea"></textarea>
+            <textarea placeholder="Сообщение" name="message" class="feedback__textarea"></textarea>
             <button title="Отправить" class="btn btn--all btn--feedback">Отправить</button>
           </div>
         </form>

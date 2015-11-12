@@ -19,13 +19,15 @@ window.onload = function(){
         items: 1,
         nav: true,
         dots: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
+        //autoplay: true,
+        //autoplayTimeout: 4000,
         autoplayHoverPause: true,
         navContainer: ".owl-own-nav",
         navText:[],
         loop: true,
-        animateOut: 'fadeOut'
+        lazyLoad:true,
+        smartSpeed:1000
+        //animateOut: 'fadeOut'
     });
 
     // Center header slider dots
@@ -33,6 +35,9 @@ window.onload = function(){
 
     // Call Owl-Carousel on our works block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-works-slider", 4, ".owl-own-nav-works");
+
+    // Call Owl-Carousel on our works block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-about-slider", 4, ".owl-own-nav-about");
 
     // Call Owl-Carousel on projects block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-projects-slider", 3, ".owl-own-nav-projects");
@@ -42,6 +47,9 @@ window.onload = function(){
 
     // Call Owl-Carousel on video block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-video-slider", 3, ".owl-own-nav-video");
+
+    // Call Owl-Carousel on video block if there os more than 4 works
+    setOwlCarouselIfMoreThen(".js-owl-patents-slider", 4, ".owl-own-nav-patents");
 
     // Find html5 video and activate
     //videoHTML5Youtube();

@@ -1,0 +1,45 @@
+include mixins/patent
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+
+    include includes/_head
+
+    body
+
+        include includes/_header
+
+        main
+
+            .wrapper.wrapper--blue2grey-light
+                .container
+                    include includes/breadcrumbs
+                    article.paper
+                        p.paper__journal Патент №2466756
+                        h1.paper__title.
+                            Способ моделирования лечения больных с хроническим
+                            поражением спинного мозга на лабораторных животных
+                        p.paper__authors.
+                            Pavel E. Musienko1,2, Pavel V. Zelenin3, Vladimir F. Lyalka3, Yury P. Gerasimenko1, Grigory N. Orlovsky3,
+                            and Tatiana G. Deliagina3
+                        h2.paper__subtitle Формула изобретения
+                        p.paper__text.
+                            Изобретение относится к медицине, а также к физиологии движений и электрофизиологии. Проводят полную перерезку спинного мозга животного на нижнегрудном уровне. К стимуляции приступают через 3 недели после спинализации. Осуществляют электрическую стимуляцию животного с помощью биполярных электродов. Задние конечности животного опираются на ленту тредбана. При этом электроды накладывают на кожу задней поверхности бедра или промежности животного. Стимулируют указанные зоны с частотой 5 Гц, длительностью импульса 20 мс при интенсивности 1-10 мА. Способ позволяет активизировать локомоторные и постуральные движения после повреждения спинного мозга неинвазивным или малоинвазивным воздействием. 1 ил., 1 пр.
+
+                        img(data-original='img/paper-img.jpg' alt='Spinal and Supraspinal Control of the Direction of Stepping during Locomotion' title='Spinal and Supraspinal Control of the Direction of Stepping during Locomotion').paper__img.lazyload
+                        p.paper__source.
+                            Источник
+                            <a href="javascript:void(0)" title="Источник">http://www.jneurosci.org/content/32/48/17442.long</a>
+
+                    // Articles
+                    .our-patents-slider
+                        .owl-own-nav-patents
+                        .slider-container.js-owl-patents-slider
+                            - for (var i=0; i<6; i++ )
+                                +patent
+
+            include includes/partners
+            include includes/feedback-form
+
+        include includes/_footer
+
+        //include includes/_outdate-browers

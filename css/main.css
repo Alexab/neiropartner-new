@@ -4591,6 +4591,10 @@ img:not([src])
 
     color: #81868b;
 }
+.paper__journal--about-page
+{
+    margin-bottom: 15px;
+}
 .paper__title
 {
     font-family: 'HelveticaNeueCyr-Medium', sans-serif;
@@ -4651,6 +4655,18 @@ img:not([src])
     line-height: 26px;
 
     color: #4b4b4b;
+}
+.paper__date
+{
+    font-family: 'HelveticaNeueCyr-Light', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    color: #81868b;
 }
 
 @media (min-width: 48em) and (max-width: 81.24em)

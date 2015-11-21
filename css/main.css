@@ -5645,8 +5645,10 @@ img:not([src])
 
 .js-owl-top-slider .owl-dots
 {
-    position: absolute;
-    bottom: -35px;
+    display: table;
+
+    margin: 0 auto;
+    margin-top: 13px;
 }
 .js-owl-top-slider .owl-dots .owl-dot
 {
@@ -5674,7 +5676,9 @@ img:not([src])
 .owl-own-nav
 {
     position: absolute;
-    top: calc(50% - 46px); 
+    top: calc(50% - 46px);
+
+    display: none; 
 
     width: 100%;
 }

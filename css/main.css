@@ -5282,7 +5282,7 @@ img:not([src])
 {
     font-size: 0;
 
-    width: 720px;
+    width: 580px;
     height: 15px;
     margin: 0 auto;
 
@@ -5294,10 +5294,11 @@ img:not([src])
 {
     display: inline-block;
 
-    width: 120px;
+    width: 580px;
     height: 15px;
 
-    border-radius: 0 0 4px 4px;
+    background: -webkit-linear-gradient(right, #d8d8d8 0%, #003a92 11%, #47a3d1 92%, #d8d8d8 100%);
+    background:         linear-gradient(to left, #d8d8d8 0%, #003a92 11%, #47a3d1 92%, #d8d8d8 100%);
 }
 .header-top-line__strip--grey
 {

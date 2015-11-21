@@ -26,8 +26,9 @@ window.onload = function(){
         navText:[],
         loop: true,
         lazyLoad:true,
-        smartSpeed:1000
-        //animateOut: 'fadeOut'
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        smartSpeed:500
     });
 
     // Center header slider dots

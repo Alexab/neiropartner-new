@@ -17,7 +17,7 @@ window.onload = function(){
     // Call Owl-Carousel on header slider
     $(".js-owl-top-slider").owlCarousel({
         items: 1,
-        nav: true,
+        nav: false,
         dots: true,
         //autoplay: true,
         //autoplayTimeout: 4000,
@@ -32,7 +32,7 @@ window.onload = function(){
     });
 
     // Center header slider dots
-    positionedAbsoluteElementHorizontalCenter('.js-owl-top-slider','.owl-dots');
+    //positionedAbsoluteElementHorizontalCenter('.js-owl-top-slider','.owl-dots');
 
     // Call Owl-Carousel on our works block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-works-slider", 4, ".owl-own-nav-works");

@@ -4932,7 +4932,7 @@ img:not([src])
 
     background-image: url(../img/sprite/png-sprite.png);
     background-repeat: no-repeat;
-    background-position: -646px -47px;
+    background-position: -637px -47px;
 }
 
 .bottles
@@ -4946,7 +4946,7 @@ img:not([src])
 
     background-image: url(../img/sprite/png-sprite.png);
     background-repeat: no-repeat;
-    background-position: -447px -47px;
+    background-position: -438px -47px;
 }
 
 .wrapper--grey
@@ -5201,7 +5201,7 @@ img:not([src])
 
     opacity: .7; 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -1002px -47px;
+    background-position: -993px -47px;
 }
 .pagination__link--arrow-left:hover,
 .pagination__link--arrow-right:hover
@@ -5700,7 +5700,7 @@ img:not([src])
     height: 92px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 .owl-own-nav .owl-next
 {
@@ -5718,7 +5718,7 @@ img:not([src])
             transform: rotate(180deg); 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 
 .problem
@@ -5789,24 +5789,24 @@ img:not([src])
 }
 .direction__icon--philosophy
 {
-    width: 148px;
-    height: 148px; 
+    width: 145px;
+    height: 144px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -149px -47px;
+    background-position: -146px -47px;
 }
 .direction__icon--principles
 {
-    width: 148px;
-    height: 148px; 
+    width: 145px;
+    height: 144px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -298px -47px;
+    background-position: -292px -47px;
 }
 .direction__icon--directions
 {
-    width: 148px;
-    height: 148px; 
+    width: 145px;
+    height: 144px; 
 
     background-image: url(../img/sprite/png-sprite.png);
     background-position: 0 -47px;
@@ -6099,7 +6099,7 @@ img:not([src])
     height: 92px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 .owl-own-nav-projects .owl-next
 {
@@ -6117,7 +6117,7 @@ img:not([src])
             transform: rotate(180deg); 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 
 .projects-slider
@@ -6348,7 +6348,7 @@ img:not([src])
     margin-bottom: 40px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -544px -47px;
+    background-position: -535px -47px;
 }
 .consalting-bids__text
 {
@@ -6481,7 +6481,7 @@ img:not([src])
     height: 92px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 .owl-own-nav-video .owl-next
 {
@@ -6499,7 +6499,7 @@ img:not([src])
             transform: rotate(180deg); 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 
 .video-owl-slider
@@ -6780,7 +6780,7 @@ img:not([src])
     height: 92px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 .owl-own-nav-works .owl-next
 {
@@ -6798,7 +6798,7 @@ img:not([src])
             transform: rotate(180deg); 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 
 .our-works-slider
@@ -6981,7 +6981,7 @@ img:not([src])
     height: 92px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 .owl-own-nav-patents .owl-next
 {
@@ -6999,7 +6999,7 @@ img:not([src])
             transform: rotate(180deg); 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 
 .our-patents-slider
@@ -7182,7 +7182,7 @@ img:not([src])
     height: 92px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 .owl-own-nav-about .owl-next
 {
@@ -7200,7 +7200,7 @@ img:not([src])
             transform: rotate(180deg); 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 
 .our-about-slider
@@ -7279,7 +7279,7 @@ img:not([src])
     height: 92px;
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 .owl-own-nav-partners .owl-next
 {
@@ -7297,7 +7297,7 @@ img:not([src])
             transform: rotate(180deg); 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -387px;
+    background-position: 0 -383px;
 }
 
 .partner
@@ -7780,7 +7780,7 @@ img:not([src])
     height: 33px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -885px -47px;
+    background-position: -876px -47px;
 }
 .footer__social-icon--vk
 {
@@ -7788,7 +7788,7 @@ img:not([src])
     height: 33px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -918px -47px;
+    background-position: -909px -47px;
 }
 .footer__social-icon--fb
 {
@@ -7796,7 +7796,7 @@ img:not([src])
     height: 33px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -852px -47px;
+    background-position: -843px -47px;
 }
 .footer__social-link
 {
@@ -7914,7 +7914,7 @@ img:not([src])
     height: 30px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -646px -90px;
+    background-position: -637px -90px;
 }
 .contacts__item--email:before
 {
@@ -7922,7 +7922,7 @@ img:not([src])
     height: 17px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -977px -47px;
+    background-position: -968px -47px;
 }
 .contacts__item--phone:before
 {
@@ -7930,7 +7930,7 @@ img:not([src])
     height: 27px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -951px -47px;
+    background-position: -942px -47px;
 }
 .contacts__item--data
 {
@@ -8265,7 +8265,7 @@ img:not([src])
     margin-top: 0; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -786px -47px;
+    background-position: -777px -47px;
 }
 .cooperation-needs__item--expirience:before
 {
@@ -8273,7 +8273,7 @@ img:not([src])
     height: 68px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -318px;
+    background-position: 0 -314px;
 }
 .cooperation-needs__item--ideas:before
 {
@@ -8281,7 +8281,7 @@ img:not([src])
     height: 63px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -254px;
+    background-position: 0 -250px;
 }
 .cooperation-needs__item--offers:before
 {
@@ -8289,7 +8289,7 @@ img:not([src])
     height: 57px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: 0 -196px;
+    background-position: 0 -192px;
 }
 .cooperation-needs__item--investments:before
 {
@@ -8297,7 +8297,7 @@ img:not([src])
     height: 49px; 
 
     background-image: url(../img/sprite/png-sprite.png);
-    background-position: -447px -142px;
+    background-position: -438px -142px;
 }
 .cooperation-needs__title
 {

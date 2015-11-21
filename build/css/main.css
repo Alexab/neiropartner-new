@@ -5587,6 +5587,10 @@ img:not([src])
 
     color: #47494e;
 }
+.slider__blockquote
+{
+    margin-left: 20px;
+}
 .slider__blockquote-text
 {
     font-family: 'Georgia-Italic', sans-serif;
@@ -7545,7 +7549,7 @@ img:not([src])
     padding-left: 15px;
 
     color: #fff;
-    border: 1px solid #7f8083;
+    border: 2px solid #7f8083;
     border-radius: 5px;
     outline: none;
     background-color: transparent;
@@ -7556,6 +7560,10 @@ img:not([src])
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+}
+.feedback__select option
+{
+    color: #000;
 }
 .feedback__select::-webkit-input-placeholder
 {
@@ -8095,7 +8103,7 @@ img:not([src])
     padding-left: 15px;
 
     color: #4b4b4b;
-    border: 1px solid #7f8083;
+    border: 2px solid #7f8083;
     border-radius: 5px;
     outline: none;
     background-color: transparent;

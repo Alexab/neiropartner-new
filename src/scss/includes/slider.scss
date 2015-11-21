@@ -53,7 +53,7 @@
     text-align: right;
   }
   &__blockquote{
-
+    margin-left: 20px;
   }
   &__blockquote-text{
     @include font-family('Georgia-Italic');

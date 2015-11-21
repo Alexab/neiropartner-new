@@ -7706,9 +7706,9 @@ img:not([src])
 .footer__left
 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 700px;
-        -ms-flex: 0 0 700px;
-            flex: 0 0 700px;
+    -webkit-flex: 0 0 740px;
+        -ms-flex: 0 0 740px;
+            flex: 0 0 740px;
 }
 .footer__right
 {
@@ -7766,7 +7766,7 @@ img:not([src])
 .footer__menu-link
 {
     font-family: 'HelveticaNeueCyr-Roman', sans-serif;
-    font-size: .875rem; 
+    font-size: 13px; 
     font-weight: normal;
     font-style: normal;
 

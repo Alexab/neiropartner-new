@@ -6,15 +6,20 @@
     margin: 0 auto;
     text-align: center;
     height: 15px;
-    width: 720px;
+    width: 580px;
     font-size: 0;
     background-color: $color-header-top-line-wrapper;
   }
   &__strip{
-    height: 15px;
+    //height: 15px;
+    //display: inline-block;
+    //width: 120px;
+    //border-radius: 0 0 4px 4px;
+    width: 580px;
     display: inline-block;
-    width: 120px;
-    border-radius: 0 0 4px 4px;
+    height: 15px;
+    background: $color-header-top-gradient;
+
 
     &--grey{
       background-color: $color-header-top-line;

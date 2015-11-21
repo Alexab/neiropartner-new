@@ -5587,6 +5587,10 @@ img:not([src])
 
     color: #47494e;
 }
+.slider__blockquote
+{
+    margin-left: 20px;
+}
 .slider__blockquote-text
 {
     font-family: 'Georgia-Italic', sans-serif;

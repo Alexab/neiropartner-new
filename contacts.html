@@ -289,9 +289,9 @@
         <form class="contacts__form">
           <h2 class="contacts__title">Мы ждем ваших писем</h2>
           <div class="contacts__form-left">
-            <input type="text" placeholder="Имя" required spellcheck="true" class="contacts__input">
-            <input type="email" placeholder="Эл. почта" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" spellcheck="true" class="contacts__input">
-            <input type="tel" placeholder="Телефон" required pattern="(+?d[- .]*){7,13}" spellcheck="true" title="Международный, государственный или местный телефонный номер" class="contacts__input">
+            <input type="text" placeholder="Имя" name="name" id="name" required data-msg="" class="contacts__input">
+            <input type="email" placeholder="Эл. почта" name="email" required data-msg="" class="contacts__input">
+            <input type="tel" placeholder="Телефон" name="phone" class="contacts__input">
             <select required class="contacts__select">
               <option>Я - пациент</option>
               <option>Я - врач или специалист</option>
@@ -301,8 +301,11 @@
             </select>
           </div>
           <div class="contacts__form-right">
-            <textarea placeholder="Сообщение" required spellcheck="true" class="contacts__textarea"></textarea>
-            <button title="Отправить" class="btn btn--all btn--feedback">Отправить</button>
+            <textarea placeholder="Сообщение" name="message" required data-msg="" class="contacts__textarea"></textarea>
+            <button title="Отправить" type="submit" class="btn btn--all btn--feedback">Отправить</button>
+          </div>
+          <div class="contacts__aftersubmit">
+            <p class="contacts__aftersubmit-text">Сообщение отправлено - мы свяжемся с Вами в ближайшее время. Спасибо!</p>
           </div>
         </form>
       </div>

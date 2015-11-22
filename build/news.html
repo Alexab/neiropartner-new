@@ -327,10 +327,10 @@
             <p class="feedback__invite">Принимаются предложения по инвестированию проектов</p>
             <p class="feedback__subinvite">Если вас заинтересовала наша деятельность и вы хотите сотрудничать с нами, заполните форму</p>
           </div>
-          <form name="feedback-form" class="feedback__form">
+          <form name="feedback-form" id="feedback-form" class="feedback__form">
             <div class="feedback__form-left">
-              <input type="text" placeholder="Имя" name="name" class="feedback__input">
-              <input type="email" placeholder="Эл. почта" name="email" class="feedback__input">
+              <input type="text" placeholder="Имя" name="name" id="name" required data-msg="" class="feedback__input">
+              <input type="email" placeholder="Эл. почта" name="email" required data-msg="" class="feedback__input">
               <input type="tel" placeholder="Телефон" name="phone" class="feedback__input">
               <select required class="feedback__select">
                 <option>Я - пациент</option>
@@ -341,8 +341,11 @@
               </select>
             </div>
             <div class="feedback__form-right">
-              <textarea placeholder="Сообщение" name="message" class="feedback__textarea"></textarea>
-              <button title="Отправить" class="btn btn--all btn--feedback">Отправить</button>
+              <textarea placeholder="Сообщение" name="message" required data-msg="" class="feedback__textarea"></textarea>
+              <button title="Отправить" type="submit" class="btn btn--all btn--feedback">Отправить</button>
+            </div>
+            <div class="feedback__aftersubmit">
+              <p class="feedback__aftersubmit-text">Сообщение отправлено - мы свяжемся с Вами в ближайшее время. Спасибо!</p>
             </div>
           </form>
         </div>

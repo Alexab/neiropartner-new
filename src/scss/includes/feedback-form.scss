@@ -30,6 +30,14 @@
   &__form{
     flex: 0 0 660px;
     display: flex;
+
+    & label.error{
+      color: red;
+    }
+    & input.error, textarea.error{
+      border: 1px dashed red;
+    }
+
   }
   &__form-left{
     width: 265px;
@@ -42,6 +50,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+  }
+  &__aftersubmit{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+  }
+  &__aftersubmit-text{
+    @include font-family('OpenSans-Regular');
+    font-size: 1rem;
+    color: $color-feedback-inputs;
   }
   &__input{
     box-sizing: border-box;

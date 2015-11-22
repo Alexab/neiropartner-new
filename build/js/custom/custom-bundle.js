@@ -1,5 +1,44 @@
 window.onload = function(){
 
+    // Form validate
+    //$("form").each( function() {
+    //    $(this).validate();
+    //} );
+
+    form = $("form");
+
+    form.each( function() {
+        $(this).validate({
+            //submitHandler: function (form) {
+            //    $('.feedback__form-left, .feedback__form-right').hide();
+            //    $('.feedback__aftersubmit').show();
+            //    $('.contacts__form-left, .contacts__form-right').hide();
+            //    $('.contacts__aftersubmit').show();
+            //    //form.submit();
+            //}
+        });
+    } );
+
+    form.submit (function(event) {
+        if (form.valid())
+        {
+            $('.feedback__form-left, .feedback__form-right').hide();
+            $('.feedback__aftersubmit').show();
+            $('.contacts__form-left, .contacts__form-right').hide();
+            $('.contacts__aftersubmit').show();
+
+            $.ajax({
+                type: form.attr("method"), // use method specified in form attributes
+                url: form.attr("action"), // use action specified in form attributes
+                data: form.serialize(), // encodes set of form elements as string for submission
+                success: function(data) {
+                    // get response from servlet and display on page via jQuery
+                }
+            });
+        }
+        event.preventDefault(); // stop form from redirecting to java servlet page
+    });
+
     /**
      * Init Images lazy loading
      * https://github.com/verlok/lazyload
@@ -19,8 +58,6 @@ window.onload = function(){
         items: 1,
         nav: false,
         dots: true,
-        //autoplay: true,
-        //autoplayTimeout: 4000,
         autoplayHoverPause: true,
         navContainer: ".owl-own-nav",
         navText:[],
@@ -52,25 +89,10 @@ window.onload = function(){
     // Call Owl-Carousel on video block if there os more than 4 works
     setOwlCarouselIfMoreThen(".js-owl-patents-slider", 4, ".owl-own-nav-patents");
 
-    // Find html5 video and activate
-    //videoHTML5Youtube();
-
     // Toogle sliders on project pages
     toggleSliders();
 
-
-    // Validate form
-    //var validator = new FormValidator('feedback-form', [{
-    //    name: 'name',
-    //    rules: 'required'
-    //}, {
-    //    name: 'email',
-    //    rules: 'valid_email'
-    //}], function(errors) {
-    //    if (errors.length > 0) {
-    //        alert('form not valid')
-    //    }
-    //});
+    //$('#feedback-form').validate();
 
 };
 

@@ -25,9 +25,9 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
                 form.contacts__form
                     h2.contacts__title Мы ждем ваших писем
                     .contacts__form-left
-                        input(type="text" placeholder="Имя" required spellcheck="true").contacts__input
-                        input(type="email" placeholder="Эл. почта" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" spellcheck="true").contacts__input
-                        input(type="tel" placeholder="Телефон" required pattern="(\+?\d[- .]*){7,13}" spellcheck="true" title="Международный, государственный или местный телефонный номер").contacts__input
+                        input(type="text" placeholder="Имя"  name='name' id='name' required data-msg="").contacts__input
+                        input(type="email" placeholder="Эл. почта" name='email' required data-msg="").contacts__input
+                        input(type="tel" placeholder="Телефон"  name='phone').contacts__input
                         select(required).contacts__select
                             option Я - пациент
                             option Я - врач или специалист
@@ -35,8 +35,10 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
                             option Хочу к Вам присоединиться и работать в Нейро-Партнере
                             option Другое
                     .contacts__form-right
-                        textarea(placeholder="Сообщение" required spellcheck="true").contacts__textarea
-                        button(title="Отправить").btn.btn--all.btn--feedback Отправить
+                        textarea(placeholder="Сообщение" name='message' required data-msg="").contacts__textarea
+                        button(title="Отправить" type='submit').btn.btn--all.btn--feedback Отправить
+                    .contacts__aftersubmit
+                        p.contacts__aftersubmit-text Сообщение отправлено - мы свяжемся с Вами в ближайшее время. Спасибо!
 
         include includes/_footer--contacts
         include includes/_outdate-browers

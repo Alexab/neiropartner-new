@@ -5,10 +5,10 @@
             p.feedback__invite Принимаются предложения по инвестированию проектов
             p.feedback__subinvite Если вас заинтересовала наша деятельность и вы хотите сотрудничать с нами, заполните форму
 
-        form(name='feedback-form').feedback__form
+        form(name='feedback-form').feedback__form#feedback-form
             .feedback__form-left
-                input(type="text" placeholder="Имя"  name='name').feedback__input
-                input(type="email" placeholder="Эл. почта" name='email').feedback__input
+                input(type="text" placeholder="Имя"  name='name' id='name' required data-msg="").feedback__input
+                input(type="email" placeholder="Эл. почта" name='email' required data-msg="").feedback__input
                 input(type="tel" placeholder="Телефон"  name='phone').feedback__input
                 select(required).feedback__select
                     option Я - пациент
@@ -17,5 +17,7 @@
                     option Хочу к Вам присоединиться и работать в Нейро-Партнере
                     option Другое
             .feedback__form-right
-                textarea(placeholder="Сообщение" name='message').feedback__textarea
-                button(title="Отправить").btn.btn--all.btn--feedback Отправить
+                textarea(placeholder="Сообщение" name='message' required data-msg="").feedback__textarea
+                button(title="Отправить" type='submit').btn.btn--all.btn--feedback Отправить
+            .feedback__aftersubmit
+                p.feedback__aftersubmit-text Сообщение отправлено - мы свяжемся с Вами в ближайшее время. Спасибо!

@@ -17,9 +17,8 @@
     "sass-mq": "~3.2.4",
     "vanilla-lazyload": "~1.5.7",
     "owl.carousel": "owl-carousel2#~2.0.0-beta.3",
-    "animate.css": "~3.4.0"
+    "animate.css": "~3.4.0",
+    "jquery-validation": "~1.14.0"
   },
-  "dependencies": {
-    "validatejs": "~1.5.1"
-  }
+  "dependencies": {}
 }

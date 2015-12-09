@@ -6382,7 +6382,6 @@ img:not([src])
 .video-slider__item
 {
     width: 360px;
-    height: 228px;
 }
 .video-slider__item:hover .video-slider__video-title
 {
@@ -6517,7 +6516,7 @@ img:not([src])
     position: relative;
 
     width: 100%; 
-    margin-top: 55px;
+    margin-bottom: 55px;
 }
 
 .mission-wrapper

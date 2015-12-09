@@ -129,7 +129,6 @@
 
     &__item{
         width: 360px;
-        height: 228px;
         &:hover .video-slider__video-title{
             color: $color-consalting-video-title--hover;
         }
@@ -204,7 +203,7 @@
 }
 
 .video-owl-slider{
-    margin-top: 55px;
+  margin-bottom: 55px;
     position: relative;
     width: 100%;
 }

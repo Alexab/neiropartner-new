@@ -8,15 +8,7 @@ window.onload = function(){
     form = $("form");
 
     form.each( function() {
-        $(this).validate({
-            //submitHandler: function (form) {
-            //    $('.feedback__form-left, .feedback__form-right').hide();
-            //    $('.feedback__aftersubmit').show();
-            //    $('.contacts__form-left, .contacts__form-right').hide();
-            //    $('.contacts__aftersubmit').show();
-            //    //form.submit();
-            //}
-        });
+        $(this).validate({});
     } );
 
     form.submit (function(event) {

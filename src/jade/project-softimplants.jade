@@ -48,8 +48,8 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
                         a(href='javascript:void(0)' title='Статьи').js-find-articles.small-menu__link.small-menu__link--active Статьи
                     li.small-menu__item
                         a(href='javascript:void(0)' title='Патенты').js-find-patents.small-menu__link Патенты
-                    li.small-menu__item
-                        a(href='javascript:void(0)' title='Видео').js-find-video.small-menu__link Видео
+                    //li.small-menu__item
+                    //    a(href='javascript:void(0)' title='Видео').js-find-video.small-menu__link Видео
 
 
                 .sliders.js-articles
@@ -66,13 +66,13 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
                             - for (var i=0; i<6; i++ )
                                 +patent
                     a(href='ourworks.html' title="Все патенты НейроПартнер").btn.btn--all Все патенты
-                .sliders.js-video
-                    .video-owl-slider.video-slider
-                        .owl-own-nav-video
-                        .container.js-owl-video-slider
-                            - for (var i=0; i<3; i++ )
-                                +video
-                    a(href='ourworks.html' title="Все видео НейроПартнер").btn.btn--all Все видео
+                //.sliders.js-video
+                //    .video-owl-slider.video-slider
+                //        .owl-own-nav-video
+                //        .container.js-owl-video-slider
+                //            - for (var i=0; i<3; i++ )
+                //                +video
+                //    a(href='ourworks.html' title="Все видео НейроПартнер").btn.btn--all Все видео
 
         include includes/partners
         include includes/feedback-form

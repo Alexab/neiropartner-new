@@ -165,7 +165,6 @@ img:not([src]) {
 }
 
 .small-menu{
-  margin-top: 0;
   list-style: none;
   position: relative;
   margin-bottom: 60px;
@@ -257,6 +256,10 @@ img:not([src]) {
 .sliders{
   display: flex;
   flex-wrap: wrap;
+
+  &.hide{
+    display: none;
+  }
 }
 
 .slider-container{

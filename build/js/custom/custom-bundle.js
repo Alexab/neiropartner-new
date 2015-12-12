@@ -82,9 +82,7 @@ window.onload = function(){
     setOwlCarouselIfMoreThen(".js-owl-patents-slider", 4, ".owl-own-nav-patents");
 
     // Toogle sliders on project pages
-    toggleSliders();
-
-    //$('#feedback-form').validate();
+    initArticlesTabs();
 
 };
 
@@ -145,44 +143,75 @@ function setOwlCarouselIfMoreThen(container, count, navContainer) {
 }
 
 /* Toogle sliders */
+var tabLinks = new Array();
+var contentDivs = new Array();
 
-function toggleSliders(){
-    if (document.querySelectorAll('.sliders')) {
-        var links = document.querySelectorAll('.small-menu__link'),
-            articles = document.querySelector('.js-articles'),
-            patents = document.querySelector('.js-patents'),
-            video = document.querySelector('.js-video');
 
-        patents.style.display='none';
-        video.style.display='none';
-        articles.style.display='flex';
+function initArticlesTabs() {
 
-        for (i=0; i < links.length; i++){
-            links[i].onclick = function(){
-
-                for (m=0; m < links.length; m++){
-                    links[m].classList.remove('small-menu__link--active');
-                }
-
-                this.classList.add('small-menu__link--active');
-                if (this.classList.contains('js-find-articles')){
-                    patents.style.display='none';
-                    video.style.display='none';
-                    articles.style.display='flex';
-                } else if (this.classList.contains('js-find-patents')) {
-                    patents.style.display='flex';
-                    video.style.display='none';
-                    articles.style.display='none';
-                } else if (this.classList.contains('js-find-video')) {
-                    patents.style.display='none';
-                    video.style.display='flex';
-                    articles.style.display='none';
-                }
-
-            }
+    // Grab the tab links and content divs from the page
+    var tabListItems = document.querySelector('.js-article-tabs').childNodes;
+    for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+            var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+            var id = getHash( tabLink.getAttribute('href') );
+            tabLinks[id] = tabLink;
+            contentDivs[id] = document.getElementById( id );
         }
     }
+
+    // Assign onclick events to the tab links, and
+    // highlight the first tab
+    var i = 0;
+
+    for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'small-menu__link small-menu__link--active';
+        i++;
+    }
+
+    // Hide all content divs except the first
+    var i = 0;
+
+    for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'sliders hide';
+        i++;
+    }
 }
+
+function showTab() {
+    var selectedId = getHash( this.getAttribute('href') );
+
+    // Highlight the selected tab, and dim all others.
+    // Also show the selected content div, and hide all others.
+    for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+            tabLinks[id].className = 'small-menu__link small-menu__link--active';
+            contentDivs[id].className = 'sliders';
+        } else {
+            tabLinks[id].className = 'small-menu__link';
+            contentDivs[id].className = 'sliders hide';
+        }
+    }
+
+    // Stop the browser following the link
+    return false;
+}
+
+function getFirstChildWithTagName( element, tagName ) {
+    for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+    }
+}
+
+function getHash( url ) {
+    var hashPos = url.lastIndexOf ( '#' );
+    return url.substring( hashPos + 1 );
+}
+
+
+
 
 var videoHTML5Youtube = function () {
     var videos = document.querySelectorAll("video");

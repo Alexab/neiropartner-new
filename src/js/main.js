@@ -82,9 +82,7 @@ window.onload = function(){
     setOwlCarouselIfMoreThen(".js-owl-patents-slider", 4, ".owl-own-nav-patents");
 
     // Toogle sliders on project pages
-    toggleSliders();
-
-    //$('#feedback-form').validate();
+    initArticlesTabs();
 
 };
 

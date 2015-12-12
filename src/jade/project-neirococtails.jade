@@ -1,6 +1,3 @@
-include mixins/work
-include mixins/video
-include mixins/patent
 include mixins/project-infoblock
 doctype
 html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
@@ -38,37 +35,7 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
                 // Infoblock
                 +project-infoblock('Проект основывается на ряде предшествующих патентов и экспериментальных статей')
 
-                // Articles
-                ul.small-menu
-                    li.small-menu__item
-                        a(href='javascript:void(0)' title='Статьи').js-find-articles.small-menu__link.small-menu__link--active Статьи
-                    li.small-menu__item
-                        a(href='javascript:void(0)' title='Патенты').js-find-patents.small-menu__link Патенты
-                    li.small-menu__item
-                        a(href='javascript:void(0)' title='Видео').js-find-video.small-menu__link Видео
-
-
-                .sliders.js-articles
-                    .our-works-slider
-                        .owl-own-nav-works
-                        .container.js-owl-works-slider
-                            - for (var i=0; i<6; i++ )
-                                +work
-                    a(href='ourworks-articles.html' title="Все статьи НейроПартнер").btn.btn--all Все статьи
-                .sliders.js-patents
-                    .our-works-slider
-                        .owl-own-nav-works
-                        .container.js-owl-works-slider
-                            - for (var i=0; i<6; i++ )
-                                +patent
-                    a(href='ourworks.html' title="Все патенты НейроПартнер").btn.btn--all Все патенты
-                .sliders.js-video
-                    .video-owl-slider.video-slider
-                        .owl-own-nav-video
-                        .container.js-owl-video-slider
-                            - for (var i=0; i<6; i++ )
-                                +video
-                    a(href='ourworks.html' title="Все видео НейроПартнер").btn.btn--all Все видео
+                include includes/project-tabs
 
         include includes/partners
         include includes/feedback-form

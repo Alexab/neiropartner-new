@@ -1,0 +1,51 @@
+doctype
+html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
+    include includes/_head
+    body
+        include includes/_header
+        main.wrapper.wrapper--blue2grey-light
+            .container.article-wrapper
+                // Submenu
+                ul.submenu
+                    li.submenu__item
+                        a(href='nervous-system.html' title='Нервная система').submenu__link Нервная система
+                    li.submenu__item
+                        a(href='disease.html' title='Заболевания').submenu__link Заболевания
+                    li.submenu__item
+                        a(href='disability.html' title='Проблема инвалидности').submenu__link.submenu__link--active Проблема инвалидности
+                    li.submenu__item
+                        a(href='neuroprosthesis.html' title='Нейропротезы').submenu__link Нейропротезы
+
+
+                h1.h1-title Инвалидность
+
+                // Article
+                article.article
+                    .article__left
+                        ul.article__list
+                            li.article__list-item
+                                p.article__text.
+                                    Проблема <a href="javascript:void(0)" title="инвалидизация">инвалидизации</a> населения имеет огромную актуальность
+                            li.article__list-item
+                                p.article__text.
+                                    По данным <a href='javascript:void(0)' title='ВОЗ'>ВОЗ</a> (Всемирная Ассоциация Здравоохранения) более
+                                    1 миллиарда человек (около 15% населения Земли) имеют какую-либо
+                                    форму инвалидности
+                            li.article__list-item
+                                p.article__text.
+                                    Из них 2 - 4% (от 110 до 190 миллионов взрослых людей) испытывают значительные трудности в функционировании
+                            li.article__list-item
+                                p.article__text.
+                                    На сегодняшний день в мире более 2 миллионов обездвиженных
+                                    людей с <a href="javascript:void(0)" title='вертебро-спинальной травмой'>вертебро-спинальной травмой</a>
+                            li.article__list-item
+                                p.article__text.
+                                    Каждый год появляется 50 тысяч парализованных больных
+
+                    .article__right
+                        img(src="img/disability.jpg" alt="Инвалидность" title="Инвалидность").article__right-img
+        include includes/partners
+        include includes/feedback-form
+        include includes/_footer
+        include includes/_outdate-browers
+

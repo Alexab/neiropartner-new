@@ -8432,7 +8432,9 @@ img:not([src])
 }
 .article__right
 {
-    text-align: center; 
+    padding-left: 60px; 
+
+    text-align: center;
 
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;

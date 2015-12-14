@@ -12,28 +12,39 @@
   flex: 0 0 32%;
   text-align: center;
   margin-bottom: 70px;
+  &--coctails{  text-align: right;}
   &__icon{
     background-repeat: no-repeat;
     background-position: center center;
     display: inline-block;
     background-size: contain;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 
     &--multi{
-      width: 319px;
-      height: 326px;
-      min-height: 335px;
+      //width: 319px;
+      //height: 326px;
+      width: 355px;
+      height: 325px;
+      //min-height: 335px;
       background-image: url(../img/project-neiro.png);
     }
     &--coctails{
-      width: 320px;
-      height: 335px;
-      min-height: 335px;
+      //width: 320px;
+      //height: 335px;
+      width: 305px;
+      height: 325px;
+      //height: 325px;
+      //min-height: 335px;
       background-image: url(../img/project-coctails.png);
     }
     &--implants{
-      width: 218px;
+      //width: 218px;
+      //height: 325px;
+      //min-height: 335px;
+      width: 280px;
       height: 325px;
-      min-height: 335px;
       background-image: url(../img/project-implants.png);
     }
   }

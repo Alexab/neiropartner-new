@@ -129,10 +129,11 @@ head
     script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
     <![endif]-->
 
-    // Async load CSS
-    script
-        include ../../js/custom/toHead/loadCSS.js
-
-    // Set yours main CSS file if JS is down
-    noscript
-        link(rel='stylesheet', href='css/main.min.css')
+    link(rel='stylesheet', href='css/main.min.css')
+    //// Async load CSS
+    //script
+    //    include ../../js/custom/toHead/loadCSS.js
+    //
+    //// Set yours main CSS file if JS is down
+    //noscript
+    //    link(rel='stylesheet', href='css/main.min.css')

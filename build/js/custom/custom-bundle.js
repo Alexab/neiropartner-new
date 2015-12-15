@@ -50,6 +50,7 @@ window.onload = function(){
         items: 1,
         nav: false,
         dots: true,
+        autoplay: true,
         autoplayHoverPause: true,
         navContainer: ".owl-own-nav",
         navText:[],

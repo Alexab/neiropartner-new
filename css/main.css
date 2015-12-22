@@ -5615,7 +5615,10 @@ img:not([src])
 }
 .slider__blockquote-cite
 {
+    font-family: 'Georgia-Italic', sans-serif;
     font-size: 1.25rem;
+    font-weight: normal;
+    font-style: normal;
     line-height: 40px;
 
     float: right; 

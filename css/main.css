@@ -5461,6 +5461,10 @@ img:not([src])
     background-color: #6da40e;
     box-shadow: inset 0 2px 0 0 #639a20;
 }
+.header__nav-link--news
+{
+    color: #bdbdbd;
+}
 .header__nav-link--contacts
 {
     line-height: 25px;

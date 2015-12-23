@@ -6584,8 +6584,8 @@ img:not([src])
 }
 .mission__img
 {
-    width: 792px;
-    height: 318px; 
+    width: 850px;
+    height: 355px; 
 
     background-image: url(../img/mission.png);
     background-repeat: no-repeat;

@@ -8973,20 +8973,13 @@ img:not([src])
     }
     .slider__slide-left
     {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 100%;
-            -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
+        width: 100%;
     }
     .slider__slide-right
     {
+        width: 100%;
         margin-top: 50px;
-        padding: 0 50px; 
-
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 100%;
-            -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
+        padding: 0 50px;
     }
     .slider__gradient
     {

@@ -5807,6 +5807,10 @@ img:not([src])
         -ms-flex: 0 0 32%;
             flex: 0 0 32%;
 }
+.direction:hover > .direction__title
+{
+    color: #2d54c2;
+}
 .direction__icon
 {
     display: inline-block; 

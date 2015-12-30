@@ -6222,7 +6222,7 @@ img:not([src])
 }
 .consalting__img
 {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 
     -o-object-fit: contain;

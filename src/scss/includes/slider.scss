@@ -34,7 +34,8 @@
     height: calc(100vh - 195px);
     max-height: 800px;
     min-height: 305px;
-    width: 100%;
+    //width: 100%;
+    max-width: 100%;
   }
   &__gradient{
     text-align: right;

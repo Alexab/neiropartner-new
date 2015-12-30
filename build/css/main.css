@@ -5564,7 +5564,7 @@ img:not([src])
 {
     position: relative;
 
-    width: 100%; 
+    max-width: 100%; 
     height: calc(100vh - 195px);
     min-height: 305px;
     max-height: 800px;

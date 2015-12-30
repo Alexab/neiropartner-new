@@ -7675,6 +7675,10 @@ img:not([src])
 
     color: #fff;
 }
+.feedback__select::-ms-expand
+{
+    display: none;
+}
 .feedback__select:focus
 {
     border: 2px solid #6889b1;

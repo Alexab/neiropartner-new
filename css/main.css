@@ -4856,6 +4856,14 @@ html
     box-sizing: border-box;
 }
 
+body
+{
+    font-smooth: always;
+
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
+
 img:not([src])
 {
     visibility: hidden;

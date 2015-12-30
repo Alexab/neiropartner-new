@@ -6211,7 +6211,9 @@ img:not([src])
 }
 .consalting__left
 {
-    text-align: center; 
+    width: 50%; 
+
+    text-align: center;
 
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
@@ -6220,7 +6222,8 @@ img:not([src])
 }
 .consalting__right
 {
-    padding-left: 25px; 
+    width: 50%; 
+    padding-left: 25px;
 
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;

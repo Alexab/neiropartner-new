@@ -8466,6 +8466,8 @@ img:not([src])
 }
 .article__left
 {
+    width: 50%; 
+
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
@@ -8473,7 +8475,8 @@ img:not([src])
 }
 .article__right
 {
-    padding-left: 60px; 
+    width: 50%; 
+    padding-left: 60px;
 
     text-align: center;
 

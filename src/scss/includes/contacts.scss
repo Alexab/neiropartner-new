@@ -155,6 +155,9 @@
     &:focus{
       border: 2px solid $color-contacts-inputs-border-focus;
     }
+    &::-ms-expand{
+      display: none;
+    }
   }
   &__textarea{
     @include font-family('OpenSans-Regular');
@@ -168,7 +171,7 @@
     border-radius: 5px;
     resize: none;
     outline: none;
-    height: 190px;
+    height: 195px;
     margin-bottom: 25px;
     &::placeholder{
       @include font-family('OpenSans-Regular');

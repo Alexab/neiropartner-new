@@ -6211,25 +6211,18 @@ img:not([src])
 }
 .consalting__left
 {
-    text-align: center; 
+    width: 50%; 
 
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    text-align: center;
 }
 .consalting__right
 {
-    padding-left: 25px; 
-
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    width: 50%; 
+    padding-left: 25px;
 }
 .consalting__img
 {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 
     -o-object-fit: contain;
@@ -7675,6 +7668,10 @@ img:not([src])
 
     color: #fff;
 }
+.feedback__select::-ms-expand
+{
+    display: none;
+}
 .feedback__select:focus
 {
     border: 2px solid #6889b1;
@@ -7688,7 +7685,7 @@ img:not([src])
     line-height: 40px;
 
     width: 100%;
-    height: 190px;
+    height: 195px;
     margin-bottom: 25px; 
     padding-left: 15px;
 
@@ -8261,6 +8258,10 @@ img:not([src])
 {
     border: 2px solid #b1d6fe;
 }
+.contacts__select::-ms-expand
+{
+    display: none;
+}
 .contacts__textarea
 {
     font-family: 'OpenSans-Regular', sans-serif;
@@ -8270,7 +8271,7 @@ img:not([src])
     line-height: 40px;
 
     width: 100%;
-    height: 190px;
+    height: 195px;
     margin-bottom: 25px; 
     padding-left: 15px;
 
@@ -8466,27 +8467,20 @@ img:not([src])
 }
 .article__left
 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    width: 50%;
 }
 .article__right
 {
-    padding-left: 60px; 
+    width: 50%; 
+    padding-left: 60px;
 
     text-align: center;
-
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
 }
 .article__right-img
 {
     display: inline-block; 
 
-    width: 100%;
+    max-width: 100%;
     height: auto;
 
     -o-object-fit: contain;
@@ -9587,12 +9581,7 @@ img:not([src])
     {
         width: 100%;
         margin-bottom: 50px;
-        padding: 0 50px; 
-
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 100%;
-            -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
+        padding: 0 50px;
     }
     .submenu
     {

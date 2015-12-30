@@ -113,6 +113,9 @@
       font-size: 1rem;
       color: $color-feedback-inputs;
     }
+    &::-ms-expand{
+      display: none;
+    }
     &:focus{
       border: 2px solid $color-feedback-inputs-border-focus;
     }
@@ -129,7 +132,7 @@
     border-radius: 5px;
     resize: none;
     outline: none;
-    height: 190px;
+    height: 195px;
     margin-bottom: 25px;
     &::placeholder{
       @include font-family('OpenSans-Regular');

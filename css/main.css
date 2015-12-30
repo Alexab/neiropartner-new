@@ -8466,12 +8466,7 @@ img:not([src])
 }
 .article__left
 {
-    width: 50%; 
-
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    width: 50%;
 }
 .article__right
 {
@@ -8479,11 +8474,6 @@ img:not([src])
     padding-left: 60px;
 
     text-align: center;
-
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
 }
 .article__right-img
 {

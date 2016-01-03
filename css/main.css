@@ -6072,6 +6072,8 @@ img:not([src])
     margin-top: 1.875rem;
     margin-bottom: 25px;
 
+    text-decoration: none; 
+
     color: #4b4b4b;
 
     -webkit-box-pack: center;
@@ -6082,6 +6084,10 @@ img:not([src])
     -webkit-align-items: center;
     -ms-flex-align: center;
             align-items: center;
+}
+.project__title:hover
+{
+    color: #2d54c2;
 }
 .project__text
 {

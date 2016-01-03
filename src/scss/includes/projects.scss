@@ -48,6 +48,11 @@
       background-image: url(../img/project-implants.png);
     }
   }
+  &__img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+  }
   &__title{
     @include font-family('HelveticaNeueCyr-Medium');
     font-size: 1.56rem;

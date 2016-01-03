@@ -6045,6 +6045,14 @@ img:not([src])
 
     background-image: url(../img/project-implants.png);
 }
+.project__img
+{
+    max-width: 100%;
+    height: auto; 
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
 .project__title
 {
     font-family: 'HelveticaNeueCyr-Medium', sans-serif;
@@ -9439,11 +9447,11 @@ img:not([src])
     }
     .projects-slider
     {
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .partners-slider
     {
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .partner
     {
@@ -9451,15 +9459,15 @@ img:not([src])
     }
     .our-works-slider
     {
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .our-patents-slider
     {
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .our-about-slider
     {
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .project
     {
@@ -9498,11 +9506,59 @@ img:not([src])
     .owl-own-nav-patents,
     .owl-own-nav-about
     {
-        width: calc(100% - 200px);
+        width: calc(100% - 120px);
+    }
+    .owl-own-nav-projects .owl-prev,
+    .owl-own-nav-projects .owl-next
+    {
+        width: 10px;
+    }
+    .owl-own-nav-works .owl-prev,
+    .owl-own-nav-works .owl-next
+    {
+        width: 10px;
+    }
+    .owl-own-nav-partners .owl-prev,
+    .owl-own-nav-partners .owl-next
+    {
+        width: 10px;
+    }
+    .owl-own-nav-video .owl-prev,
+    .owl-own-nav-video .owl-next
+    {
+        width: 10px;
+    }
+    .owl-own-nav-patents .owl-prev,
+    .owl-own-nav-patents .owl-next
+    {
+        width: 10px;
+    }
+    .owl-own-nav-about .owl-prev,
+    .owl-own-nav-about .owl-next
+    {
+        width: 10px;
+    }
+    .owl-own-nav-about .owl-prev,
+    .owl-own-nav-partners .owl-prev,
+    .owl-own-nav-patents .owl-prev,
+    .owl-own-nav-projects .owl-prev,
+    .owl-own-nav-video .owl-prev,
+    .owl-own-nav-works .owl-prev
+    {
+        left: -30px;
+    }
+    .owl-own-nav-about .owl-next,
+    .owl-own-nav-partners .owl-next,
+    .owl-own-nav-patents .owl-next,
+    .owl-own-nav-projects .owl-next,
+    .owl-own-nav-video .owl-next,
+    .owl-own-nav-works .owl-next
+    {
+        right: -90px;
     }
     .video-slider
     {
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .owl-item.active
     {

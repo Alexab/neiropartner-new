@@ -5281,6 +5281,11 @@ img:not([src])
             justify-content: space-between;
 }
 
+.m0-a
+{
+    margin: 0 auto;
+}
+
 .header-top-line
 {
     height: 6px;

@@ -101,7 +101,7 @@ img:not([src]) {
     color: $color-btn;
     background-color: $color-btn-bg;
     display: block;
-    margin: 0 auto;
+    //margin: 0 auto;
     &:hover{
       color: $color-btn;
       box-shadow: inset 0 2px 0 0 $color-btn-hover-shadow;
@@ -275,4 +275,8 @@ img:not([src]) {
   position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.m0-a{
+  margin: 0 auto;
 }

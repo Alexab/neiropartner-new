@@ -9490,7 +9490,6 @@ img:not([src])
     }
     .project__title
     {
-        font-size: .7rem;
         font-weight: bold;
     }
     .project__text

@@ -48,7 +48,7 @@ window.onload = function(){
     // Call Owl-Carousel on header slider
     $(".js-owl-top-slider").owlCarousel({
         items: 1,
-        nav: false,
+        nav: true,
         dots: true,
         autoplay: true,
         autoplayHoverPause: true,

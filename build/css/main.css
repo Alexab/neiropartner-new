@@ -5801,9 +5801,7 @@ img:not([src])
 .owl-own-nav
 {
     position: absolute;
-    top: calc(50% - 46px);
-
-    display: none; 
+    top: calc(50% - 46px); 
 
     width: 100%;
 }
@@ -9778,6 +9776,10 @@ img:not([src])
         display: -webkit-flex;
         display: -ms-flexbox;
         display:         flex;
+    }
+    .owl-own-nav
+    {
+        display: none;
     }
 }
 

@@ -5518,7 +5518,7 @@ img:not([src])
 
     position: absolute;
     z-index: 1;
-    top: 28px;
+    top: 18px;
     right: 30px;
 
     display: none; 
@@ -9202,6 +9202,11 @@ img:not([src])
     {
         top: -20px;
     }
+    .header__logo
+    {
+        width: 250px;
+        height: auto;
+    }
     .header__nav
     {
         line-height: 2rem;
@@ -9278,7 +9283,7 @@ img:not([src])
     {
         width: 100%;
         margin-bottom: 50px;
-        padding: 0 50px; 
+        padding: 0 10px; 
 
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 100%;

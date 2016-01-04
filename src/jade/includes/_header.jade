@@ -16,7 +16,7 @@ header
             a(href="index.html" title="НейроПартнер").header__logo-link
                 img(data-original="img/neiropartner-logo.png" alt="НейроПартнер. Лаборатория нейропротезов" title="НейроПартнер. Лаборатория нейропротезов").header__logo.lazyload
             // Header navigation
-            ul.header__nav
+            ul.header__nav#js-top-nav
                 li.header__nav-item
                     a(href="projects.html" title="Проекты").header__nav-link Проекты
                 li.header__nav-item
@@ -31,3 +31,7 @@ header
                     a(href="cooperation.html" title="Сотрудничество").header__nav-link.header__nav-link--partnership Сотрудничество
                 li.header__nav-item
                     a(href="contacts.html" title="Контакты").header__nav-link.header__nav-link--contacts Контакты
+
+            // Toggle gamburger
+            a(href='javascript:void(0)').header-toggler#js-toggler
+                span

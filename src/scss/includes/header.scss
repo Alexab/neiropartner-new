@@ -89,6 +89,9 @@
     display: flex;
     justify-content: space-between;
     padding-left: 60px;
+    &--visible{
+      display: flex!important;
+    }
   }
   &__nav-item{
     display: inline-block;
@@ -141,6 +144,73 @@
         box-shadow: inset 0 2px 0 0 $color-header-menu-link-bg-contacts-hover;
         background-color: $color-header-menu-link-bg-contacts-active;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+.header-toggler {
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  right: 30px;
+  align-items: center;
+  width: 35px;
+  height: 30px;
+  line-height: 3em;
+  user-select: none;
+  cursor: pointer;
+  display: none;
+
+  > span {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    height: 2px;
+    background: $color-header-gamburger;
+    border-radius: .2rem;
+    position: relative;
+    transition: background .3s .5s;
+
+    &:before,
+    &:after {
+      width: 100%;
+      height: 2px;
+      background: $color-header-gamburger;
+      border-radius: .2rem;
+      position: absolute;
+      left: 0;
+      content: '';
+      transform-origin: 50% 50%;
+      transition: top .3s .6s, transform .3s;
+    }
+
+    &:before {
+      top: .7rem;
+    }
+
+    &:after {
+      top: -0.7rem;
+    }
+  }
+
+  &--close {
+    > span {
+      transition: background .3s 0;
+      background: transparent;
+
+      &:before,
+      &:after {
+        transition: top .3s, transform .3s .5s;
+        top: 0;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
       }
     }
   }

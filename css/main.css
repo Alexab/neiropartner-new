@@ -6337,6 +6337,8 @@ img:not([src])
     max-width: 100%;
     height: auto;
 
+    cursor: pointer; 
+
     -o-object-fit: contain;
        object-fit: contain;
 }
@@ -6347,10 +6349,14 @@ img:not([src])
     font-weight: normal;
     font-style: normal;
 
-    margin-top: 0; 
+    display: block; 
+
+    margin-top: 0;
     margin-bottom: 35px;
 
+    cursor: pointer;
     text-align: left;
+    text-decoration: none;
 
     color: #2d54c2;
 }

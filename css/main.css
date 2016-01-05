@@ -9747,7 +9747,7 @@ img:not([src])
     {
         width: 100%;
         margin-bottom: 50px;
-        padding: 0 50px;
+        padding: 0 10px;
     }
     .submenu
     {

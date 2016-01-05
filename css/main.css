@@ -4987,7 +4987,7 @@ img:not([src])
     font-size: 1.0625rem;
     font-weight: normal;
     font-style: normal;
-    line-height: 2.7rem;
+    line-height: 42px;
 
     height: 40px; 
     padding: 0 35px;

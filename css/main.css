@@ -9210,7 +9210,7 @@ img:not([src])
     }
     .header__logo
     {
-        width: 250px;
+        width: 230px;
         height: auto;
     }
     .header__nav
@@ -9333,6 +9333,10 @@ img:not([src])
         -webkit-flex: 0 0 100%;
             -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
+    }
+    .feedback__left
+    {
+        margin-right: 0;
     }
     .feedback__form-left
     {

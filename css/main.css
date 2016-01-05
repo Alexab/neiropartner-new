@@ -4920,12 +4920,12 @@ img:not([src])
     display: block;
 
     width: 1148px;
-    height: 46px;
+    height: 4px;
     margin: 85px auto 100px auto; 
 
-    background-image: url(../img/impuls.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    opacity: .7;
+    background: -webkit-linear-gradient(0deg, #fff 0%, #57baec 5%, #1557ba 56%, #47a3d1 96%, #fff 100%);
+    background:         linear-gradient(90deg, #fff 0%, #57baec 5%, #1557ba 56%, #47a3d1 96%, #fff 100%);
 }
 
 .mouse

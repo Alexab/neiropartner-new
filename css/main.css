@@ -9792,6 +9792,10 @@ img:not([src])
     {
         display: none;
     }
+    .btn
+    {
+        font-size: .7rem;
+    }
 }
 
 [class^='amg-']

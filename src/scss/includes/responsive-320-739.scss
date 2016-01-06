@@ -19,6 +19,11 @@
   //  text-align: center;
   //}
 
+  .header__logo{
+    width: 230px;
+    height: auto;
+  }
+
   .header__nav{
     flex: 0 0 100%;
     justify-content: space-around;
@@ -67,7 +72,7 @@
     width: 100%;
     flex: 0 0 100%;
     margin-bottom: 50px;
-    padding: 0 50px;
+    padding: 0 10px;
   }
 
   .consalting{  padding-bottom: 10px;  }
@@ -87,6 +92,10 @@
     flex: 0 0 100%;
     margin-bottom: 10px;
     padding: 10px;
+  }
+
+  .feedback__left{
+    margin-right: 0;
   }
 
   .feedback__form-left{
@@ -298,7 +307,7 @@
     width: 100%;
     //flex: 0 0 100%;
     margin-bottom: 50px;
-    padding: 0 50px;
+    padding: 0 10px;
   }
 
   .submenu{  margin-top: 55px;  }
@@ -330,5 +339,9 @@
 
   .owl-own-nav{
     display: none;
+  }
+
+  .btn{
+    font-size: .7rem;
   }
 }

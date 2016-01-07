@@ -9564,7 +9564,8 @@ img:not([src])
     }
     .project
     {
-        margin-bottom: -20px; 
+        margin-top: 50px; 
+        margin-bottom: -20px;
 
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 100%;

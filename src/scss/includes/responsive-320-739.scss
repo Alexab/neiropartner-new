@@ -140,7 +140,7 @@
   .contacts__list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   .contacts__item{  margin-right: 10px;  }

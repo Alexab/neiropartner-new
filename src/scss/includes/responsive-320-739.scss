@@ -10,7 +10,8 @@
     width: 100%;
   }
 
-  .header-top-line{  @include hidden;  }
+  .header-top-line__wrapper{  width: 80%;  }
+  .header-top-line__strip{  width: 100%;  }
 
   .header__lang{  top: -20px;  }
 

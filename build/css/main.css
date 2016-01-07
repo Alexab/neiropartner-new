@@ -9199,10 +9199,13 @@ img:not([src])
     {
         width: 100%;
     }
-    .header-top-line
+    .header-top-line__wrapper
     {
-        display: none !important;
-        visibility: hidden !important;
+        width: 80%;
+    }
+    .header-top-line__strip
+    {
+        width: 100%;
     }
     .header__lang
     {

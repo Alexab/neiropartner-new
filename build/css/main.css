@@ -9185,6 +9185,11 @@ img:not([src])
         -ms-flex-pack: distribute;
                 justify-content: space-around;
     }
+    .js-owl-top-slider .owl-dots
+    {
+        position: relative;
+        bottom: -30px;
+    }
 }
 
 @media (min-width: 18.75em) and (max-width: 47.99em)
@@ -9546,7 +9551,7 @@ img:not([src])
     .slider__slide-right
     {
         margin-top: 50px;
-        padding: 0 50px; 
+        padding: 0 10px; 
 
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 100%;
@@ -9559,6 +9564,8 @@ img:not([src])
     }
     .project
     {
+        margin-bottom: -20px; 
+
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 100%;
             -ms-flex: 0 0 100%;
@@ -9588,10 +9595,6 @@ img:not([src])
     {
         padding: 0 30px;
     }
-    .project
-    {
-        margin-bottom: 10px;
-    }
     .project__icon
     {
         width: 100%;
@@ -9604,7 +9607,7 @@ img:not([src])
     }
     .project__text
     {
-        font-size: .7rem;
+        font-size: 1rem;
         line-height: 1.2rem !important; 
 
         text-align: center;
@@ -9696,7 +9699,8 @@ img:not([src])
     }
     .impuls
     {
-        margin: 20px auto 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     .consalting__right
     {
@@ -9803,6 +9807,11 @@ img:not([src])
     .btn
     {
         font-size: .7rem;
+    }
+    .js-owl-top-slider .owl-dots
+    {
+        position: relative;
+        bottom: -30px;
     }
 }
 

@@ -199,12 +199,12 @@
   .slider__slide-right{
     flex: 0 0 100%;
     margin-top: 50px;
-    padding: 0 50px;
+    padding: 0 10px;
   }
 
   .slider__gradient{  margin: 0 auto;  }
 
-  .project{  flex: 0 0 100%;  }
+  .project{  flex: 0 0 100%;  margin-bottom: -20px; }
 
   .projects-slider{  padding: 0 30px;  }
 
@@ -218,8 +218,6 @@
 
   .our-about-slider{  padding: 0 30px;  }
 
-  .project{  margin-bottom: 10px;  }
-
   .project__icon{
     width: 100%;
     height: auto;
@@ -232,7 +230,7 @@
   }
 
   .project__text{
-    font-size: .7rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 1.2rem!important;
   }
@@ -280,7 +278,10 @@
 
   .video-slider__item{ width: 100%;  }
 
-  .impuls{  margin: 20px auto 20px;  }
+  .impuls{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 
   .consalting__right{  padding: 0 10px;  }
 
@@ -344,5 +345,10 @@
 
   .btn{
     font-size: .7rem;
+  }
+
+  .js-owl-top-slider .owl-dots{
+    position: relative;
+    bottom: -30px;
   }
 }

@@ -9564,6 +9564,8 @@ img:not([src])
     }
     .project
     {
+        margin-bottom: -20px; 
+
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 100%;
             -ms-flex: 0 0 100%;
@@ -9592,10 +9594,6 @@ img:not([src])
     .our-about-slider
     {
         padding: 0 30px;
-    }
-    .project
-    {
-        margin-bottom: 10px;
     }
     .project__icon
     {
@@ -9701,7 +9699,8 @@ img:not([src])
     }
     .impuls
     {
-        margin: 20px auto 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     .consalting__right
     {

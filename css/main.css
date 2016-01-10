@@ -5715,15 +5715,17 @@ img:not([src])
 }
 .slider__blockquote-text
 {
-    font-family: 'Georgia-Italic', sans-serif;
+    font-family: 'HelveticaNeueCyr-Light', sans-serif;
     font-size: 1.25rem;
     font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
-    line-height: 40px;
 
-    text-align: left;
+    text-align: left; 
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
 
-    color: #949191;
+    color: #47494e;
 }
 .slider__blockquote-cite
 {

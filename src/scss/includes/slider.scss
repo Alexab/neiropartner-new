@@ -60,11 +60,18 @@
     margin-left: 20px;
   }
   &__blockquote-text{
-    @include font-family('Georgia-Italic');
-    text-align: left;
+    //@include font-family('Georgia-Italic');
+    //text-align: left;
+    //font-size: 1.25rem;
+    //line-height: 40px;
+    //color: $color-header-slider-bq;
+    @include font-family('HelveticaNeueCyr-Light');
     font-size: 1.25rem;
-    line-height: 40px;
-    color: $color-header-slider-bq;
+    text-transform: uppercase;
+    color: $color-header-slider-text;
+    font-weight: lighter;
+    letter-spacing: 1.3px;
+    text-align: left;
   }
   &__blockquote-footer{
 

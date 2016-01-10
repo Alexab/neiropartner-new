@@ -9816,6 +9816,10 @@ img:not([src])
         position: relative;
         bottom: -30px;
     }
+    .h1-title
+    {
+        font-size: 2rem;
+    }
 }
 
 [class^='amg-']

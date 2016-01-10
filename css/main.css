@@ -6046,7 +6046,8 @@ img:not([src])
     font-size: 1rem;
     line-height: 1.625rem;
 
-    padding-left: 25px; 
+    margin-bottom: 10px; 
+    padding-left: 25px;
 
     text-align: left;
 

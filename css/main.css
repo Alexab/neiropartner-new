@@ -5286,6 +5286,12 @@ img:not([src])
     margin: 0 auto;
 }
 
+.video-slider__video
+{
+    max-width: 100%;
+    height: auto;
+}
+
 .header-top-line
 {
     height: 6px;
@@ -9818,6 +9824,10 @@ img:not([src])
     .h1-title
     {
         font-size: 1.5rem;
+    }
+    .small-menu__link
+    {
+        font-size: 1rem;
     }
 }
 

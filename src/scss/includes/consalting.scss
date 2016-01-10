@@ -135,7 +135,7 @@
 .video-slider{
 
     &__item{
-        width: 360px;
+        //width: 360px;
         &:hover .video-slider__video-title{
             color: $color-consalting-video-title--hover;
         }

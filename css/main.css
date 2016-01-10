@@ -6522,10 +6522,6 @@ img:not([src])
     color: #36c;
 }
 
-.video-slider__item
-{
-    width: 360px;
-}
 .video-slider__item:hover .video-slider__video-title
 {
     color: #36c;

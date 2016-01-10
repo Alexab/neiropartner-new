@@ -58,7 +58,7 @@ window.onload = function(){
         lazyLoad:true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        smartSpeed:1500
+        smartSpeed:3500
     });
 
     // Center header slider dots

@@ -5286,12 +5286,6 @@ img:not([src])
     margin: 0 auto;
 }
 
-.video-slider__video
-{
-    max-width: 100%;
-    height: auto;
-}
-
 .header-top-line
 {
     height: 6px;
@@ -6767,7 +6761,6 @@ img:not([src])
 
 .work
 {
-    width: 265px;
     margin-bottom: 70px; 
 
     cursor: pointer;
@@ -6975,7 +6968,6 @@ img:not([src])
 
 .patent
 {
-    width: 265px;
     margin-bottom: 70px; 
 
     cursor: pointer;
@@ -7175,6 +7167,12 @@ img:not([src])
 .our-patents-slider .patent
 {
     margin-bottom: 0;
+}
+
+.video-slider__video
+{
+    max-width: 100%;
+    height: auto;
 }
 
 .about-item

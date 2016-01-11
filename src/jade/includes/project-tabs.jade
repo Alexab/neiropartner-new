@@ -11,26 +11,26 @@ ul.small-menu.js-article-tabs
         a(href='#video-tab' title='Видео').js-find-video.small-menu__link Видео
 
 
-.sliders.js-articles#articles-tab
+.container.js-articles#articles-tab
     .our-works-slider
         .owl-own-nav-works
-        .container.js-owl-works-slider
+        .slider-container.js-owl-works-slider
             - for (var i=0; i<6; i++ )
                 +work
     a(href='ourworks-articles.html' title="Все статьи НейроПартнер").btn.btn--all.m0-a Все статьи
 
-.sliders.js-patents#patents-tab
-    .our-works-slider
-        .owl-own-nav-works
-        .container.js-owl-works-slider
+.container.js-patents#patents-tab
+    .our-patents-slider
+        .owl-own-nav-patents
+        .slider-container.js-owl-patents-slider
             - for (var i=0; i<6; i++ )
                 +patent
     a(href='ourworks.html' title="Все патенты НейроПартнер").btn.btn--all.m0-a Все патенты
 
-.sliders.js-video#video-tab
+.container.js-video#video-tab
     .video-owl-slider.video-slider
         .owl-own-nav-video
-        .container.js-owl-video-slider
+        .slider-container.js-owl-video-slider
             - for (var i=0; i<6; i++ )
                 +video
     a(href='ourworks.html' title="Все видео НейроПартнер").btn.btn--all.m0-a Все видео

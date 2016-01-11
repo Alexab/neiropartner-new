@@ -4440,7 +4440,8 @@ Copyright (c) 2015 Daniel Eden
     display: block !important;
 
     width: 100%; 
-    margin: 0 auto !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 .t-ac
@@ -9208,7 +9209,7 @@ img:not([src])
     }
     .header-top-line__wrapper
     {
-        width: 80%;
+        width: 60%;
     }
     .header-top-line__strip
     {
@@ -9269,6 +9270,8 @@ img:not([src])
     {
         font-size: 1rem;
         line-height: 20px;
+
+        text-align: center;
     }
     .problem
     {
@@ -9823,6 +9826,10 @@ img:not([src])
     .small-menu__link
     {
         font-size: 1rem;
+    }
+    .mb
+    {
+        margin-bottom: 0;
     }
 }
 

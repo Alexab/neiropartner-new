@@ -28,11 +28,11 @@ function initArticlesTabs() {
     }
 
     // Hide all content divs except the first
-    var i = 0;
+    var k = 0;
 
     for ( var id in contentDivs ) {
-        if ( i != 0 ) contentDivs[id].className = 'sliders hide';
-        i++;
+        if ( k != 0 ) contentDivs[id].className = 'sliders hide';
+        k++;
     }
 }
 

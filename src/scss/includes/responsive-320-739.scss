@@ -10,7 +10,7 @@
     width: 100%;
   }
 
-  .header-top-line__wrapper{  width: 80%;  }
+  .header-top-line__wrapper{  width: 60%;  }
   .header-top-line__strip{  width: 100%;  }
 
   .header__lang{  top: -20px;  }
@@ -53,6 +53,7 @@
   .slider__blockquote-text{
     font-size: 1rem;
     line-height: 20px;
+    text-align: center;
   }
 
   .problem{
@@ -204,8 +205,11 @@
 
   .slider__gradient{  margin: 0 auto;  }
 
-  .project{  flex: 0 0 100%;  margin-bottom: -20px;
-    margin-top: 50px;}
+  .project{
+    flex: 0 0 100%;
+    margin-bottom: -20px;
+    margin-top: 50px;
+  }
 
   .projects-slider{  padding: 0 30px;  }
 
@@ -358,5 +362,9 @@
   }
   .small-menu__link{
     font-size: 1rem;
+  }
+
+  .mb{
+    margin-bottom: 0;
   }
 }

@@ -9269,6 +9269,8 @@ img:not([src])
     {
         font-size: 1rem;
         line-height: 20px;
+
+        text-align: center;
     }
     .problem
     {

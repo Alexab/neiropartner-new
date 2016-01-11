@@ -9208,7 +9208,7 @@ img:not([src])
     }
     .header-top-line__wrapper
     {
-        width: 80%;
+        width: 60%;
     }
     .header-top-line__strip
     {
@@ -9825,6 +9825,10 @@ img:not([src])
     .small-menu__link
     {
         font-size: 1rem;
+    }
+    .mb
+    {
+        margin-bottom: 0;
     }
 }
 

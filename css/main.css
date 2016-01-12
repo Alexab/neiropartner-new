@@ -9433,21 +9433,12 @@ img:not([src])
     }
     .contacts__list
     {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display:         flex;
-
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-                justify-content: flex-start;
+        display: block;
     }
     .contacts__item
     {
+        float: left; 
+
         margin-right: 10px;
     }
     .contacts__item--data

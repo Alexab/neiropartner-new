@@ -9433,21 +9433,12 @@ img:not([src])
     }
     .contacts__list
     {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display:         flex;
-
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-                justify-content: flex-start;
+        display: block;
     }
     .contacts__item
     {
+        float: left; 
+
         margin-right: 10px;
     }
     .contacts__item--data
@@ -9577,6 +9568,10 @@ img:not([src])
             -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
     }
+    .project:last-child
+    {
+        margin-bottom: 20px;
+    }
     .projects-slider
     {
         padding: 0 30px;
@@ -9610,6 +9605,11 @@ img:not([src])
     .project__title
     {
         font-weight: bold;
+    }
+    .projects-title
+    {
+        margin-top: 50px;
+        margin-bottom: 0;
     }
     .project__text
     {

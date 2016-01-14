@@ -6344,8 +6344,9 @@ img:not([src])
 }
 .consalting__img
 {
-    display: block; 
+    display: block;
 
+    width: 100%; 
     max-width: 100%;
     height: auto;
 

@@ -9226,6 +9226,14 @@ img:not([src])
     {
         top: -20px;
     }
+    .header__logo-link
+    {
+        float: left;
+
+        width: 80%;
+
+        text-align: left;
+    }
     .header__logo
     {
         width: 230px;
@@ -9813,6 +9821,7 @@ img:not([src])
         display: -webkit-flex;
         display: -ms-flexbox;
         display:         flex;
+        float: right;
     }
     .owl-own-nav
     {

@@ -6333,6 +6333,10 @@ img:not([src])
 
     text-align: center;
 }
+.consalting__left-img
+{
+    width: 100%;
+}
 .consalting__right
 {
     width: 50%; 

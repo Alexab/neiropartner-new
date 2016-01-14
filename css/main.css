@@ -9206,6 +9206,14 @@ img:not([src])
         position: relative;
         bottom: -30px;
     }
+    .project__title
+    {
+        font-size: 1.2rem;
+    }
+    .project__text
+    {
+        font-size: .8rem;
+    }
 }
 
 @media (min-width: 18.75em) and (max-width: 47.99em)

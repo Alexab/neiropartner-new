@@ -9453,9 +9453,14 @@ img:not([src])
     }
     .contacts__item
     {
-        float: left; 
+        float: left;
 
+        width: 100%; 
         margin-right: 10px;
+    }
+    .contacts__item-link
+    {
+        width: 100%;
     }
     .contacts__item--data
     {

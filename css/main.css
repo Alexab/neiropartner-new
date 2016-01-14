@@ -5698,13 +5698,21 @@ img
 {
     position: relative;
 
-    max-width: 100%; 
+    display: block;
+
+    width: 100%; 
+    max-width: 100%;
     height: calc(100vh - 195px);
     min-height: 305px;
     max-height: 800px;
 
+    opacity: .99;
+
     -o-object-fit: contain;
        object-fit: contain;
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .slider__gradient
 {
@@ -8639,13 +8647,19 @@ img
 }
 .article__right-img
 {
-    display: inline-block; 
+    display: block;
 
+    width: 100%;
     max-width: 100%;
     height: auto;
 
+    opacity: .99; 
+
     -o-object-fit: contain;
        object-fit: contain;
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .article__list
 {

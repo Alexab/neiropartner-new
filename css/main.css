@@ -5400,6 +5400,12 @@ img:not([src])
 {
     width: 306px;
     height: 85px;
+
+    opacity: .99; 
+
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .header__nav
 {

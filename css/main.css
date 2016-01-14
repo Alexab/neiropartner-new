@@ -6346,14 +6346,19 @@ img:not([src])
 {
     display: block;
 
-    width: 100%; 
+    width: 100%;
     max-width: 100%;
     height: auto;
 
     cursor: pointer;
 
+    opacity: .99; 
+
     -o-object-fit: contain;
        object-fit: contain;
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .consalting__title
 {

@@ -6344,10 +6344,12 @@ img:not([src])
 }
 .consalting__img
 {
+    display: block; 
+
     max-width: 100%;
     height: auto;
 
-    cursor: pointer; 
+    cursor: pointer;
 
     -o-object-fit: contain;
        object-fit: contain;

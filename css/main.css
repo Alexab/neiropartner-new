@@ -4870,12 +4870,27 @@ img:not([src])
     visibility: hidden;
 }
 
+img
+{
+    opacity: .99; 
+
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
 /* Fixes Firefox anomaly */
 @-moz-document url-prefix()
 {
     img:-moz-loading
     {
         visibility: hidden;
+
+        opacity: .99; 
+
+                backface-visibility: hidden;
+           -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 }
 

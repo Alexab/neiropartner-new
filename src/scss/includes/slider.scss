@@ -36,6 +36,12 @@
     min-height: 305px;
     //width: 100%;
     max-width: 100%;
+    backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    opacity: .99;
+    display: block;
+    width: 100%;
   }
   &__gradient{
     text-align: right;

@@ -79,6 +79,10 @@
   &__logo{
     width: 306px;
     height: 85px;
+    backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    opacity: .99;
   }
   &__nav{
     list-style: none;

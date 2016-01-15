@@ -1,6 +1,7 @@
 .problem{
   flex: 0 0 33.3333%;
   text-align: center;
+  width: 33%;
   &__link{
     @include font-family('HelveticaNeueCyr-Bold', normal, normal, sans-serif);
     font-size: 3.4375rem;

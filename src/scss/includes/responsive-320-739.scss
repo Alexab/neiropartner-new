@@ -15,10 +15,11 @@
 
   .header__lang{  top: -20px;  }
 
-  //.header__logo-link{
-  //  width: 100%;
-  //  text-align: center;
-  //}
+  .header__logo-link{
+    float: left;
+    width: 80%;
+    text-align: left;
+  }
 
   .header__logo{
     width: 230px;
@@ -60,6 +61,7 @@
     flex: 0 0 100%;
     margin-bottom: 50px;
     padding: 0 50px;
+    width: 100%;
   }
 
   .impuls{  width: 100%;  }
@@ -147,8 +149,10 @@
   }
 
   .contacts__item{
-    margin-right: 10px;
-    float: left;}
+    //margin-right: 10px;
+    float: left;
+    width: 100%;
+  }
 
   .contacts__item--data{  margin-left: 0;  }
 
@@ -352,6 +356,7 @@
 
   .header-toggler{
     display: flex;
+    float: right;
   }
 
   .owl-own-nav{
@@ -368,7 +373,7 @@
   }
 
   .h1-title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .small-menu__link{
     font-size: 1rem;
@@ -376,5 +381,12 @@
 
   .mb{
     margin-bottom: 0;
+  }
+
+  .project__title{
+    font-size: 1.2rem;
+  }
+  .project__text{
+    font-size: 0.8rem;
   }
 }

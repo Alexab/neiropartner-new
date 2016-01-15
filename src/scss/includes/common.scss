@@ -14,10 +14,21 @@ img:not([src]) {
   visibility: hidden;
 }
 
+img{
+  backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  opacity: .99;
+}
+
 /* Fixes Firefox anomaly */
 @-moz-document url-prefix() {
   img:-moz-loading {
     visibility: hidden;
+    backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    opacity: .99;
   }
 }
 

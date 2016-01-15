@@ -4870,12 +4870,27 @@ img:not([src])
     visibility: hidden;
 }
 
+img
+{
+    opacity: .99; 
+
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
 /* Fixes Firefox anomaly */
 @-moz-document url-prefix()
 {
     img:-moz-loading
     {
         visibility: hidden;
+
+        opacity: .99; 
+
+                backface-visibility: hidden;
+           -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 }
 
@@ -5400,6 +5415,12 @@ img:not([src])
 {
     width: 306px;
     height: 85px;
+
+    opacity: .99; 
+
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .header__nav
 {
@@ -5677,13 +5698,21 @@ img:not([src])
 {
     position: relative;
 
-    max-width: 100%; 
+    display: block;
+
+    width: 100%; 
+    max-width: 100%;
     height: calc(100vh - 195px);
     min-height: 305px;
     max-height: 800px;
 
+    opacity: .99;
+
     -o-object-fit: contain;
        object-fit: contain;
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .slider__gradient
 {
@@ -5857,7 +5886,9 @@ img:not([src])
 
 .problem
 {
-    text-align: center; 
+    width: 33%; 
+
+    text-align: center;
 
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.3333%;
@@ -6331,6 +6362,10 @@ img:not([src])
 
     text-align: center;
 }
+.consalting__left-img
+{
+    width: 100%;
+}
 .consalting__right
 {
     width: 50%; 
@@ -6338,13 +6373,21 @@ img:not([src])
 }
 .consalting__img
 {
+    display: block;
+
+    width: 100%;
     max-width: 100%;
     height: auto;
 
-    cursor: pointer; 
+    cursor: pointer;
+
+    opacity: .99; 
 
     -o-object-fit: contain;
        object-fit: contain;
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .consalting__title
 {
@@ -6755,6 +6798,11 @@ img:not([src])
     text-align: center;
 
     color: #4b4b4b;
+}
+
+.container--articles .work
+{
+    width: 265px;
 }
 
 .work
@@ -8599,13 +8647,19 @@ img:not([src])
 }
 .article__right-img
 {
-    display: inline-block; 
+    display: block;
 
+    width: 100%;
     max-width: 100%;
     height: auto;
 
+    opacity: .99; 
+
     -o-object-fit: contain;
        object-fit: contain;
+            backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .article__list
 {
@@ -9219,6 +9273,14 @@ img:not([src])
     {
         top: -20px;
     }
+    .header__logo-link
+    {
+        float: left;
+
+        width: 80%;
+
+        text-align: left;
+    }
     .header__logo
     {
         width: 230px;
@@ -9275,8 +9337,9 @@ img:not([src])
     }
     .problem
     {
+        width: 100%; 
         margin-bottom: 50px;
-        padding: 0 50px; 
+        padding: 0 50px;
 
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 100%;
@@ -9437,9 +9500,9 @@ img:not([src])
     }
     .contacts__item
     {
-        float: left; 
+        float: left;
 
-        margin-right: 10px;
+        width: 100%;
     }
     .contacts__item--data
     {
@@ -9805,6 +9868,7 @@ img:not([src])
         display: -webkit-flex;
         display: -ms-flexbox;
         display:         flex;
+        float: right;
     }
     .owl-own-nav
     {
@@ -9821,7 +9885,7 @@ img:not([src])
     }
     .h1-title
     {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .small-menu__link
     {
@@ -9830,6 +9894,14 @@ img:not([src])
     .mb
     {
         margin-bottom: 0;
+    }
+    .project__title
+    {
+        font-size: 1.2rem;
+    }
+    .project__text
+    {
+        font-size: .8rem;
     }
 }
 

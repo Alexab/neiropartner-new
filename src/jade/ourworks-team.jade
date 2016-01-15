@@ -1,4 +1,4 @@
-include mixins/about-item-for-list
+include mixins/team
 doctype
 html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
     include includes/_head
@@ -8,18 +8,18 @@ html.no-js(lang='ru', prefix='og: http://ogp.me/ns#')
             .container.container--articles
                 ul.submenu
                     li.submenu__item
-                        a(href='ourworks-articles.html' title='Статьи').submenu__link Статьи
+                        a(href='ourworks-articles.html' title='Статьи').submenu__link.submenu__link--active Статьи
                     li.submenu__item
                         a(href='ourworks-patents.html' title='Патенты').submenu__link Патенты
                     li.submenu__item
-                        a(href='ourworks-about.html' title='О Нас').submenu__link.submenu__link--active О нас
+                        a(href='ourworks-about.html' title='О Нас').submenu__link О нас
                     li.submenu__item
                         a(href='ourworks-team.html' title='Команда').submenu__link Команда
 
-                h1.h1-title О нас
+                h1.h1-title Команда
 
                 - for (var i=0; i<12; i++ )
-                    +about-item-for-list
+                    +team
 
                 ul.pagination
                     li.pagination__item

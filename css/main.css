@@ -5698,9 +5698,8 @@ img
 {
     position: relative;
 
-    display: block;
+    display: block; 
 
-    width: 100%; 
     max-width: 100%;
     height: calc(100vh - 195px);
     min-height: 305px;

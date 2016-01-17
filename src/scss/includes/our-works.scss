@@ -157,7 +157,7 @@
 
 .patent{
   cursor: pointer;
-  //width: 265px;
+  width: 265px;
   margin-bottom: 70px;
   &:hover{
     .patent__link{  color: $color-work-link-hover;}
@@ -187,7 +187,6 @@
   }
 
   &__img{
-    width: 100%;
     max-width: 100%;
     height: auto;
     object-fit: contain;

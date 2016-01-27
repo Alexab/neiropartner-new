@@ -29,6 +29,9 @@
 .work{
   cursor: pointer;
   //width: 265px;
+  @include mq($from: tablet) {
+    max-width: 265px;
+  }
   margin-bottom: 70px;
   &:hover{
     .work__link{  color: $color-work-link-hover;}
@@ -157,7 +160,9 @@
 
 .patent{
   cursor: pointer;
-  width: 265px;
+  @include mq($from: tablet) {
+    max-width: 265px;
+  }
   margin-bottom: 70px;
   &:hover{
     .patent__link{  color: $color-work-link-hover;}
@@ -280,6 +285,13 @@
 .video-slider__video{
   max-width: 100%;
   height: auto;
+}
+
+.video-slider__item{
+
+  @include mq($from: tablet) {
+    max-width: 265px;
+  }
 }
 
 .about-item{

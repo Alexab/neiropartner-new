@@ -6808,6 +6808,13 @@ img
 
     cursor: pointer;
 }
+@media (min-width: 48em)
+{
+    .work
+    {
+        max-width: 265px;
+    }
+}
 .work:hover .work__link
 {
     color: #2d54c2;
@@ -7011,10 +7018,16 @@ img
 
 .patent
 {
-    width: 265px;
     margin-bottom: 70px; 
 
     cursor: pointer;
+}
+@media (min-width: 48em)
+{
+    .patent
+    {
+        max-width: 265px;
+    }
 }
 .patent:hover .patent__link
 {
@@ -7216,6 +7229,14 @@ img
 {
     max-width: 100%;
     height: auto;
+}
+
+@media (min-width: 48em)
+{
+    .video-slider__item
+    {
+        max-width: 265px;
+    }
 }
 
 .about-item

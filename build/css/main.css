@@ -9242,24 +9242,6 @@ img
     {
         width: 100%;
     }
-    .submenu
-    {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display:         flex;
-
-        margin-top: 55px; 
-        padding: 0;
-
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 100%;
-            -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-                justify-content: space-around;
-    }
     .js-owl-top-slider .owl-dots
     {
         position: relative;

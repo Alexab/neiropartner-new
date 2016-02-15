@@ -58,6 +58,7 @@ window.onload = function(){
         lazyLoad:true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
+        autoPlayTimeout: parseInt($(".js-owl-top-slider").data('speed')),
         smartSpeed:3500
     });
 

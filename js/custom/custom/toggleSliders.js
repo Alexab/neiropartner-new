@@ -31,7 +31,7 @@ function initArticlesTabs() {
     var k = 0;
 
     for ( var id in contentDivs ) {
-        if ( k != 0 ) contentDivs[id].className = 'sliders hide';
+        if ( k != 0 ) contentDivs[id].className = ' hide';
         k++;
     }
 }

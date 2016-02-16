@@ -5302,6 +5302,11 @@ img
     margin: 0 auto;
 }
 
+.hide
+{
+    display: none;
+}
+
 .header-top-line
 {
     height: 6px;

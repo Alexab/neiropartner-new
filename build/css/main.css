@@ -9913,6 +9913,10 @@ img
         margin: 0 auto;
         margin-top: 50px;
     }
+    .consalting-features
+    {
+        background-position: center top;
+    }
 }
 
 [class^='amg-']
